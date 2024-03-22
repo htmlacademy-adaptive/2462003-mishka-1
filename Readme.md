@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Данила Петров](https://up.htmlacademy.ru/adaptive-individual/1/user/2462003).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
