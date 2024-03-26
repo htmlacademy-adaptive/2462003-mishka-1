@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Мишка</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+</head>
+
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
@@ -42,21 +44,93 @@
   <main class="main-wrapper">
     <h1 class="hero-title">Вязание на заказ</h1>
     <section class="forms">
-      <p class="forms__customization-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="forms__customization-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <h2 class="visually-hidden">Настройка заказа.</h2>
-      <form class="form">
-        <fieldset class="form__type">
+      <form class="form" id="form-area" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__type form-section">
           <legend class="form__label--primary">Тип</legend>
-          <input class="type__radio" type="radio" name="Тип" value="Аксессуар для интерьера" id="accesory">
-          <label class="type__label form-text" for="accesory">Аксессуар для интерьера</label>
-          <input class="type__radio" type="radio" name="Тип" value="Детская игрушка" id="toy">
-          <label class="type__label form-text" for="toy">Детская игрушка</label>
+          <ul class="form__form-list">
+            <li class="form-list-item">
+              <input class="type__radio" type="radio" name="Тип" value="Аксессуар для интерьера" id="accesory" checked>
+              <label class="type__label form-text" for="accesory">Аксессуар для интерьера</label>
+            </li>
+            <li class="form-list-item">
+              <input class="type__radio" type="radio" name="Тип" value="Детская игрушка" id="toy">
+              <label class="type__label form-text" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form__color">
+        <fieldset class="form__color form-section">
           <legend class="form__label--primary">Цвет</legend>
-          <input class="color__checkbox" type="checkbox" name="Цвет" value="Белый" id="white" checked>
-          <label class="color-label form-text" for="white">Белый</label>
+          <ul class="form__form-list">
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Белый" id="white" checked>
+              <label class="color__label form-text" for="white">Белый</label>
+            </li>
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Серый" id="grey" checked>
+              <label class="color__label form-text" for="grey">Серый</label>
+            </li>
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Тиффани" id="tiff">
+              <label class="color__label form-text" for="tiff">Тиффани</label>
+            </li>
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Черный" id="black">
+              <label class="color__label form-text" for="black">Черный</label>
+            </li>
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Розовый" id="pink">
+              <label class="color__label form-text" for="pink">Розовый</label>
+            </li>
+            <li class="form-list-item">
+              <input class="color__checkbox" type="checkbox" name="Цвет" value="Оранжевый" id="orange">
+              <label class="color__label form-text" for="orange">Оранжевый</label>
+            </li>
+          </ul>
         </fieldset>
+        <fieldset class="form__name form-section">
+          <legend class="form__label--primary">Фио</legend>
+          <ul class="form__form-list">
+            <li class="form-list-item">
+              <label class="name__label form-text" for="first-name">Имя:</label>
+              <input class="name__text-input" type="text" name="Имя" id="first-name" placeholder="Введите ваше имя*"
+                required>
+            </li>
+            <li class="form-list-item">
+              <label class="name__label form-text" for="last-name">Фамилия:</label>
+              <input class="name__text-input" type="text" name="Фамилия" id="last-name" placeholder="Укажите фамилию*"
+                required>
+            </li>
+            <li class="form-list-item">
+              <label class="name__label form-text" for="middle-name">Отчество:</label>
+              <input class="name__text-input" type="text" name="Отчество" id="middle-name"
+                placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__phone form-section">
+          <legend class="form__label--primary">Тел</legend>
+          <label class="phone__label">
+            <input class="phone__phone-number-input" type="tel" name="Телефон" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__email form-section">
+          <legend class="form__label--primary">E-mail</legend>
+          <label class="email__label">
+            <input class="email__email-input" type="email" name="E-mail" placeholder="Ваш Email*" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__additional form-section">
+          <legend class="form__label--primary">Доп</legend>
+          <label class="additional__label">
+            <textarea name="Дополнительные пожелания" form="form-area" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+        <p class="required-menu-items">*Поля обязательны для заполнения</p>
+        <button class="button-primary button" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>
@@ -104,4 +178,5 @@
     </div>
   </footer>
 </body>
+
 </html>
