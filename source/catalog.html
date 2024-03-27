@@ -15,7 +15,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <span class="visually-hidden">Открыть меню.</span>
-      <div class="main-nav-wrapper">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">
@@ -47,8 +47,12 @@
       <h2 class="visually-hidden">Карточки товаров.</h2>
       <ul class="cards__items">
         <li class="cards__item card">
-          <img src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
-          <h3 class="card__title">Зайчик-попрыгайчик</h3>
+          <a class="card__card-link" href="#">
+            <img src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
+          </a>
+          <h3 class="card__title">
+            <a class="card__card-link" href="#">Зайчик-попрыгайчик</a>
+          </h3>
           <p class="card__description">Рост 30 см, вес 200 г</p>
           <div class="card__price-wrapper">
             <p class="card__price">
@@ -64,8 +68,12 @@
           </div>
         </li>
         <li class="cards__item card">
-          <img src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
-          <h3 class="card__title">Корзинка для белья</h3>
+          <a class="card__card-link" href="#">
+            <img src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
+          </a>
+          <h3 class="card__title">
+            <a class="card__card-link" href="#">Корзинка для белья</a>
+          </h3>
           <p class="card__description">Диаметр 15 см, высота 10 см</p>
           <div class="card__price-wrapper">
             <p class="card__price">
@@ -81,8 +89,12 @@
           </div>
         </li>
         <li class="cards__item card">
-          <img src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
-          <h3 class="card__title">Большая корзинка для игрушек</h3>
+          <a class="card__card-link" href="#">
+            <img src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
+          </a>
+          <h3 class="card__title">
+            <a class="card__card-link" href="#">Большая корзинка для игрушек</a>
+          </h3>
           <p class="card__description">Диаметр 30 см, высота 30 см</p>
           <div class="card__price-wrapper">
             <p class="card__price">
@@ -101,8 +113,8 @@
     </article>
     <section class="production">
       <h2 class="production__title section-title">Процесс производства</h2>
-      <div class="production__video-player">
-        <video class="video-player video" src="#" width="260" height="150" poster="img/video-mobile.jpg"></video>
+      <div class="production__video-player video">
+        <video class="video__video" src="#" width="260" height="150" poster="img/video-mobile.jpg"></video>
         <button class="video__play-button play-button" type="button">
           <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -163,11 +175,11 @@
       </svg>
     </div>
   </footer>
-  <div class="modal-wrapper>">
-    <div class="modal-window>">
+  <div class="modal-wrapper">
+    <div class="modal-window">
       <h2 class="modal-window__title section-title">Добавить в корзину</h2>
       <p class="modal-window__options">Выберите размер:</p>
-      <div class="options__wrapper">
+      <div class="modal-window__options-wrapper options">
         <button class="options__button button-xs" type="button">S</button>
         <button class="options__button button-xs" type="button">M</button>
         <button class="options__button button-xs" type="button">L</button>
