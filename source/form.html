@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,9 @@
   <title>HTML Academy: Мишка</title>
 </head>
 
-<body class="page__body">
+<body>
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
     </a>
     <nav class="main-nav">
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link" href="#">
               Вязание на заказ
             </a>
           </li>
@@ -42,144 +42,100 @@
     </nav>
   </header>
   <main class="main-wrapper">
-    <section class="hero">
-      <h1 class="hero-title">Милые штуки ручной работы для дома</h1>
-    </section>
-    <section class="products-categories">
-      <h2 class="visually-hidden">Категории товаров.</h2>
-      <ul class="products-categories__list categories-list">
-        <li class="categories-list__item categories-list__item--primary">
-          <a href="#">Предметы интерьера</a>
-        </li>
-        <li class="category-item category-item--secondary">
-          <a href="#">Детские игрушки</a>
-        </li>
-      </ul>
-    </section>
-    <article class="featured">
-      <div class="featured__wrapper">
-        <h2 class="featured__title section-title">Вязаные корзинки</h2>
-        <p class="featured__best-of-week">Товар недели</p>
-        <p class="featured__description">
-          Экологически чистая пряжа,
-          ручная работа. Доступны в шести расцветках и трёх размерах.
-        </p>
-        <dl class="featured__properties">
-          <dt class="featured__type">Цвет:</dt>
-          <dd class="featured__value">тиффани/серый</dd>
-          <dt class="featured__type">Диаметр:</dt>
-          <dd class="featured__value">25 см</dd>
-          <dt class="featured__type">Высота:</dt>
-          <dd class="featured__value">15 см</dd>
-        </dl>
-        <div class="featured__image-wrapper">
-          <img src="img/triple-set-mobile.jpg" width="260" height="315"
-            alt="Три разноцветных вязаных корзинки разных размеров.">
-        </div>
-        <div class="featured__order-wrapper">
-          <p class="featured__price">Цена: 990 руб.</p>
-          <button class="featured__button" type="button">Заказать</button>
-        </div>
-      </div>
-    </article>
-    <section class="about">
-      <h2 class="about__title section-title">Коротко о нас:</h2>
-      <ul class="about__list">
-        <li class="about__list-item">
-          <img src="img/icons/flower-icon.svg" width="33" height="38" alt="">
-          <p class="about__list-item-description">
-            Экологически чистые материалы
-          </p>
-        </li>
-        <li class="about__list-item">
-          <img src="img/icons/money-icon.svg" width="47" height="27" alt="">
-          <p class="about__list-item-description">
-            Скандинавский стиль по российской цене
-          </p>
-        </li>
-        <li class="about__list-item">
-          <img src="img/icons/heart-icon.svg" width="34" height="27" alt="">
-          <p class="about__list-item-description">
-            Увеличивает лайки на фотографиях
-          </p>
-        </li>
-        <li class="about__list-item">
-          <img src="img/icons/ball-icon.svg" width="35" height="34" alt="">
-          <p class="about__list-item-description">
-            Связано вручную
-            с любовью и умилением
-          </p>
-        </li>
-        <li class="about__list-item">
-          <img src="img/icons/rocket-icon.svg" width="55" height="23" alt="">
-          <p class="about__list-item-description">
-            Поддержка отечественного производителя
-          </p>
-        </li>
-        <li class="about__list-item">
-          <img src="img/icons/present-icon.svg" width="33" height="32" alt="">
-          <p class="about__list-item-description">
-            Поставляется
-            в подарочной упаковке
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__title section-title">Отзывы</h2>
-      <blockquote class="reviews__item review">
-        <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-          как
-          у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-          и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="review__author">
-          <span class="review__author-name">Анастасия Красильникова</span>
-          <span class="review__author-email"> @misssssiskras</span>
-        </cite>
-      </blockquote>
-      <div class="reviews__slide-wrapper slide-wrapper">
-        <button class="slide-wrapper__button button-previous" type="button">
-          <span class="visually-hidden">Предыдущий отзыв.</span>
-          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
-          </svg>
-        </button>
-        <button class="slide-wrapper__button button-next" type="button">
-          <span class="visually-hidden">Следующий отзыв.</span>
-          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
-          </svg>
-        </button>
-      </div>
-      <button class="button button-primary" type="button">
-        Написать
-      </button>
-    </section>
-    <section class="contact-us">
-      <h2 class="contact-us__title section-title">Контакты</h2>
-      <div class="contact-us__wrapper">
-        <ul class="contact-us__list contacts">
-          <li class="contacts__item">
-            <h3 class="contacts__item-name">e-mail:</h3>
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-name">адрес:</h3>
-            <address>
-              г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
-            </address>
-          </li>
-        </ul>
-        <div class="map-wrapper">
-          <img class="map-wrapper__map" src="img/map-mobile.png" width="320" height="454" alt="Наш адрес на карте.">
-        </div>
-        <button class="button button-primary" type="button">Напишите нам</button>
-      </div>
+    <h1 class="hero-title">Вязание на заказ</h1>
+    <section class="forms">
+      <p class="forms__customization-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <h2 class="visually-hidden">Настройка заказа.</h2>
+      <form class="form" id="form-area" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__type form-section">
+          <legend class="form__label form__label--primary">Тип</legend>
+          <ul class="form__form-list">
+            <li class="form__from-radio radio-block">
+              <input class="radio-block__radio" type="radio" name="type" value="Аксессуар для интерьера" id="accesory" checked>
+              <label class="radio-block__label form-text" for="accesory">Аксессуар для интерьера</label>
+            </li>
+            <li class="form__form-radio radio-block">
+              <input class="radio-block__radio" type="radio" name="type" value="Детская игрушка" id="toy">
+              <label class="radio-block__label form-text" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__type form-section">
+          <legend class="form__label form__label--primary">Цвет</legend>
+          <ul class="form__form-list">
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Белый" id="white" checked>
+              <label class="checkbox-block__label form-text" for="white">Белый</label>
+            </li>
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Серый" id="grey" checked>
+              <label class="checkbox-block__label form-text" for="grey">Серый</label>
+            </li>
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Тиффани" id="tiff">
+              <label class="checkbox-block__label form-text" for="tiff">Тиффани</label>
+            </li>
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Черный" id="black">
+              <label class="checkbox-block__label form-text" for="black">Черный</label>
+            </li>
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Розовый" id="pink">
+              <label class="checkbox-block__label form-text" for="pink">Розовый</label>
+            </li>
+            <li class="form__form-checkbox checkbox-block">
+              <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Оранжевый" id="orange">
+              <label class="checkbox-block__label form-text" for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__type form-section">
+          <legend class="form__label  form__label--primary">Фио</legend>
+          <ul class="form__form-list">
+            <li class="form__form-text text-block">
+              <label class="text-block__label form-text" for="first-name">Имя:</label>
+              <input class="text-block__text-input" type="text" name="name" id="first-name" placeholder="Введите ваше имя*"
+                required>
+            </li>
+            <li class="form__form-text text-block">
+              <label class="text-block__label form-text" for="last-name">Фамилия:</label>
+              <input class="text-block__text-input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*"
+                required>
+            </li>
+            <li class="form__form-text text-block">
+              <label class="text-block__label form-text" for="middle-name">Отчество:</label>
+              <input class="text-block__text-input" type="text" name="moddle-name" id="middle-name"
+                placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__type form-section">
+          <legend class="form__label form__label--primary">Тел</legend>
+          <label class="form__text-input-block text-input-block">
+            <input class="text-input-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__type form-section">
+          <legend class="form__label form__label--primary">E-mail</legend>
+          <label class="form__text-input-block text-input-block">
+            <input class="text-input-block__input" type="email" name="email" placeholder="Ваш Email*" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__type form-section">
+          <legend class="form__label form__label--primary">Доп</legend>
+          <label class="form__text-input-block text-input-block">
+            <textarea class="text-input-block__input textarea" name="extra" form="form-area" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+        <p class="required-menu-items">*Поля обязательны для заполнения</p>
+        <button class="button-primary button" type="submit">Отправить заказ</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
-    <ul class="main-footer__socials socials">
+    <ul class="socials">
       <li class="socials__item socials__item--vk">
         <a class="socials__link" href="#">
           <span class="visually-hidden">Вконтакте.</span>
@@ -211,7 +167,7 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__developed developed">
+    <div class="developed">
       <p class="developed__text">Разработано</p>
       <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"
         aria-label="Логотип разрабочтика.">
@@ -221,18 +177,6 @@
       </svg>
     </div>
   </footer>
-  <div class="modal-wrapper">
-    <div class="modal-window">
-      <h2 class="modal-window__title section-title">Добавить в корзину</h2>
-      <p class="modal-window__options">Выберите размер:</p>
-      <div class="modal-window__options-wrapper options">
-        <button class="options__button button-xs" type="button">S</button>
-        <button class="options__button button-xs" type="button">M</button>
-        <button class="options__button button-xs" type="button">L</button>
-      </div>
-      <button class="button button-secondary" type="button">Добавить</button>
-    </div>
-  </div>
 </body>
 
 </html>
