@@ -1,5 +1,10 @@
-.main-header {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.main-header__logo {
+  margin: 0 auto;
 }

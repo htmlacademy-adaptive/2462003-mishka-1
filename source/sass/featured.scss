@@ -1,0 +1,55 @@
+.featured {
+  padding: 0 30px;
+}
+
+.featured__title {
+  margin-bottom: 3.5px;
+  margin-top: 31px;
+}
+
+.featured__best-of-week {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63D1BB;
+}
+
+.featured__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.featured__properties {
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.featured__image {
+  display: block;
+}
+
+.featured__order-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.featured__price {
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  margin-top: 25.5px;
+  margin-bottom: 24.5px;
+}
+
+.featured__button {
+  margin-bottom: 73px;
+}

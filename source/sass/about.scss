@@ -1,0 +1,25 @@
+.about {
+  padding: 0 30px;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__list-item img {
+  display: block;
+}
+
+.about__list-item-description {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}

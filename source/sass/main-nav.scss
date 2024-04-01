@@ -1,0 +1,23 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-list__link {
+  color: #000000;
+  padding: 28.5px 59px 26.5px 76px;
+}
+
+.site-list__item {
+  min-height: 79px;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+}

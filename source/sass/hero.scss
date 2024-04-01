@@ -1,0 +1,21 @@
+.hero {
+  background-image: url(../img/hero-image.jpg);
+  background-color: #808080;
+  background-repeat: no-repeat;
+  background-position: top;
+  object-fit: cover;
+  padding: 0 30px;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  min-height: 300px;
+}
+
+.hero-title {
+  min-width: 260px;
+  margin-top: 73px;
+  margin-bottom: 120px;
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+}
