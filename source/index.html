@@ -89,38 +89,38 @@
       <h2 class="about__title section-title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__list-item">
-          <img src="img/icons/flower-icon.svg" width="33" height="38" alt="">
+          <img class="about__list-item-image about__list-item-image--flower" src="img/icons/flower-icon.svg" width="33" height="38" alt="">
           <p class="about__list-item-description">
             Экологически<br> чистые материалы
           </p>
         </li>
         <li class="about__list-item">
-          <img src="img/icons/money-icon.svg" width="47" height="27" alt="">
+          <img class="about__list-item-image about__list-item-image--money" src="img/icons/money-icon.svg" width="47" height="27" alt="">
           <p class="about__list-item-description">
             Скандинавский стиль<br> по российской цене
           </p>
         </li>
         <li class="about__list-item">
-          <img src="img/icons/heart-icon.svg" width="34" height="27" alt="">
+          <img class="about__list-item-image about__list-item-image--heart" src="img/icons/heart-icon.svg" width="34" height="27" alt="">
           <p class="about__list-item-description">
             Увеличивает лайки<br> на фотографиях
           </p>
         </li>
         <li class="about__list-item">
-          <img src="img/icons/ball-icon.svg" width="35" height="34" alt="">
+          <img class="about__list-item-image about__list-item-image--ball" src="img/icons/ball-icon.svg" width="35" height="34" alt="">
           <p class="about__list-item-description">
             Связано вручную<br>
             с любовью и умилением
           </p>
         </li>
         <li class="about__list-item">
-          <img src="img/icons/rocket-icon.svg" width="55" height="23" alt="">
+          <img class="about__list-item-image about__list-item-image--rocket" src="img/icons/rocket-icon.svg" width="55" height="23" alt="">
           <p class="about__list-item-description">
             Поддержка отечественного<br> производителя
           </p>
         </li>
         <li class="about__list-item">
-          <img src="img/icons/present-icon.svg" width="33" height="32" alt="">
+          <img class="about__list-item-image about__list-item-image--present" src="img/icons/present-icon.svg" width="33" height="32" alt="">
           <p class="about__list-item-description">
             Поставляется<br>
             в подарочной упаковке
@@ -130,7 +130,7 @@
     </section>
     <section class="reviews">
       <h2 class="reviews__title section-title">Отзывы</h2>
-      <blockquote class="reviews__item review">
+      <blockquote class="reviews__item reviews__item--active review ">
         <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как
           у популярных инстамамочек.
@@ -139,6 +139,24 @@
         <cite class="review__author">
           <span class="review__author-name">Анастасия Красильникова</span>
           <span class="review__author-email"> @misssssiskras</span>
+        </cite>
+      </blockquote>
+      <blockquote class="reviews__item review">
+        <p class="review__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+          и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+          больше лайков!</p>
+        <cite class="review__author">
+          <span class="review__author-name">Екатерина Красильникова</span>
+          <span class="review__author-email"> @misssssiskras2</span>
+        </cite>
+      </blockquote>
+      <blockquote class="reviews__item review">
+        <p class="review__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+          и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+          больше лайков!</p>
+        <cite class="review__author">
+          <span class="review__author-name">Елена Красильникова</span>
+          <span class="review__author-email"> @misssssiskras3</span>
         </cite>
       </blockquote>
       <div class="reviews__slide-wrapper slide-wrapper">
@@ -165,11 +183,11 @@
         <ul class="contact-us__list contacts">
           <li class="contacts__item">
             <h3 class="contacts__item-name">e-mail:</h3>
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__item-info contacts__item-info--decoration" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__item-name">адрес:</h3>
-            <address>
+            <address class="contacts__item-info">
               г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
             </address>
           </li>
@@ -177,7 +195,7 @@
         <div class="map-wrapper">
           <img class="map-wrapper__map" src="img/map-mobile.png" width="320" height="454" alt="Наш адрес на карте.">
         </div>
-        <button class="button button-primary" type="button">Напишите нам</button>
+        <button class="contact-us__button button button-primary" type="button">Напишите нам</button>
       </div>
     </section>
   </main>
@@ -224,12 +242,12 @@
       </svg>
     </div>
   </footer>
-  <div class="modal-wrapper">
+  <div class="modal-wrapper invisible">
     <div class="modal-window">
       <h2 class="modal-window__title section-title">Добавить в корзину</h2>
       <p class="modal-window__options">Выберите размер:</p>
       <div class="modal-window__options-wrapper options">
-        <button class="options__button button-xs" type="button">S</button>
+        <button class="options__button options__button--active button-xs" type="button">S</button>
         <button class="options__button button-xs" type="button">M</button>
         <button class="options__button button-xs" type="button">L</button>
       </div>

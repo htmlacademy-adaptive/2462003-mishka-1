@@ -4,7 +4,7 @@
 
 .about__title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 82px;
 }
 
 .about__list {
@@ -22,4 +22,46 @@
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+}
+
+.about__list-item {
+  position: relative;
+}
+
+.about__list-item:not(:last-child) {
+  margin-bottom: 83px;
+}
+
+.about__list-item-image {
+  position: absolute;
+}
+
+.about__list-item-image--flower {
+  bottom: 56px;
+  left: 8px;
+}
+
+.about__list-item-image--money {
+  bottom: 66px;
+  left: 0;
+}
+
+.about__list-item-image--heart {
+  bottom: 61px;
+  left: 7px;
+}
+
+.about__list-item-image--ball {
+  bottom: 57px;
+  left: 3px;
+}
+
+.about__list-item-image--rocket {
+  bottom: 66px;
+  left: -6px;
+}
+
+.about__list-item-image--present {
+  bottom: 60px;
+  left: 3px;
 }
