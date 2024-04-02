@@ -10,16 +10,18 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+      </a>
+      <button class="main-header__toggle" type="button"></button>
       <span class="visually-hidden">Открыть меню.</span>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
@@ -43,13 +45,15 @@
     </nav>
   </header>
   <main class="main-wrapper">
-    <h1 class="hero-title">Каталог товаров</h1>
+    <section class="catalog-hero">
+      <h1 class="hero-title">Каталог товаров</h1>
+    </section>
     <article class="cards">
       <h2 class="visually-hidden">Карточки товаров.</h2>
       <ul class="cards__items">
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
+            <img class="card__card-image" src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
           </a>
           <h3 class="card__title">
             <a class="card__card-link" href="#">Зайчик-попрыгайчик</a>
@@ -70,7 +74,7 @@
         </li>
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
+            <img class="card__card-image"  src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
           </a>
           <h3 class="card__title">
             <a class="card__card-link" href="#">Корзинка для белья</a>
@@ -91,7 +95,7 @@
         </li>
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
+            <img class="card__card-image"  src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
           </a>
           <h3 class="card__title">
             <a class="card__card-link" href="#">Большая корзинка для игрушек</a>
@@ -112,7 +116,7 @@
         </li>
       </ul>
     </article>
-    <section class="production">
+    <section class="production production-spacing">
       <h2 class="production__title section-title">Процесс производства</h2>
       <div class="production__video-player video">
         <video class="video__video" src="#" width="260" height="150" poster="img/video-mobile.jpg"></video>
@@ -130,7 +134,7 @@
       </div>
       <p class="production__production-description">По просьбам наших любимых фолловеров мы сняли для вас подробное
         видео о том, как появляются наши товары.</p>
-      <button class="button-primary button" type="button">Сделать заказ</button>
+      <button class="button-primary button-primary--catalog button" type="button">Сделать заказ</button>
     </section>
   </main>
   <footer class="main-footer">

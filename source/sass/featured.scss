@@ -28,7 +28,23 @@
   color: #444444;
   padding: 0;
   margin: 0;
+  list-style-type: none;
   margin-bottom: 14px;
+}
+
+.featured__properties-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.featured__type {
+  width: 97px;
+  margin-right: 1px;
+}
+
+.featured__value {
+  left: 97px;
 }
 
 .featured__image {
