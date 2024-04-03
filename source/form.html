@@ -14,7 +14,13 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
       </a>
-      <button class="main-header__toggle" type="button"></button>
+      <button class="main-header__toggle" type="button">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+          <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+          <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+          </svg>
+      </button>
       <span class="visually-hidden">Открыть меню.</span>
     </div>
     <nav class="main-nav">
@@ -45,7 +51,9 @@
     </nav>
   </header>
   <main class="main-wrapper">
-    <h1 class="hero-title">Вязание на заказ</h1>
+    <section class="hero-section">
+      <h1 class="hero-title">Вязание на заказ</h1>
+    </section>
     <section class="forms">
       <p class="forms__customization-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -53,7 +61,7 @@
       <form class="form" id="form-area" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form__type form-section">
           <legend class="form__label form__label--primary">Тип</legend>
-          <ul class="form__form-list">
+          <ul class="form__form-list form-list-radio">
             <li class="form__from-radio radio-block">
               <input class="radio-block__radio" type="radio" name="type" value="Аксессуар для интерьера" id="accesory" checked>
               <label class="radio-block__label form-text" for="accesory">Аксессуар для интерьера</label>
@@ -66,7 +74,7 @@
         </fieldset>
         <fieldset class="form__type form-section">
           <legend class="form__label form__label--primary">Цвет</legend>
-          <ul class="form__form-list">
+          <ul class="form__form-list form-list-checkbox">
             <li class="form__form-checkbox checkbox-block">
               <input class="checkbox-block__checkbox" type="checkbox" name="type" value="Белый" id="white" checked>
               <label class="checkbox-block__label form-text" for="white">Белый</label>
@@ -95,7 +103,7 @@
         </fieldset>
         <fieldset class="form__type form-section">
           <legend class="form__label  form__label--primary">Фио</legend>
-          <ul class="form__form-list">
+          <ul class="form__form-list form__form-list-name">
             <li class="form__form-text text-block">
               <label class="text-block__label form-text" for="first-name">Имя:</label>
               <input class="text-block__text-input" type="text" name="name" id="first-name" placeholder="Введите ваше имя*"
@@ -127,8 +135,8 @@
         </fieldset>
         <fieldset class="form__type form-section">
           <legend class="form__label form__label--primary">Доп</legend>
-          <label class="form__text-input-block text-input-block">
-            <textarea class="text-input-block__input textarea" name="extra" form="form-area" cols="30" rows="10"
+          <label class="form__text-input-block text-area-input-block">
+            <textarea class="text-input-block__input-textarea" name="extra" form="form-area" cols="30" rows="10"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </fieldset>

@@ -1,0 +1,149 @@
+.forms {
+  padding: 0 30px;
+}
+
+.form {
+  padding-bottom: 55px;
+}
+
+.forms__customization-text {
+  margin-top: 17px;
+  margin-bottom: 29px;
+}
+
+.form-section {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__label--primary {
+  color: #63D1BB;
+}
+
+.form-text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form__form-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.radio-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form__from-radio:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-list-radio {
+  padding-top: 35px;
+  padding-bottom: 43px;
+  padding-left: 60px;
+}
+
+.radio-block__radio {
+  position: absolute;
+  left: 41px;
+  cursor: pointer;
+}
+
+.radio-block__label {
+  cursor: pointer;
+}
+
+.form-list-checkbox {
+  padding-top: 25px;
+  padding-bottom: 33px;
+  padding-left: 61px;
+}
+
+.checkbox-block {
+  min-height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkbox-block__checkbox {
+  position: absolute;
+  left: 42px;
+}
+
+.form__form-list-name {
+  padding-top: 28.85px;
+  padding-bottom: 12.65px;
+}
+
+.text-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-block__text-input {
+  height: 52px;
+  border: none;
+  border-bottom: solid 2px #000000;
+  font-family: inherit;
+}
+
+.text-block__text-input {
+  margin-bottom: 21.85px;
+}
+
+.text-block__text-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.text-input-block__input {
+  min-height: 52px;
+  width: 260px;
+  border: none;
+  border-bottom:  solid 2px #000000;
+  margin-bottom: 34.5px;
+  padding-right: 30px;
+  font-family: inherit;
+}
+
+.text-input-block__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.text-input-block__input-textarea {
+  margin-top: 22.5px;
+  border: solid 2px #444444;
+  font-family: inherit;
+}
+
+.text-input-block__input-textarea::placeholder {
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.required-menu-items {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 17px;
+  margin-bottom: 48px;
+}
