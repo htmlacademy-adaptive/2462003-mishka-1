@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .featured {
   padding: 0 30px;
 }
@@ -68,4 +70,8 @@
 
 .featured__button {
   margin-bottom: 73px;
+}
+
+@media (min-width:$tablet-width) {
+
 }

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14,4 +16,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width:$tablet-width) {
+  .main-header {
+    display: flex;
+    min-height: 89px;
+  }
+  .main-header__toggle {
+    display: none;
+  }
+  .main-header__logo {
+    margin: 0;
+  }
 }

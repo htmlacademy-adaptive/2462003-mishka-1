@@ -1,5 +1,14 @@
+@import "variables.scss";
+
 .section-title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+}
+
+@media (min-width:$tablet-width) {
+  .section-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

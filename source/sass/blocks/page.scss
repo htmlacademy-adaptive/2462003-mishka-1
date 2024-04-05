@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .page {
   height: 100%;
   width: 320px;
@@ -14,4 +16,10 @@
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+@media (min-width:$tablet-width) {
+  .page {
+    width: 768px;
+  }
 }
