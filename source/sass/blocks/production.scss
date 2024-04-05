@@ -5,7 +5,7 @@
 .production__production-spacing {
   padding-bottom: 33px;
   margin-bottom: 58px;
-  border-top: solid 1px #ECECEC;
+  border-top: solid 1px #ececec;
 }
 
 .production__title {
@@ -20,7 +20,7 @@
 .production__title::before {
   position: absolute;
   content: "";
-  background-image: url(../img/icons/camera-icon.svg);
+  background-image: url("../img/icons/camera-icon.svg");
   background-size: 32px 22px;
   background-repeat: no-repeat;
   background-position: center;
