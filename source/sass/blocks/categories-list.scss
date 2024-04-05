@@ -1,0 +1,28 @@
+.categories-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.categories-list__item {
+  width: 320px;
+  min-height: 103px;
+  text-align: left;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.categories-list__link {
+  color: #ffffff;
+  min-width: 130px;
+  padding: 24px 160px 31px 0;
+}
+
+.categories-list__item--primary {
+  background-color: #63d1bb;
+}
+
+.categories-list__item--secondary {
+  background-color: #56c3b2;
+}

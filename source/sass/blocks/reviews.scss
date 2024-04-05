@@ -1,0 +1,20 @@
+.reviews {
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin-top: 58px;
+  margin-bottom: 14px;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__slide-wrapper {
+  margin-bottom: 38px;
+}

@@ -1,0 +1,11 @@
+.checkbox-block {
+  min-height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.checkbox-block__checkbox {
+  position: absolute;
+  left: 42px;
+}

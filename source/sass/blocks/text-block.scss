@@ -1,0 +1,19 @@
+.text-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-block__text-input {
+  height: 52px;
+  border: none;
+  border-bottom: solid 2px #000000;
+  font-family: inherit;
+  margin-bottom: 21.85px;
+}
+
+.text-block__text-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+}

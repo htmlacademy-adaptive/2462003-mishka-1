@@ -1,0 +1,17 @@
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.main-header__logo {
+  margin: 0 auto;
+}
+
+.main-header__toggle {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

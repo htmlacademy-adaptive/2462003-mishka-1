@@ -1,1 +1,44 @@
-// Начните писать стили здесь
+@use "fonts.scss";
+@use "global.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss"; //Список навигации.
+@use "./blocks/page.scss"; // sticky footer.
+@use "./blocks/hero.scss";
+@use "./blocks/hero-title.scss";
+@use "./blocks/products-categories.scss";
+@use "./blocks/categories-list.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/featured.scss";
+@use "./blocks/section-title.scss";
+@use "./blocks/button.scss";
+@use "./blocks/button-primary.scss";
+@use "./blocks/button-secondary.scss";
+@use "./blocks/button-xs.scss";
+@use "./blocks/about.scss";
+@use "./blocks/reviews.scss";
+@use "./blocks/review.scss";
+@use "./blocks/slide-wrapper.scss";
+@use "./blocks/contact-us.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/socials.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/developed.scss";
+@use "./blocks/modal-wrapper.scss";
+@use "./blocks/modal-window.scss";
+@use "./blocks/options.scss";
+@use "./blocks/hero-section.scss";
+@use "./blocks/cards.scss";
+@use "./blocks/card.scss";
+@use "./blocks/production.scss";
+@use "./blocks/video.scss";
+@use "./blocks/play-button.scss";
+@use "./blocks/forms.scss";
+@use "./blocks/form.scss";
+@use "./blocks/form-section.scss";
+@use "./blocks/form-text.scss";
+@use "./blocks/radio-block.scss";
+@use "./blocks/form-list-radio.scss";
+@use "./blocks/form-list-checkbox.scss";
+@use "./blocks/checkbox-block.scss";
+@use "./blocks/text-block.scss";
+@use "./blocks/text-input-block.scss";
