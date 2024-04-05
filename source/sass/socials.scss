@@ -1,0 +1,16 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  min-height: 80px;
+}
+
+.socials__link {
+  padding: 20px 10px;
+}
+

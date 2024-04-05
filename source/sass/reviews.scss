@@ -7,55 +7,12 @@
   margin-bottom: 14px;
 }
 
-.review {
-  margin: 0;
-}
-
 .reviews__item {
   display: none;
 }
 
 .reviews__item--active {
   display: block;
-}
-
-.review__text {
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
-  margin-top: 0;
-  margin-bottom: 33px;
-}
-
-.review__author-name {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.review__author-email {
-  font-size: 17px;
-  line-height: 30px;
-  font-style: normal;
-  color: #444444;
-}
-
-.slide-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.slide-wrapper__button {
-  background-color: #ffffff;
-  width: 130px;
-  min-height: 52px;
-  border: solid 1px #ECECEC;
-}
-
-.button-previous {
-  border-right: none;
 }
 
 .reviews__slide-wrapper {

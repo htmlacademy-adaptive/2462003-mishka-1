@@ -1,0 +1,11 @@
+.modal-wrapper {
+  display: flex;
+  position: fixed;
+  background-color: #FFFFFF90;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-wrapper--invisible {
+  display: none;
+}

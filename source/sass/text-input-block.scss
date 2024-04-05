@@ -1,0 +1,26 @@
+.text-input-block__input {
+  min-height: 52px;
+  width: 260px;
+  border: none;
+  border-bottom:  solid 2px #000000;
+  margin-bottom: 34.5px;
+  padding-right: 30px;
+  font-family: inherit;
+}
+
+.text-input-block__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.text-input-block__input-textarea {
+  margin-top: 22.5px;
+  border: solid 2px #444444;
+  font-family: inherit;
+}
+
+.text-input-block__input-textarea::placeholder {
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+}

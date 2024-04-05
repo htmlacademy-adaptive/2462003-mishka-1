@@ -1,0 +1,16 @@
+.slide-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.slide-wrapper__button {
+  background-color: #ffffff;
+  width: 130px;
+  min-height: 52px;
+  border: solid 1px #ECECEC;
+}
+
+.slide-wrapper__button-previous {
+  border-right: none;
+}

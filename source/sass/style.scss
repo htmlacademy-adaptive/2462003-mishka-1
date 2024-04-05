@@ -4,11 +4,15 @@
 
 @use "main-nav.scss";
 
+@use "site-list.scss";
+
 @use "sticky-footer.scss";
 
 @use "hero.scss";
 
 @use "products-categories.scss";
+
+@use "categories-list.scss";
 
 @use "main-header.scss";
 
@@ -20,20 +24,62 @@
 
 @use "button-primary.scss";
 
+@use "button-secondary.scss";
+
+@use "button-xs.scss";
+
 @use "about.scss";
 
 @use "reviews.scss";
 
+@use "review.scss";
+
+@use "slide-wrapper.scss";
+
 @use "contact-us.scss";
+
+@use "contacts.scss";
+
+@use "socials.scss";
 
 @use "main-footer.scss";
 
+@use "developed.scss";
+
+@use "modal-wrapper.scss";
+
 @use "modal-window.scss";
+
+@use "options.scss";
 
 @use "hero-section.scss";
 
 @use "cards.scss";
 
+@use "card.scss";
+
 @use "production.scss";
 
+@use "video.scss";
+
+@use "play-button.scss";
+
 @use "forms.scss";
+
+@use "form.scss";
+
+@use "form-section.scss";
+
+@use "form-text.scss";
+
+@use "radio-block.scss";
+
+@use "form-list-radio.scss";
+
+@use "form-list-checkbox.scss";
+
+@use "checkbox-block.scss";
+
+@use "text-block.scss";
+
+@use "text-input-block.scss";

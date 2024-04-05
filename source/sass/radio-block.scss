@@ -1,0 +1,15 @@
+.radio-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.radio-block__radio {
+  position: absolute;
+  left: 41px;
+  cursor: pointer;
+}
+
+.radio-block__label {
+  cursor: pointer;
+}
