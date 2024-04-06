@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +17,9 @@
 }
 
 @media (min-width:$tablet-width) {
+  .main-header__wrapper {
+    margin-right: auto;
+  }
   .main-header {
     display: flex;
     min-height: 89px;
