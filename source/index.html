@@ -10,45 +10,60 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
-      </a>
-      <button class="main-header__toggle" type="button">
-        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
-          <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
-          <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
-          </svg>
-      </button>
-      <span class="visually-hidden">Открыть меню.</span>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link site-list__link--catalog site-list__link--tablet" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--order">
-            <a class="site-list__link site-list__link--order site-list__link--tablet" href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link site-list__link--cart" href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#">
+          <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+        </a>
+        <button class="main-header__toggle" type="button">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+            <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+            <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+            </svg>
+        </button>
+        <span class="visually-hidden">Открыть меню.</span>
       </div>
-    </nav>
+      <ul class="main-header__list site-list">
+        <li class="site-list__item site-list__item--catalog">
+          <a class="site-list__link site-list__link--catalog site-list__link--wider site-list__link--smaller" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--order">
+          <a class="site-list__link site-list__link--order site-list__link--wider site-list__link--smaller" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <ul class="main-header__list site-list">
+        <li class="site-list__item site-list__item--search">
+          <a class="site-list__link site-list__link--search" href="#">
+            <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--cart">
+          <a class="site-list__link site-list__link--wider" href="#">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+      <ul class="main-header__list site-list">
+        <li class="site-list__item site-list__item--desktop">
+          <a class="site-list__link site-list__link--wider">
+            Новые поступления
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--desktop">
+          <a class="site-list__link site-list__link--wider">
+            Распродажа
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__link--wider">
+            Бесплатная доставка по России
+          </a>
+        </li>
+      </ul>
   </header>
   <main class="main-wrapper">
     <section class="hero">

@@ -21,3 +21,9 @@
     width: 768px;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .page {
+    width: 1150px;
+  }
+}
