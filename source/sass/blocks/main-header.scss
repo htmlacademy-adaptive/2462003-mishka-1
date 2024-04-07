@@ -39,5 +39,15 @@
 }
 
 @media (min-width:$desktop-width) {
-
+  .main-header__list--first {
+    order: -2;
+  }
+  .main-header__wrapper {
+    order: -1;
+    margin: 0 auto;
+  }
+  .main-header__list--last {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

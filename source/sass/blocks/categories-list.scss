@@ -1,5 +1,3 @@
-@import "variables.scss";
-
 .categories-list {
   margin: 0;
   padding: 0;
@@ -35,5 +33,17 @@
   }
   .categories-list__item {
     width: 100%;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .categories-list {
+    display: flex;
+  }
+  .categories-list__item {
+    width: 100%;
+  }
+  .categories-list__link {
+    max-width: 200px;
   }
 }
