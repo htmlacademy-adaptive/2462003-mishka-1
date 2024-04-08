@@ -12,3 +12,10 @@
     line-height: 50px;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .section-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

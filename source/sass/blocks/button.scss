@@ -7,3 +7,7 @@
   width: 260px;
   font-family: inherit;
 }
+
+@media (min-width:$tablet-width) {
+  .button {width: 292px;}
+}

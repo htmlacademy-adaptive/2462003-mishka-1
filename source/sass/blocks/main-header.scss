@@ -25,10 +25,12 @@
 @media (min-width:$tablet-width) {
   .main-header__wrapper {
     margin-right: auto;
+    padding: 0;
   }
   .main-header {
     display: flex;
     min-height: 89px;
+    padding: 0 50px;
   }
   .main-header__toggle {
     display: none;

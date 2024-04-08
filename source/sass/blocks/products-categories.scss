@@ -3,3 +3,9 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+@media (min-width:$tablet-width) {
+  .products-categories {
+    padding: 0 50px;
+  }
+}
