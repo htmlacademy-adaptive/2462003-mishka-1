@@ -14,3 +14,16 @@
 .slide-wrapper__button-previous {
   border-right: none;
 }
+
+@media (min-width:$tablet-width) {
+  .slide-wrapper__button {
+    border: none;
+  }
+  .slide-wrapper__button {
+    min-height: 26px;
+    width: 50px;
+  }
+  .slide-wrapper__button-previous {
+    margin-right: 37px;
+  }
+}
