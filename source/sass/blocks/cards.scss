@@ -12,3 +12,9 @@
 .cards__item {
   margin-bottom: 30px;
 }
+
+@media (min-width:$tablet-width) {
+  .cards {
+    padding: 0 50px;
+  }
+}
