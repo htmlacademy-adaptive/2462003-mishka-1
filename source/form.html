@@ -23,33 +23,48 @@
       </button>
       <span class="visually-hidden">Открыть меню.</span>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__link site-list__link--catalog site-list__link--tablet" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--order">
-            <a class="site-list__link site-list__link--order site-list__link--tablet" href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--cart">
-            <a class="site-list__link site-list__link--cart" href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <ul class="main-header__list main-header__list--first site-list">
+      <li class="site-list__item site-list__item--catalog">
+        <a class="site-list__link site-list__link--catalog site-list__link--wider site-list__link--smaller" href="catalog.html">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--order">
+        <a class="site-list__link site-list__link--order site-list__link--wider site-list__link--smaller" href="#">
+          Вязание на заказ
+        </a>
+      </li>
+    </ul>
+    <ul class="main-header__list site-list">
+      <li class="site-list__item site-list__item--search">
+        <a class="site-list__link site-list__link--search" href="#">
+          <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--cart">
+        <a class="site-list__link site-list__link--wider" href="#">
+          Корзина: пока пуста
+        </a>
+      </li>
+    </ul>
+    <ul class="main-header__list main-header__list--last site-list">
+      <li class="site-list__item site-list__item--new site-list__item--desktop">
+        <a class="site-list__link site-list__link--wider">
+          Новые поступления
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--sale site-list__item--desktop">
+        <a class="site-list__link site-list__link--wider">
+          Распродажа
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--delivery">
+        <a class="site-list__link site-list__link--wider site-list__link--delivery">
+          Бесплатная доставка по России
+        </a>
+      </li>
+    </ul>
+</header>
   <main class="main-wrapper">
     <section class="hero-section">
       <h1 class="hero-title">Вязание на заказ</h1>
@@ -146,6 +161,11 @@
     </section>
   </main>
   <footer class="main-footer">
+    <div class="main-footer__logo footer-logo">
+      <a class="footer-logo__link" href="index.html">
+        <img class="footer-logo__image" src="img/logo-footer.svg.svg" width="102px" height="34px" alt="DIY магазин «Мишка».">
+      </a>
+    </div>
     <ul class="main-footer__socials socials">
       <li class="socials__item socials__item--vk">
         <a class="socials__link" href="#">
