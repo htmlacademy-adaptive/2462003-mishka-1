@@ -88,3 +88,20 @@
     margin-bottom: 15px;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .card {
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 659px;
+    margin-bottom: 57px;
+  }
+  .card__title {
+    margin-bottom: 6px;
+  }
+  .card__description {
+    margin-bottom: 60.5px;
+  }
+}
