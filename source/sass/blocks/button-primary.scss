@@ -10,3 +10,10 @@
 .button-primary--catalog {
   line-height: 16px;
 }
+
+@media (min-width:$tablet-width) {
+  .button-primary--catalog {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+}
