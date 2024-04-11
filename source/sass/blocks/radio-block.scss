@@ -2,14 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 .radio-block__radio {
   position: absolute;
-  left: 41px;
+  left: -61px;
   cursor: pointer;
 }
 
 .radio-block__label {
   cursor: pointer;
 }
+

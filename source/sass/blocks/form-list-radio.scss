@@ -3,3 +3,10 @@
   padding-bottom: 43px;
   padding-left: 60px;
 }
+
+@media (min-width:$tablet-width) {
+  .form-list-radio {
+    padding-top: 0;
+    padding-left: 181px;
+  }
+}

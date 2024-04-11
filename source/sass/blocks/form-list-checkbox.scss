@@ -3,3 +3,13 @@
   padding-bottom: 33px;
   padding-left: 61px;
 }
+
+@media (min-width:$tablet-width) {
+  .form-list-checkbox{
+    padding-top: 0;
+    padding-left: 175px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 94px;
+  }
+}

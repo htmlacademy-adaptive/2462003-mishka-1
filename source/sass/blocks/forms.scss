@@ -6,3 +6,13 @@
   margin-top: 17px;
   margin-bottom: 29px;
 }
+
+@media (min-width:$tablet-width) {
+  .forms {
+    padding: 0 50px;
+  }
+  .forms__customization-text {
+    margin-top: 54px;
+    margin-bottom: 63px;
+  }
+}
