@@ -15,5 +15,12 @@
 @media (min-width:$tablet-width) {
   .hero {
     min-height: 627px;
+    padding-top: 155px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .hero {
+    padding-top: 157px;
   }
 }

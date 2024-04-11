@@ -1,9 +1,33 @@
 .hero-title {
   min-width: 260px;
   margin: 0;
-  margin-top: 73px;
   margin-bottom: 120px;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+}
+
+.hero-title--catalog {
+  margin-bottom: 73.46px;
+}
+
+@media (min-width:$tablet-width) {
+  .hero-title {
+    margin-bottom: 75px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .hero-title--catalog {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .hero-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .hero-title--catalog {
+    margin-bottom: 95.95px;
+  }
 }
