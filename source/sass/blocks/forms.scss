@@ -9,10 +9,19 @@
 
 @media (min-width:$tablet-width) {
   .forms {
-    padding: 0 50px;
+    padding: 0;
   }
   .forms__customization-text {
     margin-top: 54px;
-    margin-bottom: 63px;
+    margin-bottom: 13px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .forms__customization-text {
+    margin-top: 98.5px;
+    padding-left: 174px;
+    padding-right: 171px;
   }
 }

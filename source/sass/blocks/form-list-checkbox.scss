@@ -7,9 +7,19 @@
 @media (min-width:$tablet-width) {
   .form-list-checkbox{
     padding-top: 0;
+    padding-bottom: 0;
     padding-left: 175px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 94px;
+    row-gap: 60px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .form-list-checkbox {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 57px;
+    padding-left: 137px;
   }
 }

@@ -31,24 +31,5 @@
   align-self: flex-start;
 }
 
-.contacts__map-wrapper-map {
-  display: block;
-  margin-top: 62px;
-  margin-bottom: 42px;
-}
 
-@media (min-width:$tablet-width) {
-  .contacts__item  {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  .contacts__map-wrapper-map {
-    display: block;
-  }
-}
 
-@media (min-width:$desktop-width) {
-  .contacts__map-wrapper-map {
-    margin-top: 0;
-  }
-}

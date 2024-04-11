@@ -74,10 +74,10 @@
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <h2 class="visually-hidden">Настройка заказа.</h2>
       <form class="form" id="form-area" method="get" action="https://echo.htmlacademy.ru">
-        <div class="form__type form-section">
+        <div class="form__type form__type--pdt-pdb50 form-section">
           <h3 class="form__label form__label--primary">Тип</h3>
           <ul class="form__form-list form-list-radio">
-            <li class="form__from-radio radio-block">
+            <li class="form__form-radio radio-block">
               <input class="radio-block__radio" type="radio" name="type" value="Аксессуар для интерьера" id="accesory" checked>
               <label class="radio-block__label form-text" for="accesory">Аксессуар для интерьера</label>
             </li>
@@ -87,7 +87,7 @@
             </li>
           </ul>
         </div>
-        <div class="form__type form-section">
+        <div class="form__type form__type--pdt-pdb50 form-section">
           <h3 class="form__label form__label--primary">Цвет</h3>
           <ul class="form__form-list form-list-checkbox">
             <li class="form__form-checkbox checkbox-block">
@@ -116,47 +116,51 @@
             </li>
           </ul>
         </div>
-        <div class="form__type form-section">
+        <div class="form__type form__type--pdt-pdb50 form-section">
           <h3 class="form__label  form__label--primary">Фио</h3>
           <ul class="form__form-list form__form-list-name">
             <li class="form__form-text text-block">
-              <label class="text-block__label form-text" for="first-name">Имя:</label>
-              <input class="text-block__text-input" type="text" name="name" id="first-name" placeholder="Введите ваше имя*"
+              <label class="text-block__label text-block__label--wider form-text" for="first-name">Имя:</label>
+              <input class="text-block__text-input text-block__text-input--wider" type="text" name="name" id="first-name" placeholder="Введите ваше имя*"
                 required>
             </li>
             <li class="form__form-text text-block">
-              <label class="text-block__label form-text" for="last-name">Фамилия:</label>
+              <label class="text-block__label text-block__label--wider form-text" for="last-name">Фамилия:</label>
               <input class="text-block__text-input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*"
                 required>
             </li>
             <li class="form__form-text text-block">
-              <label class="text-block__label form-text" for="middle-name">Отчество:</label>
+              <label class="text-block__label text-block__label--wider form-text" for="middle-name">Отчество:</label>
               <input class="text-block__text-input" type="text" name="moddle-name" id="middle-name"
                 placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
-        <div class="form__type form-section">
-          <h3 class="form__label form__label--primary">Тел</h3>
-          <label class="form__text-input-block text-input-block">
-            <input class="text-input-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </label>
+        <div class="form__type form__type--contacts form__type--pdt-pdb50 form-section">
+          <div class="form__label-wrapper">
+            <h3 class="form__label form__label--primary">Тел</h3>
+            <label class="form__text-input-block text-input-block">
+              <input class="text-input-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </label>
+          </div>
+          <div class="form__label-wrapper">
+            <h3 class="form__label form__label--primary">E-mail</h3>
+            <label class="form__text-input-block text-input-block">
+              <input class="text-input-block__input" type="email" name="email" placeholder="Ваш Email*" required>
+            </label>
+          </div>
         </div>
-        <div class="form__type form-section">
-          <h3 class="form__label form__label--primary">E-mail</h3>
-          <label class="form__text-input-block text-input-block">
-            <input class="text-input-block__input" type="email" name="email" placeholder="Ваш Email*" required>
-          </label>
-        </div>
-        <div class="form__type form-section">
+        <div class="form__type form__type--pdt-pdb50 form-section">
           <h3 class="form__label form__label--primary">Доп</h3>
           <label class="form__text-input-block text-area-input-block">
             <textarea class="text-input-block__input-textarea" name="extra" form="form-area" cols="30" rows="10"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </div>
-        <p class="form__required-menu-items">*Поля обязательны для заполнения</p>
-        <button class="button-primary button" type="submit">Отправить заказ</button>
+          <div class="form__required-wrapper">
+          <p class="form__required-menu-items">*Поля обязательны для заполнения</p>
+          <button class="button-primary button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>

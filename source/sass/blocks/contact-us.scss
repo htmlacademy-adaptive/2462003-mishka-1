@@ -8,6 +8,11 @@
   margin-left: 30px;
   margin-bottom: 39px;
 }
+.contact-us__map-wrapper-map {
+  display: block;
+  margin-top: 62px;
+  margin-bottom: 42px;
+}
 
 @media (min-width:$tablet-width) {
   .contact-us {
@@ -35,6 +40,13 @@
     margin:  0 auto;
     margin-top: 55px;
     margin-bottom: 57px;
+  }
+  .contact-us__item  {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .contact-us__map-wrapper-map {
+    display: block;
   }
 }
 
@@ -69,7 +81,11 @@
   .contact-us__button {
     width: 230px;
     position: absolute;
-    bottom: 105px;
+    bottom: 47px;
     left: 225px;
+  }
+  .contact-us__map-wrapper-map {
+    margin-top: 0;
+    margin-bottom: 105px;
   }
 }

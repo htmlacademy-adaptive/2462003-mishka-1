@@ -20,8 +20,15 @@
   list-style-type: none;
 }
 
-.form__from-radio:not(:last-child) {
+.form__form-radio:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.form__form-checkbox:not(:last-child) {
+  margin-bottom: 23px;
+  @media (min-width:$tablet-width) {
+    margin: 0;
+  }
 }
 
 .form__form-list-name {
@@ -40,5 +47,62 @@
 @media (min-width:$tablet-width) {
   .form__type {
     display: flex;
+    padding: 0 50px;
+  }
+  .form__form-radio:not(:last-child) {
+    margin-bottom: 58px;
+  }
+  .form__type--pdt-pdb50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form__form-list-name {
+    padding: 0;
+  }
+  .form__form-list-name {
+    padding-left: 125px;
+  }
+  .form__type--contacts {
+    flex-direction: column;
+  }
+  .form__label-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .form__label-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .form__text-input-block {
+    margin-left: auto;
+  }
+  .form__required-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+  }
+  .form__required-menu-items {
+    margin: 0;
+    order: 2;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .form__type {
+    padding-left: 46px;
+  }
+  .form__form-list-name {
+    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .form__form-text {
+    margin-right: 173px;
+  }
+  .form__required-wrapper {
+    padding: 0 225px;
   }
 }
