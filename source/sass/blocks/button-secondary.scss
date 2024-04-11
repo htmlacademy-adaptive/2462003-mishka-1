@@ -7,3 +7,9 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media (min-width:$tablet-width) {
+  .button-secondary {
+    width: 100%;
+  }
+}

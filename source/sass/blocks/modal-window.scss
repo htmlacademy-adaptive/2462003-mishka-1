@@ -19,3 +19,25 @@
   text-align: center;
   margin: 0;
 }
+
+@media (min-width:$tablet-width) {
+  .modal-window {
+    margin-left: 101px;
+    width: 566px;
+    padding: 0 108px;
+  }
+  .modal-window__title {
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 11px;
+  }
+  .modal-window__options {
+    font-size: 17px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .modal-window {
+    margin-left: 292px;
+  }
+}
