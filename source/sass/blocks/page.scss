@@ -16,13 +16,13 @@
   grid-template-rows: auto 1fr auto;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .page {
     width: 768px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .page {
     width: 1150px;
   }

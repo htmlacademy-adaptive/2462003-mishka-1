@@ -1,0 +1,25 @@
+.text-area-input-block__input-textarea {
+  margin-top: 22.5px;
+  border: solid 2px #444444;
+  font-family: inherit;
+}
+
+.text-area-input-block__input-textarea::placeholder {
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .text-area-input-block__input-textarea {
+    margin: 0;
+    width: 501px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-area-input-block__input-textarea {
+    width: 700px;
+    margin-right: 173px;
+  }
+}

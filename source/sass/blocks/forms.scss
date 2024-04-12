@@ -7,10 +7,11 @@
   margin-bottom: 29px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .forms {
     padding: 0;
   }
+
   .forms__customization-text {
     margin-top: 54px;
     margin-bottom: 13px;
@@ -18,7 +19,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .forms__customization-text {
     margin-top: 98.5px;
     padding-left: 174px;

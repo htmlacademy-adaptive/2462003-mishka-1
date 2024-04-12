@@ -11,22 +11,24 @@
   margin-bottom: 73.46px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .hero-title {
     margin-bottom: 75px;
     font-size: 43px;
     line-height: 50px;
   }
+
   .hero-title--catalog {
     margin-bottom: 75px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .hero-title {
     font-size: 53px;
     line-height: 57px;
   }
+
   .hero-title--catalog {
     margin-bottom: 95.95px;
   }

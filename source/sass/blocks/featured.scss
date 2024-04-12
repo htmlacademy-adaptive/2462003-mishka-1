@@ -73,10 +73,11 @@
   margin-bottom: 73px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .featured {
-    padding:  0 50px;
+    padding: 0 50px;
   }
+
   .featured__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -85,14 +86,17 @@
     margin-top: 39.5px;
     margin-bottom: 37.5px;
   }
+
   .featured__title {
     margin: 0;
   }
+
   .featured__best-of-week {
     width: 100px;
     font-size: 17px;
     line-height: 17px;
   }
+
   .featured__columns-wrapper {
     display: grid;
     grid-template-columns: 292px 334px;
@@ -100,6 +104,7 @@
     align-items: start;
     min-height: 404px;
   }
+
   .featured__description {
     grid-column: 1/2;
     font-size: 17px;
@@ -107,42 +112,50 @@
     margin-top: 0;
     margin-bottom: 33px;
   }
+
   .featured__properties {
     grid-column: 1/2;
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 55px;
   }
+
   .featured__image-wrapper {
     grid-column: 2/3;
     grid-row: 1/5;
   }
+
   .featured__order-wrapper {
     grid-column: 1/2;
   }
+
   .featured__button {
     margin-bottom: 0;
   }
+
   .featured__price {
     font-size: 20px;
     line-height: 24px;
     margin-top: 0;
     margin-bottom: 33px;
   }
+
   .featured__type {
     margin-top: 9.5px;
     margin-bottom: 9.5px;
   }
+
   .featured__value {
     margin-top: 9.5px;
     margin-bottom: 9.5px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .featured {
     position: relative;
   }
+
   .featured__wrapper {
     position: absolute;
     justify-content: flex-start;
@@ -150,10 +163,12 @@
     margin-top: 61px;
     margin-bottom: 35px;
   }
+
   .featured__best-of-week {
     order: -1;
     margin-right: 43px;
   }
+
   .featured__columns-wrapper {
     display: grid;
     grid-template-columns: 292px 525px;
@@ -163,19 +178,23 @@
     padding-left: 175px;
     margin-top: 54px;
   }
+
   .featured__description {
     grid-column: 1/2;
     margin-top: 153px;
     margin-bottom: 60px;
   }
+
   .featured__properties {
     grid-column: 1/2;
     margin-bottom: 99.5px;
   }
+
   .featured__image-wrapper {
     grid-column: 2/3;
     grid-row: 1/5;
   }
+
   .featured__order-wrapper {
     grid-column: 1/2;
   }

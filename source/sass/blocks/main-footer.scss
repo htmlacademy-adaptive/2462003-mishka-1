@@ -18,7 +18,7 @@
   display: none;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .main-footer {
     display: flex;
     flex-direction: row;
@@ -28,6 +28,7 @@
     min-height: 143px;
     padding: 0 50px;
   }
+
   .main-footer__logo {
     display: block;
   }

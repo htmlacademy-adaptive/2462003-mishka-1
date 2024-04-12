@@ -18,34 +18,38 @@
   line-height: 18px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .text-block__text-input {
     width: 375px;
   }
+
   .text-block__text-input--wider {
     width: 428px;
   }
-  .text-block__text-input::placeholder {
+
+  .text-block__text-input::placeholder,
+  .text-block__text-input {
     font-size: 19px;
     line-height: 18px;
+    margin-bottom: 0;
   }
+
   .text-block {
     flex-direction: row;
     align-items: center;
   }
-  .text-block__text-input {
-    margin-bottom: 0;
-  }
+
   .text-block__label--wider {
     margin-bottom: 9px;
     margin-right: 24px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .text-block__text-input {
     width: 573px;
   }
+
   .text-block__text-input--wider {
     width: 626px;
   }

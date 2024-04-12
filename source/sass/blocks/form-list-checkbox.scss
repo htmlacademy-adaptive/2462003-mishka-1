@@ -4,8 +4,8 @@
   padding-left: 61px;
 }
 
-@media (min-width:$tablet-width) {
-  .form-list-checkbox{
+@media (min-width: $tablet-width) {
+  .form-list-checkbox {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 175px;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .form-list-checkbox {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 57px;

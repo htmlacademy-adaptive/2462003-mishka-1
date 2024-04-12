@@ -24,12 +24,13 @@
   color: #444444;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .review__author {
     width: 284px;
     display: flex;
     flex-wrap: wrap;
   }
+
   .review__text {
     font-size: 17px;
     line-height: 30px;

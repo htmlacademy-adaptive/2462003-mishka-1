@@ -17,7 +17,7 @@
 }
 
 .site-list__item--search {
-  background-image: url(../../img/icons/search-icon.svg);
+  background-image: url("../../img/icons/search-icon.svg");
   background-repeat: no-repeat;
   background-position: 32px 32px;
 }
@@ -27,42 +27,50 @@
   display: none;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     position: relative;
     min-height: 89px;
   }
+
   .site-list__item {
     min-width: 0;
   }
+
   .site-list__link-text--search {
     display: none;
   }
+
   .site-list__link--wider {
     padding-top: 20.5px;
     padding-left: 0;
     padding-right: 0;
   }
+
   .site-list__item--catalog {
     position: absolute;
     left: -366px;
     top: 85px;
     padding-left: 46px;
   }
+
   .site-list__link--smaller {
     font-size: 15px;
     line-height: 24px;
   }
+
   .site-list__item--order {
     position: absolute;
     left: -152px;
     top: 85px;
   }
+
   .site-list__item--search {
     width: 82px;
     margin-right: 85px;
   }
+
   .site-list__link--search {
     padding: 0;
     padding-left: 33px;
@@ -70,6 +78,7 @@
     min-height: 89px;
     width: 10px;
   }
+
   .site-list__item--delivery {
     display: block;
     font-size: 15px;
@@ -81,38 +90,45 @@
     top: 108px;
     right: -70px;
   }
+
   .site-list__link--delivery {
     color: #444444;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .site-list__item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
+
   .site-list__item--desktop {
     display: block;
   }
+
   .site-list__item--catalog {
     position: static;
     padding-left: 0;
     min-width: 179px;
     margin-right: 41px;
   }
+
   .site-list__item--order {
     position: static;
   }
+
   .site-list__link {
-    padding-bottom: 20.5px ;
+    padding-bottom: 20.5px;
   }
+
   .site-list__item--new {
     position: absolute;
     top: 109.5px;
     left: -1050px;
     min-width: 240px;
   }
+
   .site-list__item--delivery {
     display: block;
     font-size: 15px;
@@ -124,11 +140,13 @@
     top: 109.5px;
     right: -70px;
   }
+
   .site-list__item--sale {
     position: absolute;
     top: 109.5px;
     left: -831px;
   }
+
   .site-list__link--delivery {
     color: #444444;
   }
