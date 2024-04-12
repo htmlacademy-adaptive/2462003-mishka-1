@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .hero {
   background-image: url("../img/hero-image.jpg");
   background-color: #808080;
@@ -7,4 +9,18 @@
   padding: 0 30px;
   padding-top: 73px;
   min-height: 300px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .hero {
+    min-height: 627px;
+    padding-top: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding-top: 157px;
+  }
 }

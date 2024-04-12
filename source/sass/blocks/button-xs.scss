@@ -7,3 +7,9 @@
   line-height: 16px;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .button-xs {
+    width: 112px;
+  }
+}

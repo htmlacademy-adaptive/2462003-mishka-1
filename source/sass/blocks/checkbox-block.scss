@@ -3,9 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
 .checkbox-block__checkbox {
   position: absolute;
-  left: 42px;
+  left: -61px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-block {
+    min-height: fit-content;
+  }
 }

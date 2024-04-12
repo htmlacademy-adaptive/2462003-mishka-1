@@ -26,3 +26,32 @@
 .categories-list__item--secondary {
   background-color: #56c3b2;
 }
+
+@media (min-width: $tablet-width) {
+  .categories-list {
+    display: flex;
+  }
+
+  .categories-list__item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .categories-list__link {
+    padding: 25px 167px 34px 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories-list {
+    display: flex;
+  }
+
+  .categories-list__item {
+    width: 100%;
+  }
+
+  .categories-list__link {
+    max-width: 200px;
+  }
+}

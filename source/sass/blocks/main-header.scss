@@ -1,3 +1,9 @@
+.main-header {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14,4 +20,41 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .main-header {
+    display: flex;
+    min-height: 89px;
+    padding: 0 50px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__list--first {
+    order: -2;
+  }
+
+  .main-header__wrapper {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .main-header__list--last {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

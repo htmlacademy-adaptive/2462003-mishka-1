@@ -23,36 +23,51 @@
       </button>
       <span class="visually-hidden">Открыть меню.</span>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--cart" href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <ul class="main-header__list main-header__list--first site-list">
+      <li class="site-list__item site-list__item--catalog">
+        <a class="site-list__link site-list__link--catalog site-list__link--wider site-list__link--smaller" href="#">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--order">
+        <a class="site-list__link site-list__link--order site-list__link--wider site-list__link--smaller" href="form.html">
+          Вязание на заказ
+        </a>
+      </li>
+    </ul>
+    <ul class="main-header__list site-list">
+      <li class="site-list__item site-list__item--search">
+        <a class="site-list__link site-list__link--search" href="#">
+          <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--cart">
+        <a class="site-list__link site-list__link--wider" href="#">
+          Корзина: пока пуста
+        </a>
+      </li>
+    </ul>
+    <ul class="main-header__list main-header__list--last site-list">
+      <li class="site-list__item site-list__item--new site-list__item--desktop">
+        <a class="site-list__link site-list__link--wider">
+          Новые поступления
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--sale site-list__item--desktop">
+        <a class="site-list__link site-list__link--wider">
+          Распродажа
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--delivery">
+        <a class="site-list__link site-list__link--wider site-list__link--delivery">
+          Бесплатная доставка по России
+        </a>
+      </li>
+    </ul>
+</header>
   <main class="main-wrapper">
     <section class="hero-section">
-      <h1 class="hero-title">Каталог товаров</h1>
+      <h1 class="hero-title hero-title--catalog">Каталог товаров</h1>
     </section>
     <article class="cards">
       <h2 class="visually-hidden">Карточки товаров.</h2>
@@ -61,10 +76,12 @@
           <a class="card__card-link" href="#">
             <img class="card__card-image" src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
           </a>
-          <h3 class="card__title">
-            <a class="card__card-link" href="#">Зайчик-попрыгайчик</a>
-          </h3>
-          <p class="card__description">Рост 30 см, вес 200 г</p>
+          <div class="card__tittle-wrapper">
+            <h3 class="card__title">
+              <a class="card__card-link" href="#">Зайчик-попрыгайчик</a>
+            </h3>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+        </div>
           <div class="card__price-wrapper">
             <p class="card__price">
               1 200 руб.
@@ -82,10 +99,12 @@
           <a class="card__card-link" href="#">
             <img class="card__card-image"  src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
           </a>
-          <h3 class="card__title">
-            <a class="card__card-link" href="#">Корзинка для белья</a>
-          </h3>
-          <p class="card__description">Диаметр 15 см, высота 10 см</p>
+          <div class="card__tittle-wrapper">
+            <h3 class="card__title">
+              <a class="card__card-link" href="#">Корзинка для белья</a>
+            </h3>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+        </div>
           <div class="card__price-wrapper">
             <p class="card__price">
               690 руб.
@@ -103,10 +122,12 @@
           <a class="card__card-link" href="#">
             <img class="card__card-image"  src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
           </a>
-          <h3 class="card__title">
-            <a class="card__card-link" href="#">Большая корзинка для игрушек</a>
-          </h3>
-          <p class="card__description">Диаметр 30 см, высота 30 см</p>
+          <div class="card__tittle-wrapper">
+            <h3 class="card__title">
+              <a class="card__card-link" href="#">Большая корзинка для игрушек</a>
+            </h3>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+          </div>
           <div class="card__price-wrapper">
             <p class="card__price">
               1 500 руб.
@@ -122,8 +143,8 @@
         </li>
       </ul>
     </article>
-    <section class="production  production__production-spacing">
-      <h2 class="production__title section-title">Процесс производства</h2>
+    <section class="production production--spacing">
+      <h2 class="production__title section-title section-title--catalog">Процесс производства</h2>
       <div class="production__video-player video">
         <video class="video__video" src="#" width="260" height="150" poster="img/video-mobile.jpg"></video>
         <button class="video__play-button play-button" type="button">
@@ -140,10 +161,15 @@
       </div>
       <p class="production__production-description">По просьбам наших любимых фолловеров мы сняли для вас подробное
         видео о том, как появляются наши товары.</p>
-      <button class="button-primary button-primary--catalog button" type="button">Сделать заказ</button>
+      <button class="production__button button-primary button-primary--catalog button" type="button">Сделать заказ</button>
     </section>
   </main>
   <footer class="main-footer">
+    <div class="main-footer__logo footer-logo">
+      <a class="footer-logo__link" href="index.html">
+        <img class="footer-logo__image" src="img/logo-footer.svg.svg" width="102px" height="34px" alt="DIY магазин «Мишка».">
+      </a>
+    </div>
     <ul class="main-footer__socials socials">
       <li class="socials__item socials__item--vk">
         <a class="socials__link" href="#">
@@ -188,7 +214,7 @@
   </footer>
   <div class="modal-wrapper modal-wrapper--invisible">
     <div class="modal-window">
-      <h2 class="modal-window__title section-title">Добавить в корзину</h2>
+      <h2 class="modal-window__title section-title section-title--catalog">Добавить в корзину</h2>
       <p class="modal-window__options">Выберите размер:</p>
       <div class="modal-window__options-wrapper options">
         <button class="options__button button-xs" type="button">S</button>
