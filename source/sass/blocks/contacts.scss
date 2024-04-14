@@ -30,3 +30,23 @@
   width: 183px;
   align-self: flex-start;
 }
+
+.contacts__item-info--decoration {
+  text-decoration: underline;
+  text-decoration-color: #62d1ba;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+  text-underline-offset: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__item-name {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts__item-info {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

@@ -11,3 +11,9 @@
 .button-primary--catalog {
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .button-primary {
+    font-size: 17px;
+  }
+}

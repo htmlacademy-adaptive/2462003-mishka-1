@@ -1,3 +1,17 @@
+.contact-us {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-image: url("../../img/zigzag-line.svg");
+    background-repeat: repeat-x;
+    top: -38px;
+  }
+}
+
 .contact-us__title {
   margin-top: 89px;
   margin-bottom: 28px;
@@ -21,6 +35,29 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 17px;
+      background-size: 100% 17px;
+      background-image: url("../../img/zigzag-line.svg");
+      background-repeat: repeat-x;
+      top: 68px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/flag.svg");
+      background-repeat: no-repeat;
+      top: 131px;
+      right: 0;
+    }
   }
 
   .contact-us__title {
@@ -59,10 +96,26 @@
 
 @media (min-width: $desktop-width) {
   .contact-us {
-    padding-left: 225px;
+
     padding-right: 50px;
     padding-top: 161px;
     position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 23px;
+      background-size: 100% 23px;
+      background-image: url("../../img/zigzag-line.svg");
+      background-repeat: repeat-x;
+      top: 67px;
+    }
+
+    &::after {
+      top: 223px;
+      left: 63px;
+    }
   }
 
   .contact-us__title {
@@ -70,12 +123,14 @@
     margin: 0;
     position: absolute;
     top: 240px;
+    padding-left: 225px;
   }
 
   .contact-us__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-left: 225px;
   }
 
   .contact-us__wrapper .contact-us__list {
