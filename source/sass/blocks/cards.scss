@@ -17,6 +17,14 @@
   .cards {
     padding: 0 50px;
   }
+
+  .cards__item {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 53px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

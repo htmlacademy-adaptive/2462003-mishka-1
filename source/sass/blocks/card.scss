@@ -36,7 +36,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 28px;
+  padding-left: 28px;
+  position: relative;
+
+    @media (min-height: $mobile-width) and (max-width:$tablet-width) {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78.46%;
+    height: 1px;
+    background-color: #ececec;
+    top: -7.5px;
+  }
+  }
 }
 
 .card__price {
@@ -51,6 +63,7 @@
   background-color: #ffffff;
   cursor: pointer;
   padding: 10px;
+  margin-right: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,10 +82,17 @@
     grid-column: 2/3;
     font-size: 15px;
     line-height: 30px;
+    margin: 0;
+  }
+
+  .card__tittle-wrapper {
+    padding-left: 34px;
   }
 
   .card__price-wrapper {
     grid-column: 2/3;
+    padding-left: 34px;
+    position: relative;
   }
 
   .card__title {
@@ -80,6 +100,7 @@
     line-height: 24px;
     margin-top: 27px;
     margin-bottom: 6.5px;
+    margin-left: 0;
   }
 
   .card__price {
@@ -91,7 +112,8 @@
 
   .card__cart-button {
     align-self: end;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
+    margin-right: 22px;
   }
 }
 

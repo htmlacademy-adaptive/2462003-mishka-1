@@ -64,6 +64,8 @@
     margin-top: 0;
     padding-top: 0;
     padding-left: 107px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .production__title::before {
@@ -79,10 +81,20 @@
 
   .production--spacing {
     margin-bottom: 110px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 85.03%;
+      height: 1px;
+      background-color: #ececec;
+      bottom: -46px;
+    }
   }
 
   .production__button {
-    width: calc(100% - 80px);
+    width: 87.43%;
     margin: 0 auto;
   }
 }
