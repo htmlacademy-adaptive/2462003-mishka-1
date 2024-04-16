@@ -1,3 +1,19 @@
+.text-input-block {
+  position: relative;
+}
+
+.text-input-block__input-image--phone {
+  position: absolute;
+  right: 2.69%;
+  top: 0;
+}
+
+.text-input-block__input-image--email {
+  position: absolute;
+  right: 1.15%;
+  top: 0;
+}
+
 .text-input-block__input {
   min-height: 52px;
   width: 260px;
@@ -19,11 +35,34 @@
     width: 501px;
     background-color: #f1f1f1;
   }
+
+  .text-input-block__input-image--phone {
+    right: 5.19%;
+    top: 11px;
+  }
+
+  .text-input-block__input-image--email {
+    right: 4.39%;
+    top: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .text-input-block {
+    width: 700px;
+  }
+
   .text-input-block__input {
     width: 700px;
     margin-right: 173px;
   }
+
+  .text-input-block__input-image--phone {
+    right: 1.14%;
+  }
+
+  .text-input-block__input-image--email {
+    right: 0.57%;
+  }
 }
+

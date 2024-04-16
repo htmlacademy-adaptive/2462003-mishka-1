@@ -43,6 +43,14 @@
     margin-bottom: 9px;
     margin-right: 24px;
   }
+
+  .text-block__label--last-name {
+    margin-right: 25px;
+  }
+
+  .text-block__label--middle-name {
+    margin-right: 27px;
+  }
 }
 
 @media (min-width: $desktop-width) {

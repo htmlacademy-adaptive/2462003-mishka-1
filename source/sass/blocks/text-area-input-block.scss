@@ -2,6 +2,9 @@
   margin-top: 22.5px;
   border: solid 2px #444444;
   font-family: inherit;
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .text-area-input-block__input-textarea::placeholder {
@@ -14,6 +17,11 @@
   .text-area-input-block__input-textarea {
     margin: 0;
     width: 501px;
+    font-size: 19px;
+  }
+
+  .text-area-input-block__input-textarea::placeholder {
+    font-size: 19px;
   }
 }
 
