@@ -3,14 +3,45 @@
   flex-wrap: wrap;
   align-items: center;
   position: relative;
+  min-height: 36px;
+
+
 }
 
 .radio-block__radio {
   position: absolute;
   left: -61px;
   cursor: pointer;
+  display: none;
 }
+
 
 .radio-block__label {
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 42px;
+    border: solid 2px #444444;
+    border-radius: 50%;
+    left: -61px;
+  }
+
+    &::after {
+      display: none;
+    position: absolute;
+    content: "";
+    width: 18.33px;
+    height: 18.33px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+    left: -49px;
+  }
+}
+
+
+.radio-block__radio:checked + .radio-block__label::after {
+  display: block;
 }

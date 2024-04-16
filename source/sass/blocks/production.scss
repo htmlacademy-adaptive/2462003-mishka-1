@@ -6,9 +6,12 @@
   margin-bottom: 58px;
 }
 
-.production__wrapper {
+.production__content-wrapper {
   border: solid 1px #ececec;
   padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .production__title {
@@ -59,7 +62,7 @@
     border-top: none;
   }
 
-  .production__wrapper  {
+  .production__content-wrapper  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -102,7 +105,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production__wrapper {
+  .production__content-wrapper {
     display: grid;
     align-items: start;
     grid-template-columns: 682.65px 1fr;
