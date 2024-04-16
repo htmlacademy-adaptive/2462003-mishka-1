@@ -4,15 +4,20 @@
   align-items: center;
   position: relative;
   min-height: 36px;
-
-
 }
 
 .radio-block__radio {
   position: absolute;
   left: -61px;
   cursor: pointer;
-  display: none;
+
+  &:checked + .radio-block__label::after {
+    display: block;
+  }
+
+  &:focus-visible + .radio-block__label::before {
+    outline: solid 2px #62d1ba;
+  }
 }
 
 
@@ -27,6 +32,7 @@
     border: solid 2px #444444;
     border-radius: 50%;
     left: -61px;
+    bottom: -4px;
   }
 
     &::after {
@@ -38,10 +44,19 @@
     background-color: #62d1ba;
     border-radius: 50%;
     left: -49px;
+    bottom: 8px;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .radio-block__label {
 
-.radio-block__radio:checked + .radio-block__label::after {
-  display: block;
+    &::before {
+      bottom: -4px;
+    }
+
+    &::after {
+      bottom: 8px;
+    }
+  }
 }
