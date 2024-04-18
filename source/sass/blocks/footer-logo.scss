@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .footer-logo__link {
+    transition: fill 0.3s, opacity 0.3s;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus-visible {
+      outline: solid 2px #63d1bb;
+    }
+  }
+}

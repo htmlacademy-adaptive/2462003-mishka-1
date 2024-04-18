@@ -11,6 +11,20 @@
   border-bottom: solid 2px #000000;
   font-family: inherit;
   margin-bottom: 21.85px;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus-visible {
+    border-color: #62d1ba;
+    outline: none;
+  }
 }
 
 .text-block__text-input::placeholder {
@@ -49,7 +63,7 @@
   }
 
   .text-block__label--middle-name {
-    margin-right: 27px;
+    margin-right: 26px;
   }
 }
 

@@ -1,3 +1,7 @@
+.text-area-input-block {
+
+}
+
 .text-area-input-block__input-textarea {
   margin-top: 22.5px;
   border: solid 2px #444444;
@@ -5,10 +9,23 @@
   padding: 17px;
   font-size: 17px;
   line-height: 18px;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus-visible {
+    border-color: #62d1ba;
+    outline: none;
+  }
+
 }
 
 .text-area-input-block__input-textarea::placeholder {
-  padding: 17px;
   font-size: 17px;
   line-height: 18px;
 }

@@ -1,11 +1,20 @@
 .button-xs {
   width: 82px;
   min-height: 52px;
-  border: solid 2px #444444;
+  border: solid 2px #44444410;
   background-color: #ffffff;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #44444430;
+  }
+}
+
+.button-xs--active {
+  border: solid 2px #63d1bb;
 }
 
 @media (min-width: $tablet-width) {

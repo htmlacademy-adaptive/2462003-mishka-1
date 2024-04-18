@@ -33,6 +33,10 @@
     border-radius: 50%;
     left: -61px;
     bottom: -4px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
   }
 
     &::after {
