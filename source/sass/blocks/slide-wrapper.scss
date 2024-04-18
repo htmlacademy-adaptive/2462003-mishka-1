@@ -9,6 +9,19 @@
   width: 130px;
   min-height: 52px;
   border: solid 1px #ececec;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: solid 2px #63d1bb;
+    }
 }
 
 .slide-wrapper__button-previous {

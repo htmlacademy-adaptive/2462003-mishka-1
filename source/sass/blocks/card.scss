@@ -3,6 +3,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 0,3;
+
+  &:hover .card__border {
+    box-shadow: 0 6px 10px 0 #0000001A;
+  }
+
+  &:active .card__border {
+    box-shadow: 0 3px 5px 0 #0000001A;
+  }
 }
 
 .card__border {
@@ -22,10 +31,23 @@
   margin-top: 27.5px;
   margin-bottom: 6px;
   margin-left: 28px;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__card-link {
   color: #000000;
+
+  &:focus-visible {
+    outline: solid 2px #63d1bb;
+  }
 }
 
 .card__description {
@@ -69,6 +91,22 @@
   cursor: pointer;
   padding: 10px;
   margin-right: 17px;
+  opacity: 0.2;
+  transition: fill 0.3s, opacity 0.3s;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: solid 2px #63d1bb;
+    transition: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -155,12 +193,18 @@
     margin-bottom: 57px;
   }
 
+  .card__border {
+    width: 100%;
+    border-top: none;
+    transition: all 0.3s;
+  }
+
   .card__title {
     margin-bottom: 6px;
   }
 
   .card__description {
-    margin-bottom: 60.5px;
+    margin-bottom: 12.5px;
   }
 
   .card__tittle-wrapper {
