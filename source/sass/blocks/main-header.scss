@@ -28,12 +28,83 @@
   }
 }
 
-.main-header__toggle {
-  width: 20px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .main-header__toggle-lines {
+    width: 20px;
+    height: 2px;
+    background-color: #231F20;
+    position: relative;
+    top: 0;
+
+    &::before {
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      content: "";
+      background-color: #231F20;
+      bottom: 6px;
+      right: 0;
+    }
+
+    &::after {
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      content: "";
+      background-color: #231F20;
+      bottom: -6px;
+      right: 0;
+    }
+
+    &--x {
+      transform: rotate(-45deg);
+
+      &::before {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        content: "";
+        background-color: #231F20;
+        bottom: 0;
+        right: 0;
+        transform: rotate(-90deg);
+      }
+
+      &::after {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        content: "";
+        background-color: #231F20;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .menu-closed {
+    display: none;
+  }
+
+  .menu-opened {
+    display: block;
+    position: absolute;
+  }
+
+  .main-header__toggle {
+    display: flex;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .main-header--no-js .main-header__toggle {
+    display: none;
+  }
+
 }
+
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
