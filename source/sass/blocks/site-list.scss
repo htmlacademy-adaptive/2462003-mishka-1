@@ -8,7 +8,6 @@
   color: #000000;
   padding: 28.5px 59px 26.5px 76px;
   cursor: pointer;
-  width: 320px;
 
   &:hover .site-list__link-text {
     opacity: 0.6;
@@ -29,6 +28,14 @@
 
   &:active .site-list__link-icon {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .site-list__link {
+    width: 320px;
+    background-color: #ffffff;
+    border-top: solid 1px #ECECEC;
   }
 }
 
