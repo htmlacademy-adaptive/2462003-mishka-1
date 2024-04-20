@@ -24,6 +24,14 @@
 .radio-block__label {
   cursor: pointer;
 
+  &:hover {
+    border-color: #62d1ba;
+
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -34,9 +42,7 @@
     left: -61px;
     bottom: -4px;
 
-    &:hover {
-      border-color: #62d1ba;
-    }
+
   }
 
     &::after {
