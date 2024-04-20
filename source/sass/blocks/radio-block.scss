@@ -25,10 +25,14 @@
   cursor: pointer;
 
   &:hover {
-    border-color: #62d1ba;
-
     &::before {
       border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #0000004D;
     }
   }
 
@@ -41,8 +45,7 @@
     border-radius: 50%;
     left: -61px;
     bottom: -4px;
-
-
+    transition: border-color 0.3s;
   }
 
     &::after {

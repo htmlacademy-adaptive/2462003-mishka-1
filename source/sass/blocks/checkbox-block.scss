@@ -23,6 +23,18 @@
 .checkbox-block__label {
   cursor: pointer;
 
+  &:hover {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #0000004D;
+    }
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -31,6 +43,7 @@
     border: solid 2px #444444;
     left: -61px;
     bottom: 0;
+    transition: border-color 0.3s;
   }
 
   &::after {
