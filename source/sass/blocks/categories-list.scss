@@ -11,9 +11,9 @@
   padding: 0 30px;
   display: flex;
   align-items: center;
-  transition: all 0.3s;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
 
-  &--primary:hover  {
+  &--primary:hover {
     background-color: #59d5bc;
   }
 
@@ -30,7 +30,7 @@
   }
 
   &:hover {
-    transform: scale(1.004,1.04);
+    transform: scale(1, 1.04);
     transform-origin: bottom center;
   }
 
@@ -67,7 +67,7 @@
   }
 
   &--secondary:focus-visible {
-    outline: 2px solid spin(#56c3b2,90);
+    outline: 2px solid spin(#56c3b2, 90);
   }
 }
 
@@ -139,6 +139,6 @@
   }
 
   .categories-list__link-image--toy {
-    left: 81.90%;
+    left: 81.9%;
   }
 }

@@ -8,10 +8,10 @@ let menuButtonContent = document.querySelector('.main-header__toggle-lines')
 
 console.log(menuButtonContent);
 
-menu.classList.add('menu-closed');
+menu.classList.add('main-header__list-wrapper--menu-close');
 
 menuButton.onclick = function () {
-  menu.classList.toggle('menu-closed')
-  menu.classList.toggle('menu-opened')
+  menu.classList.toggle('main-header__list-wrapper--menu-close')
+  menu.classList.toggle('main-header__list-wrapper--menu-open')
   menuButtonContent.classList.toggle('main-header__toggle-lines--x')
 }

@@ -8,6 +8,7 @@
   color: #000000;
   padding: 28.5px 59px 26.5px 76px;
   cursor: pointer;
+  position: relative;
 
   &:hover .site-list__link-text {
     opacity: 0.6;
@@ -35,16 +36,8 @@
   .site-list__link {
     width: 320px;
     background-color: #ffffff;
-    border-top: solid 1px #ECECEC;
+    border-top: solid 1px #ececec;
   }
-}
-
-.site-list__link-icon {
-  transition: all 0.3s;
-}
-
-.site-list__link-text {
-  transition: all 0.3s;
 }
 
 .site-list__item {
@@ -52,10 +45,6 @@
   min-width: 320px;
   display: flex;
   align-items: center;
-}
-
-.site-list__link {
-  position: relative;
 }
 
 .site-list__link-icon--search {
@@ -87,6 +76,14 @@
 
   .site-list__item {
     min-width: 0;
+  }
+
+  .site-list__link-icon {
+    transition: all 0.3s;
+  }
+
+  .site-list__link-text {
+    transition: opacity 0.3s;
   }
 
   .site-list__link-text--search {

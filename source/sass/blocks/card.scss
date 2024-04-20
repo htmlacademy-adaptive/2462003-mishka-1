@@ -3,14 +3,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  transition: all 0,3;
+  transition: all 0.3s;
 
   &:hover .card__border {
-    box-shadow: 0 6px 10px 0 #0000001A;
+    box-shadow: 0 6px 10px 0 #0000001a;
   }
 
   &:active .card__border {
-    box-shadow: 0 3px 5px 0 #0000001A;
+    box-shadow: 0 3px 5px 0 #0000001a;
   }
 }
 
@@ -31,7 +31,7 @@
   margin-top: 27.5px;
   margin-bottom: 6px;
   margin-left: 28px;
-  transition: all 0.3s;
+  transition: opacity 0.3s;
 
   &:hover {
     opacity: 0.6;
@@ -66,15 +66,15 @@
   padding-left: 28px;
   position: relative;
 
-    @media (min-height: $mobile-width) and (max-width:$tablet-width) {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 78.46%;
-    height: 1px;
-    background-color: #ececec;
-    top: -7.5px;
-  }
+  @media (min-height: $mobile-width) and (max-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 78.46%;
+      height: 1px;
+      background-color: #ececec;
+      top: -7.5px;
+    }
   }
 }
 
@@ -148,7 +148,6 @@
     padding-left: 34px;
     position: relative;
     min-height: 73px;
-    position: relative;
 
     &::before {
       position: absolute;

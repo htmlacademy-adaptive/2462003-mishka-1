@@ -31,7 +31,7 @@
 
   &:active {
     &::before {
-      border-color: #0000004D;
+      border-color: #0000004d;
     }
   }
 
@@ -52,11 +52,11 @@
     content: "";
     width: 23.22px;
     height: 16.08px;
-    background-image: url(../../img/icons/tick-icon.svg);
+    background-image: url("../../img/icons/tick-icon.svg");
     background-position: center;
     left: -53px;
     bottom: 10px;
-}
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -65,7 +65,6 @@
   }
 
   .checkbox-block__label {
-
     &::before {
       bottom: -10px;
     }
