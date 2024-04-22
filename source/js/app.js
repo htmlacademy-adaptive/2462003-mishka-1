@@ -6,7 +6,28 @@ let menuButton = document.querySelector('.main-header__toggle');
 
 let menuButtonContent = document.querySelector('.main-header__toggle-lines')
 
+
+
 console.log(menuButtonContent);
+
+const mobileMediaQuery = window.matchMedia('(max-width: 768px)')
+
+
+  menu.classList.add("main-header__list-wrapper--no-animation");
+    setTimeout(() => {
+      menu.classList.remove("main-header__list-wrapper--no-animation");
+    }, 1000);
+
+mobileMediaQuery.addEventListener("change", function (event) {
+  if (event.matches) {
+    menu.classList.add("main-header__list-wrapper--no-animation");
+    setTimeout(() => {
+      menu.classList.remove("main-header__list-wrapper--no-animation");
+    }, 1000);
+  } else {
+    menu.classList.remove("main-header__list-wrapper--no-animation");
+  }
+});
 
 menu.classList.add('main-header__list-wrapper--menu-close');
 
