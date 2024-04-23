@@ -13,9 +13,17 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .cards {
     padding: 0 50px;
+  }
+
+  .cards__item {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 53px;
+    }
   }
 }
 

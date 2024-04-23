@@ -1,14 +1,21 @@
+.modal-wrapper {
+  z-index: 3;
+}
+
 .modal-window {
   width: 320px;
-  padding: 0 30px;
+  padding: 28.5px 30px 46px 30px;
   background-color: #ffffff;
   align-self: center;
   justify-self: center;
+  box-shadow: 0 5px 10px 0 #00010140;
+  border: solid 1px #c6c6c6c6;
+  z-index: 2;
 }
 
 .modal-window__title {
   text-align: center;
-  margin-top: 28.5px;
+  margin-top: 0;
   margin-bottom: 14px;
 }
 
@@ -24,7 +31,7 @@
   .modal-window {
     margin-left: 101px;
     width: 566px;
-    padding: 0 108px;
+    padding: 37.5px 108px 46px 108px;
   }
 
   .modal-window__title {

@@ -1,3 +1,25 @@
+.text-input-block {
+  position: relative;
+}
+
+.text-input-block__input-image--phone {
+  position: absolute;
+  right: 2.69%;
+  top: 0;
+  opacity: 0.2;
+}
+
+.text-input-block__input-image--email {
+  position: absolute;
+  right: 1.15%;
+  top: 0;
+  opacity: 0.2;
+}
+
+.text-input-block__input-image {
+  transition: all 0.3s;
+}
+
 .text-input-block__input {
   min-height: 52px;
   width: 260px;
@@ -6,6 +28,35 @@
   margin-bottom: 34.5px;
   padding-right: 30px;
   font-family: inherit;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus-visible {
+    border-color: #62d1ba;
+    outline: none;
+  }
+
+  &:hover + .text-input-block__input-image {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  &:active + .text-input-block__input-image {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  &:focus-visible + .text-input-block__input-image {
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }
 
 .text-input-block__input::placeholder {
@@ -19,11 +70,33 @@
     width: 501px;
     background-color: #f1f1f1;
   }
+
+  .text-input-block__input-image--phone {
+    right: 5.19%;
+    top: 11px;
+  }
+
+  .text-input-block__input-image--email {
+    right: 4.39%;
+    top: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .text-input-block {
+    width: 700px;
+  }
+
   .text-input-block__input {
     width: 700px;
     margin-right: 173px;
+  }
+
+  .text-input-block__input-image--phone {
+    right: 1.14%;
+  }
+
+  .text-input-block__input-image--email {
+    right: 0.57%;
   }
 }

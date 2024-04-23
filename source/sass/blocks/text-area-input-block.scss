@@ -1,11 +1,28 @@
 .text-area-input-block__input-textarea {
   margin-top: 22.5px;
+  width: 260px;
+  resize: none;
   border: solid 2px #444444;
   font-family: inherit;
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus-visible {
+    border-color: #62d1ba;
+    outline: none;
+  }
 }
 
 .text-area-input-block__input-textarea::placeholder {
-  padding: 17px;
   font-size: 17px;
   line-height: 18px;
 }
@@ -14,6 +31,11 @@
   .text-area-input-block__input-textarea {
     margin: 0;
     width: 501px;
+    font-size: 19px;
+  }
+
+  .text-area-input-block__input-textarea::placeholder {
+    font-size: 19px;
   }
 }
 

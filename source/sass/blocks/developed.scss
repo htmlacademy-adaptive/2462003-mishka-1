@@ -3,6 +3,24 @@
   flex-wrap: wrap;
   align-items: center;
   min-height: 80px;
+
+  &:hover .developed__logo {
+    fill: #46c1ae;
+  }
+
+  &:active .developed__logo {
+    opacity: 0.3;
+  }
+
+  &:focus-visible .developed__logo {
+    outline: solid 2px #63d1bb;
+  }
+}
+
+.developed__logo {
+  cursor: pointer;
+  fill: #63d1bb;
+  transition: fill 0.3s, opacity 0.3s;
 }
 
 .developed__text {

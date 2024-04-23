@@ -6,8 +6,28 @@
   font-weight: 700;
   color: #444444;
   text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff30;
+  }
+
+  &:focus-visible {
+    outline: solid 2px #63d1bb;
+  }
 }
 
 .button-primary--catalog {
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .button-primary {
+    font-size: 17px;
+  }
 }
