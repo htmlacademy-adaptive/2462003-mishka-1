@@ -18,9 +18,13 @@
 <body class="page__body">
   <header class="main-header main-header--no-js">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="#">
-          <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
-        </a>
+          <a class="main-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+            </picture>
+          </a>
         <button class="main-header__toggle" type="button">
           <span class="main-header__toggle-lines"></span>
         </button>
@@ -130,8 +134,12 @@
           </li>
         </ul>
         <div class="featured__image-wrapper">
-          <img class="featured__image" src="img/triple-set-mobile.jpg" width="260" height="315"
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="featured__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="525" height="636"
             alt="Три разноцветных вязаных корзинки разных размеров.">
+          </picture>
         </div>
         <div class="featured__order-wrapper">
           <p class="featured__price">Цена: 990 руб.</p>
@@ -253,7 +261,11 @@
           </li>
         </ul>
         <div class="contact-us__map-wrapper">
-          <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" width="320" height="454" alt="Наш адрес на карте.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+            <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
+          </picture>
         </div>
         <a class="contact-us__button button button-primary" href="#">Напишите нам</a>
       </div>

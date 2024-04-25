@@ -9,6 +9,10 @@
   padding: 0 30px;
   padding-top: 73px;
   min-height: 300px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/hero-image@2x.jpg);
+  }
 }
 
 
@@ -16,11 +20,19 @@
   .hero {
     min-height: 627px;
     padding-top: 155px;
+    background-image: url(../../img/hero-image-tablet.jpg);
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/hero-image-tablet@2x.jpg);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
     padding-top: 157px;
+    background-image: url(../../img/hero-image-desktop.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/hero-image-desktop@2x.jpg);
+    }
   }
 }
