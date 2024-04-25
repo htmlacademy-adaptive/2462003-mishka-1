@@ -12,3 +12,17 @@
   width: 101px;
   height: 77px;
 }
+
+@media (min-width: $tablet-width) {
+  .video__video {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__video {
+    width: 682.65px;
+    height: 455px;
+  }
+}
