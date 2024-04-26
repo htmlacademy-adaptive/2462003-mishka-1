@@ -3,9 +3,19 @@
   flex-wrap: wrap;
   align-items: center;
   min-height: 80px;
+  text-decoration: none;
+  color: #000000;
 
   &:hover .developed__logo {
     fill: #46c1ae;
+  }
+
+  &:hover .developed__text {
+    opacity: 0.7;
+  }
+
+  &:active .developed__text {
+    opacity: 0.3;
   }
 
   &:active .developed__logo {
@@ -28,4 +38,5 @@
   line-height: 18px;
   font-weight: 700;
   margin-right: 27px;
+  transition: opacity 0.3s;
 }

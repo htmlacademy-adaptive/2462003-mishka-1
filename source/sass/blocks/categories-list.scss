@@ -12,8 +12,10 @@
   align-items: center;
   transition: background-color 0.3s;
 
-  &:hover {
-    margin-top: -5px;
+  @media (min-width: $tablet-width) {
+    &:hover {
+      margin-top: -5px;
+    }
   }
 
   &--primary:hover {
@@ -39,17 +41,23 @@
   padding: 24px 160px 31px 0;
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    &:hover {
+      padding-bottom: 39px;
+      transition: all 0.3s;
+    }
+  }
+
   &:hover {
-    padding-bottom: 39px;
     transition: all 0.3s;
   }
 
   &--primary:focus-visible {
-    outline: 2px solid spin(#63d1bb, 90);
+    outline: 2px solid#bd63d1;
   }
 
   &--secondary:focus-visible {
-    outline: 2px solid spin(#56c3b2, 90);
+    outline: 2px solid#b856c3;
   }
 
   &:hover .categories-list__link-image--lamp {

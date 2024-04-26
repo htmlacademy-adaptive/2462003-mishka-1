@@ -19,7 +19,11 @@
   <header class="main-header main-header--no-js">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+        </picture>
       </a>
       <button class="main-header__toggle" type="button">
         <span class="main-header__toggle-lines"></span>
@@ -83,7 +87,11 @@
       <ul class="cards__items">
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img class="card__card-image" src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/bunny-desktop.jpg 1x, img/bunny-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bunny-tablet.jpg 1x, img/bunny-tablet@2x.jpg 2x">
+              <img class="card__card-image" src="img/bunny-mobile.jpg" width="260" height="195" alt="Вязаный зайка." srcset="img/bunny-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="card__border">
             <div class="card__tittle-wrapper">
@@ -107,7 +115,11 @@
         </li>
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img class="card__card-image"  src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/busket-desktop.jpg 1x, img/busket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/busket-tablet.jpg 1x, img/busket-tablet@2x.jpg 2x">
+              <img class="card__card-image"  src="img/busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для белья." srcset="img/busket-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="card__border">
             <div class="card__tittle-wrapper">
@@ -131,7 +143,11 @@
         </li>
         <li class="cards__item card">
           <a class="card__card-link" href="#">
-            <img class="card__card-image"  src="img/toy-busket-mobile.jpg" width="260" height="195" alt="Вязаная корзинка для игрушек.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/toy-busket-desktop.jpg 1x, img/toy-busket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/toy-busket-tablet.jpg 1x, img/toy-busket-tablet@2x.jpg 2x">
+              <img class="card__card-image" src="img/toy-busket-mobile.jpg" srcset="img/toy-busket-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзинка для игрушек.">
+            </picture>
           </a>
           <div class="card__border">
             <div class="card__tittle-wrapper">
@@ -159,8 +175,13 @@
       <div class="production__content-wrapper">
         <h2 class="production__title section-title">Процесс производства</h2>
         <div class="production__video-player video">
-          <video class="video__video" src="#" width="260" height="150" poster="img/video-mobile.jpg"></video>
-          <button class="video__play-button play-button" type="button">
+          <iframe class="video__player video__player--no-js" width="560" height="315" src="https://www.youtube.com/embed/CQ_zG8qzR2I?si=R0kJxPtbt4MnxGe7" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <picture class="video__video-wrapper">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__video" src="img/video-mobile.jpg" width="260" height="150" srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
+          <a class="video__play-button play-button" href="https://www.youtube.com/embed/CQ_zG8qzR2I?si=R0kJxPtbt4MnxGe7">
             <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M97.0001 18.1C97.0001 18.1 96.1001 11.1 93.2001 7.99997C89.6001 3.99997 85.5001 3.89995 83.7001 3.69995C70.4001 2.69995 50.4001 2.69995 50.4001 2.69995H50.3001C50.3001 2.69995 30.3001 2.69995 17.0001 3.69995C15.1001 3.89995 11.1001 3.99997 7.50011 7.99997C4.70011 11.1 3.7001 18.1 3.7001 18.1C3.7001 18.1 2.80011 26.3 2.80011 34.5V42.2C2.80011 50.4 3.7001 58.6 3.7001 58.6C3.7001 58.6 4.60011 65.6 7.50011 68.7C11.1001 72.7 15.9001 72.6 18.0001 73C25.6001 73.8 50.4001 74 50.4001 74C50.4001 74 70.4001 74 83.7001 73C85.6001 72.8 89.6001 72.7 93.2001 68.7C96.0001 65.6 97.0001 58.6 97.0001 58.6C97.0001 58.6 97.9001 50.4 97.9001 42.2V34.5C97.9001 26.3 97.0001 18.1 97.0001 18.1Z"
@@ -170,7 +191,7 @@
                 fill="white" />
               <path d="M38.4004 20.5V56.2L68.2004 38.4L38.4004 20.5Z" fill="white" />
             </svg>
-          </button>
+          </a>
         </div>
         <p class="production__production-description">По просьбам наших любимых фолловеров мы сняли для вас подробное
           видео о том, как появляются наши товары.</p>
@@ -222,7 +243,7 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__developed developed">
+    <a class="main-footer__developed developed" href="https://htmlacademy.ru">
       <p class="developed__text">Разработано</p>
       <span class="developed__logo">
         <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +252,7 @@
           d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
       </svg>
       </span>
-    </div>
+    </a>
   </footer>
   <div class="modal-wrapper modal-wrapper--invisible">
     <div class="modal-window">

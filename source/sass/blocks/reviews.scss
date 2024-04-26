@@ -30,6 +30,12 @@
     min-height: 457px;
     background-image: url("../../img/review.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/review@2x.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .reviews__title {
