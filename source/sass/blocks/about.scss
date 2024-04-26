@@ -1,5 +1,33 @@
 .about {
   padding: 0 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-image: url(../../img/zigzag-line.svg);
+    background-repeat: repeat-x;
+    left: 0;
+    top: -31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      height: 17px;
+      background-size: 100% 17px;
+      top: -49px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 23px;
+      background-size: 100% 23px;
+      top: -68px;
+    }
+  }
 }
 
 .about__title {
