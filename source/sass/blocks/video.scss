@@ -13,8 +13,35 @@
   height: 77px;
 }
 
+.video__player {
+  border: none;
+}
+
+.video__player--no-js {
+  display: none;
+}
+
+.video__video--hidden {
+  display: none;
+}
+
+.video__play-button--hidden {
+  display: none;
+}
+
+.video__player {
+  width: 260px;
+  height: 150px;
+}
+
 @media (min-width: $tablet-width) {
   .video__video {
+    width: 668px;
+    height: 455px;
+    display: block;
+  }
+
+  .video__player {
     width: 668px;
     height: 455px;
   }
@@ -22,6 +49,11 @@
 
 @media (min-width: $desktop-width) {
   .video__video {
+    width: 682.65px;
+    height: 455px;
+  }
+
+  .video__player {
     width: 682.65px;
     height: 455px;
   }
