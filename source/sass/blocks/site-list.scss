@@ -99,8 +99,8 @@
 
   .site-list__item--catalog {
     position: absolute;
-    left: -366px;
-    top: 85px;
+    left: -367px;
+    top: 82px;
     padding-left: 46px;
   }
 
@@ -111,8 +111,8 @@
 
   .site-list__item--order {
     position: absolute;
-    left: -152px;
-    top: 85px;
+    left: -154px;
+    top: 82px;
   }
 
   .site-list__item--search {
@@ -209,11 +209,14 @@
 
   .site-list__link {
     padding-bottom: 20.5px;
+    &--smaller {
+      font-size: 17px;
+    }
   }
 
   .site-list__item--new {
     position: absolute;
-    top: 109.5px;
+    top: 107.5px;
     left: -1050px;
     min-width: 240px;
   }
@@ -232,7 +235,7 @@
 
   .site-list__item--sale {
     position: absolute;
-    top: 109.5px;
+    top: 107.5px;
     left: -831px;
   }
 

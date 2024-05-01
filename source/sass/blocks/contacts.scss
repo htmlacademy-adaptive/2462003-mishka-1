@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .contacts__item-name {
@@ -36,7 +36,6 @@
   text-decoration-color: #62d1ba;
   text-decoration-thickness: 1px;
   text-underline-position: under;
-  text-underline-offset: 4px;
   transition: text-decoration-color 0.3s, color 0.3s;
 
   &:hover {
@@ -59,8 +58,33 @@
     line-height: 30px;
   }
 
+  .contacts__item-info--decoration {
+    text-underline-offset: 3px;
+  }
+
+  .contacts__item {
+    margin-top: 0;
+  }
+
   .contacts__item-info {
     font-size: 17px;
     line-height: 30px;
+    width: 218px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    margin-top: 9px;
+    margin-bottom: 3px;
+  }
+
+  .contacts__map-wrapper {
+    width: 527px;
+    margin-bottom: 105px;
+  }
+
+  .contacts__item-info--decoration {
+    text-underline-offset: 7px;
   }
 }

@@ -10,14 +10,14 @@
     background-image: url(../../img/zigzag-line.svg);
     background-repeat: repeat-x;
     left: 0;
-    top: -31px;
+    top: -37px;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       height: 17px;
       background-size: 100% 17px;
-      top: -49px;
+      top: -73px;
     }
   }
 
@@ -25,7 +25,9 @@
     &::before {
       height: 23px;
       background-size: 100% 23px;
-      top: -68px;
+      top: -92px;
+      width: 91%;
+      left: 49px;
     }
   }
 }
@@ -104,19 +106,54 @@
   }
 
   .about__title {
-    margin-top: 124.5px;
-    margin-bottom: 97.5px;
+    margin-top: 125.5px;
+    margin-bottom: 78.5px;
   }
 
   .about__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
+    column-gap: 1px;
     align-items: start;
+  }
+
+  .about__list-item-image--flower {
+    bottom: 64px;
+  }
+
+  .about__list-item-image--money {
+    bottom: 73px;
+    left: 1px;
+  }
+
+  .about__list-item-image--heart {
+    bottom: 68px;
+    left: 8px;
+  }
+
+  .about__list-item-image--ball {
+    bottom: 64px;
+  }
+
+  .about__list-item-image--rocket {
+    bottom:  74px;
+  }
+
+  .about__list-item-image--present {
+    bottom: 67px;
+  }
+
+  .about__list-item-description {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about__list-item:not(:last-child) {
     margin-bottom: 111px;
+  }
+
+  .about__list__item-column:not(:last-child) {
+    margin-bottom: 60px;
   }
 }
 
@@ -127,6 +164,6 @@
 
   .about__title {
     margin-top: 164px;
-    margin-bottom: 95px;
+    margin-bottom: 76px;
   }
 }

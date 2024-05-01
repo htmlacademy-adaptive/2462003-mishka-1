@@ -17,6 +17,7 @@
 
 .reviews__slide-wrapper {
   margin-bottom: 38px;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +42,7 @@
   .reviews__title {
     order: -2;
     margin: 0;
+    margin-top: 4px;
   }
 
   .reviews__button {
@@ -53,13 +55,31 @@
   .reviews__slide-wrapper {
     margin: 0;
     position: absolute;
-    bottom: 62px;
-    right: 69px;
+    bottom: 61px;
+    right: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 225px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-position: 50px 7px;
+    align-items: start;
+  }
+
+  .reviews__wider-wrapper {
+    grid-column: 1/3;
+  }
+
+  .reviews__slide-wrapper {
+    bottom: 100px;
+  }
+
+  .reviews__button {
+    justify-self: end;
+    margin-top: 7px;
   }
 }
