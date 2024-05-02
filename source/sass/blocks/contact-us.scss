@@ -8,7 +8,7 @@
     height: 6px;
     background-image: url("../../img/zigzag-line.svg");
     background-repeat: repeat-x;
-    top: -38px;
+    top: -46px;
   }
 }
 
@@ -55,14 +55,14 @@
       height: 81px;
       background-image: url("../../img/flag.svg");
       background-repeat: no-repeat;
-      top: 131px;
-      right: 0;
+      top: 127px;
+      right: 53px;
     }
   }
 
   .contact-us__title {
     padding: 0 50px;
-    margin-top: 153px;
+    margin-top: 150px;
     margin-bottom: 49px;
   }
 
@@ -72,16 +72,16 @@
 
   .contact-us__wrapper .contact-us__list {
     padding: 0 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 49px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
   }
 
   .contact-us__button {
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 58px;
     margin-bottom: 57px;
+    width: 230px;
   }
 
   .contact-us__item {
@@ -93,6 +93,7 @@
     display: block;
     width: 768px;
     height: 457px;
+    margin-top: 31px;
   }
 }
 
@@ -106,17 +107,18 @@
     &::before {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 91%;
       height: 23px;
       background-size: 100% 23px;
       background-image: url("../../img/zigzag-line.svg");
       background-repeat: repeat-x;
-      top: 67px;
+      top: 75px;
+      left: 50px;
     }
 
     &::after {
-      top: 223px;
-      left: 63px;
+      top: 230px;
+      left: 113px;
     }
   }
 
@@ -124,7 +126,7 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 240px;
+    top: 247px;
     padding-left: 225px;
   }
 
@@ -136,16 +138,16 @@
   }
 
   .contact-us__wrapper .contact-us__list {
-    width: 291px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 331px;
     padding: 0;
-    margin-right: 55px;
+    margin-right: 17px;
     padding-top: 170.5px;
   }
 
-  .contacts__map-wrapper {
-    width: 527px;
-    margin-bottom: 105px;
-  }
+
 
   .contact-us__button {
     width: 230px;
@@ -155,7 +157,7 @@
   }
 
   .contact-us__map-wrapper-map {
-    margin-top: 0;
+    margin-top: 7px;
     margin-bottom: 105px;
     width: 527px;
     height: 457px;
