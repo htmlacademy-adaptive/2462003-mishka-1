@@ -40,7 +40,7 @@
 }
 
 .form__form-radio:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .form__form-checkbox:not(:last-child) {
@@ -60,23 +60,37 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  margin-top: 17px;
-  margin-bottom: 48px;
+  margin-top: 12px;
+  margin-bottom: 31px;
+}
+
+.form__button {
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 50px;
+  }
+
   .form__type {
     display: flex;
     padding: 0 50px;
   }
 
   .form__form-radio:not(:last-child) {
-    margin-bottom: 58px;
+    margin-bottom: 41px;
   }
 
   .form__type--pdt-pdb50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 58px;
+    padding-bottom: 57px;
+  }
+
+  .form__label--primary  {
+    align-self: flex-start;
+    padding-top: 10px;
   }
 
   .form__form-list-name {
@@ -86,6 +100,22 @@
 
   .form__type--contacts {
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__type--checkbox {
+    padding-bottom: 67px;
+  }
+
+  .form__type--name {
+    padding-bottom: 24px;
+    padding-top: 52px;
+  }
+
+  .form__type--additional {
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .form__label-wrapper {
@@ -100,11 +130,19 @@
   }
 
   .form__label--name {
-    margin-top: 17px;
+    margin-top: 7px;
+  }
+
+  .form__label--phone {
+    margin-top: 6px;
+  }
+
+  .form__label--email {
+    margin-top: 7px;
   }
 
   .form__label--additional {
-    margin-top: 19px;
+    margin-top: 10px;
   }
 
   .form__text-input-block {
@@ -117,6 +155,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 3px;
+    padding: 0 50px;
   }
 
   .form__required-menu-items {
@@ -125,11 +164,16 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  .form__button {
+    width: 230px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .form__type {
-    padding-left: 46px;
+    padding-left: 112px;
   }
 
   .form__form-list-name {

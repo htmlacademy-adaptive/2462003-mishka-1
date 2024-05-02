@@ -11,6 +11,10 @@
   margin-bottom: 73.46px;
 }
 
+.hero-title--form {
+  margin-bottom: 73px;
+}
+
 @media (min-width: $tablet-width) {
   .hero-title {
     margin-bottom: 75px;
@@ -31,5 +35,9 @@
 
   .hero-title--catalog {
     margin-bottom: 95.95px;
+  }
+
+  .hero-title--form {
+    margin-bottom: 112px;
   }
 }

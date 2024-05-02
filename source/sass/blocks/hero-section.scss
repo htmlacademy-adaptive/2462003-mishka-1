@@ -41,4 +41,10 @@
       bottom: -17px;
     }
   }
+
+  .hero-section--form {
+    &::after {
+      bottom: 0;
+    }
+  }
 }

@@ -5,6 +5,8 @@
 .forms__customization-text {
   margin-top: 17px;
   margin-bottom: 29px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,9 +15,12 @@
   }
 
   .forms__customization-text {
-    margin-top: 54px;
+    margin-top: 65px;
     margin-bottom: 13px;
+    padding-right: 50px;
     margin-left: 50px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -23,6 +28,6 @@
   .forms__customization-text {
     margin-top: 98.5px;
     padding-left: 174px;
-    padding-right: 171px;
+    padding-right: 200px;
   }
 }

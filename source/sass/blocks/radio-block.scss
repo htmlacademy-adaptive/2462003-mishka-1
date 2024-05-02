@@ -64,11 +64,17 @@
 @media (min-width: $tablet-width) {
   .radio-block__label {
     &::before {
-      bottom: -4px;
+      bottom: -8px;
+      left: -80px;
+      width: 52px;
+      height: 52px;
     }
 
     &::after {
-      bottom: 8px;
+      width: 22px;
+      height: 22px;
+      bottom: 7px;
+      left: -65px;
     }
   }
 }
