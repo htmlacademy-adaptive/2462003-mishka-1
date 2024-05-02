@@ -13,6 +13,12 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .cards__items {
+    margin-top: 78px;
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .cards {
     padding: 0 50px;
@@ -33,5 +39,7 @@
     flex-wrap: wrap;
     gap: 51px;
     margin-top: 111px;
+    padding-top: 16px;
+    padding-left: 20px;
   }
 }
