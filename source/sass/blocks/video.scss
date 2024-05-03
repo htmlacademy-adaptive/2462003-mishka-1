@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 8px;
   width: 101px;
   height: 77px;
 }
@@ -45,6 +45,10 @@
     width: 668px;
     height: 455px;
   }
+
+  .video__play-button {
+    bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -56,5 +60,9 @@
   .video__player {
     width: 682.65px;
     height: 455px;
+  }
+
+  .video__play-button {
+    bottom: 3px;
   }
 }

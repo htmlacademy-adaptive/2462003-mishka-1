@@ -4,26 +4,35 @@
   background-image: url("../img/hero-image.jpg");
   background-color: #808080;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 0 -17px;
   object-fit: cover;
-  padding: 0 30px;
   padding-top: 73px;
-  min-height: 300px;
+  min-height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../img/hero-image@2x.jpg);
+    background-size: contain;
+    background-position: 0 -17px;
   }
 }
 
 
 @media (min-width: $tablet-width) {
   .hero {
-    min-height: 627px;
+    min-height: 745px;
     padding-top: 155px;
+    background-position: 0;
+    background-size: cover;
     background-image: url(../../img/hero-image-tablet.jpg);
   @media (min-resolution: 2dppx) {
     background-image: url(../../img/hero-image-tablet@2x.jpg);
     }
+  }
+  .hero__mobile-br {
+    display: none;
   }
 }
 

@@ -66,11 +66,19 @@
 
   .checkbox-block__label {
     &::before {
-      bottom: -10px;
+      bottom: -18px;
+      left: -79px;
+      width: 52px;
+      height: 52px;
     }
 
     &::after {
-      bottom: 0;
+      bottom: -6px;
+      left: -69px;
+      width: 32px;
+      height: 22px;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

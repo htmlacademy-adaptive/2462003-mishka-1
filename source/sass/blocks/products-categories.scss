@@ -8,6 +8,8 @@
   .products-categories {
     padding: 0 50px;
     position: relative;
+    font-size: 20px;
+    line-height: 30px;
 
     &::after {
       position: absolute;
@@ -17,6 +19,7 @@
       background-image: url("../../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       bottom: -12px;
+      left: 0;
     }
   }
 }

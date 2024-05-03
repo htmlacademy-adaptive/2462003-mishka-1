@@ -6,13 +6,13 @@
 
 @media (min-width: $tablet-width) {
   .form-list-checkbox {
-    padding-top: 0;
+    padding-top: 7px;
     padding-bottom: 0;
-    padding-left: 175px;
+    padding-left: 203px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 94px;
-    row-gap: 60px;
+    column-gap: 140px;
+    row-gap: 59px;
   }
 }
 
@@ -20,6 +20,6 @@
   .form-list-checkbox {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 57px;
-    padding-left: 137px;
+    padding-left: 151px;
   }
 }
