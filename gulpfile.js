@@ -8,7 +8,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-squoosh';
+import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
@@ -73,5 +73,29 @@ const watcher = () => {
 
 
 export default gulp.series(
- html, styles, server, watcher
+ styles, server, watcher
 );
+
+
+// отдельно
+// WebP
+
+// to do Общее для build и start
+// удалять папку build
+// перенести html в build
+// запускаю styles
+// запускаю js
+// переношу картинки
+// переношу шрифты
+// переношу favicons (именно .ico)
+// собрать спрайт(стек)
+
+//команда move перенести в одной команде
+
+// start
+// запуск server, watcher
+
+// build весь to do
+// минификация html
+// оптимизация картинок squoosh
+
