@@ -10,6 +10,8 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import {deleteAsync} from 'del';
+import svgo from 'gulp-svgo';
+import svgstack from 'gulp-svg-sprite';
 
 // Styles
 
@@ -31,25 +33,39 @@ export const del =() =>
 
 
 // Copy
-export const copyHtml = () => {
-  return gulp.src('source/*.html')
+export const copy = () => {
+  return gulp.src([
+    'source/*.html',
+    'source/img/**/*',
+    'source/fonts/*',
+    'source/root/*',
+    'source/js/*.js'
+  ], {
+    base: 'source'
+  })
   .pipe(gulp.dest('build'))
+  done();
 }
+
+// export const copyHtml = () => {
+//   return gulp.src('source/*.html')
+//   .pipe(gulp.dest('build'))
+// }
 
 export const copyImg = () => {
   return gulp.src('source/img/**/*')
   .pipe(gulp.dest('build/img'))
 }
 
-export const copyFonts = () => {
-  return gulp.src('source/fonts/*')
-  .pipe(gulp.dest('build/fonts'))
-}
+// export const copyFonts = () => {
+//   return gulp.src('source/fonts/*')
+//   .pipe(gulp.dest('build/fonts'))
+// }
 
-export const copyFavicon = () => {
-  return gulp.src('source/root/*')
-  .pipe(gulp.dest('build/root'))
-}
+// export const copyFavicon = () => {
+//   return gulp.src('source/root/*')
+//   .pipe(gulp.dest('build/root'))
+// }
 
 export const copyScript = () => {
   return gulp.src('source/js/*.js')
@@ -63,16 +79,19 @@ export const copyScript = () => {
 }
 
 // Scripts
- export const script = () => {
+ export const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(gulp.dest('build/js'))
     .pipe(terser())
+    .pipe(rename('app.min.js'))
     .pipe(gulp.dest('build/js'))
 }
 
 // Images
 export const images = async () => {
-  return gulp.src('source/img/**/*.{jpg,png,webp}')
+  return gulp.src('build/img/**/*.{jpg,png,webp}')
     .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
 }
 
 // WebP
@@ -84,7 +103,29 @@ export const webp = () => {
   .pipe(gulp.dest('build/img/'))
 }
 // SVG
+export const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'))
+}
 
+// Sprite
+const config = {
+  mode: {
+      stack: {
+          sprite: '../sprite.svg',
+          example: false
+      }
+  }
+}
+
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstack(config))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'))
+}
 
 // Server
 
@@ -111,8 +152,26 @@ const watcher = () => {
 
 
 export default gulp.series(
- styles, server, watcher
+  del,
+  copy,
+  gulp.parallel(
+    styles,
+    sprite,
+  ),
+  server,
+  watcher
 );
+
+export const build = gulp.series (
+  del,
+  copy,
+  gulp.parallel(
+    styles,
+    sprite,
+    html,
+    images
+  )
+)
 
 
 // отдельно
