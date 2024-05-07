@@ -26,7 +26,8 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp",
-    "html": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp html"
+    "del": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp del",
+    "copyImg": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp webp"
   },
   "browserslist": [
     "last 2 versions",
@@ -46,5 +47,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "del": "^7.1.0"
+  }
 }
