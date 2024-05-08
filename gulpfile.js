@@ -38,8 +38,7 @@ export const copy = () => {
     'source/*.html',
     'source/img/**/*',
     'source/fonts/*',
-    'source/root/*',
-    'source/js/*.js'
+    'source/root/*'
   ], {
     base: 'source'
   })
@@ -47,10 +46,11 @@ export const copy = () => {
   done();
 }
 
-// export const copyHtml = () => {
-//   return gulp.src('source/*.html')
-//   .pipe(gulp.dest('build'))
-// }
+export const copyHtml = () => {
+  return gulp.src('source/*.html')
+  .pipe(gulp.dest('build'))
+  .pipe(browser.stream());
+}
 
 export const copyImg = () => {
   return gulp.src('source/img/**/*')
@@ -100,7 +100,7 @@ export const webp = () => {
   .pipe(squoosh({
     webp: {}
   }))
-  .pipe(gulp.dest('build/img/'))
+  .pipe(gulp.dest('source/img/'))
 }
 // SVG
 export const svg = () => {
@@ -145,7 +145,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html').on('change',gulp.series(copyHtml), browser.reload);
   gulp.watch('source/img/**/*'), gulp.series(copyImg);
   gulp.watch('source/js/*.js'), gulp.series(copyScript);
 }
@@ -156,6 +156,7 @@ export default gulp.series(
   copy,
   gulp.parallel(
     styles,
+    scripts,
     sprite,
   ),
   server,
@@ -167,6 +168,7 @@ export const build = gulp.series (
   copy,
   gulp.parallel(
     styles,
+    scripts,
     sprite,
     html,
     images
