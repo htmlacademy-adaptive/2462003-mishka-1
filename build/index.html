@@ -46,19 +46,17 @@
             </a>
           </li>
         </ul>
-        <ul class="main-header__list site-list">
+        <ul class="main-header__list main-header__list--icons site-list">
           <li class="site-list__item site-list__item--search">
             <a class="site-list__link site-list__link--search" href="#">
-              <svg class="site-list__link-icon site-list__link-icon--search" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./img/sprite.svg#search-icon"></use>
-                </svg>
+              <span class="site-list__link-icon site-list__link-icon--search">
+              </span>
               <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
             </a>
           </li>
           <li class="site-list__item site-list__item--cart">
             <a class="site-list__link site-list__link--wider site-list__link--cart" href="#">
               <svg class="site-list__link-icon site-list__link-icon--cart" width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./img/sprite.svg#cart-icon"></use>
                 </svg>
                 <span class="site-list__link-text site-list__link-text--cart">Корзина: пока пуста</span>
             </a>
@@ -97,7 +95,6 @@
               <path d="M23.4415 53.1426H16.5587C15.8604 53.1426 15.4614 53.6402 15.4614 54.2373C15.4614 54.8344 15.9602 55.332 16.5587 55.332H23.4415C24.1397 55.332 24.5387 54.8344 24.5387 54.2373C24.6385 53.6402 24.1397 53.1426 23.4415 53.1426Z" fill="#149080"/>
               <path d="M20.0499 28.7598C19.9501 28.7598 19.7506 28.8593 19.4514 28.9588C19.2519 29.0583 19.0524 29.2574 18.8529 29.3569V33.0391H21.1471V29.4564C20.6484 29.0583 20.2494 28.7598 20.0499 28.7598Z" fill="#149080"/>
               </g>
-              <use xlink:href=""></use>
               </svg>
             <span class="categories-list__link-text">Предметы интерьера</span>
           </a>
@@ -106,7 +103,6 @@
           <a class="categories-list__link categories-list__link--secondary" href="#">
             <svg class="categories-list__link-image categories-list__link-image--toy" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z" fill="#149080"/>
-              <use xlink:href=""></use>
               </svg>
             <span class="categories-list__link-text">Детские игрушки</span>
           </a>
@@ -160,19 +156,25 @@
       <ul class="about__list">
         <div class="about__list__item-column">
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--flower" src="img/icons/flower-icon.svg" width="33" height="38" alt="">
+            <svg class="about__list-item-image about__list-item-image--flower" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#flower-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Экологически<br> чистые материалы
             </p>
           </li>
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--money" src="img/icons/money-icon.svg" width="47" height="27" alt="">
+            <svg class="about__list-item-image about__list-item-image--money" width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#money-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Скандинавский стиль<br> по российской цене
             </p>
           </li>
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--heart" src="img/icons/heart-icon.svg" width="34" height="27" alt="">
+            <svg class="about__list-item-image about__list-item-image--heart" width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#heart-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Увеличивает лайки<br> на фотографиях
             </p>
@@ -180,20 +182,26 @@
         </div>
         <div class="about__list__item-column">
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--ball" src="img/icons/ball-icon.svg" width="35" height="34" alt="">
+            <svg class="about__list-item-image about__list-item-image--ball" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#ball-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Связано вручную<br>
               с любовью и умилением
             </p>
           </li>
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--rocket" src="img/icons/rocket-icon.svg" width="55" height="23" alt="">
+            <svg class="about__list-item-image about__list-item-image--rocket" width="55" height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#rocket-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Поддержка отечественного<br> производителя
             </p>
           </li>
           <li class="about__list-item">
-            <img class="about__list-item-image about__list-item-image--present" src="img/icons/present-icon.svg" width="33" height="32" alt="">
+            <svg class="about__list-item-image about__list-item-image--present" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#present-icon"></use>
+            </svg>
             <p class="about__list-item-description">
               Поставляется<br>
               в подарочной упаковке
@@ -238,13 +246,13 @@
           <button class="slide-wrapper__button slide-wrapper__button-previous" type="button">
             <span class="visually-hidden">Предыдущий отзыв.</span>
             <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+              <use xlink:href="./img/sprite.svg#arrow-left-icon"></use>
             </svg>
           </button>
           <button class="slide-wrapper__button slide-wrapper__button-next" type="button">
             <span class="visually-hidden">Следующий отзыв.</span>
             <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+              <use xlink:href="./img/sprite.svg#arrow-right-icon"></use>
             </svg>
           </button>
         </div>

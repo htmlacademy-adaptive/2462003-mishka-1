@@ -63,7 +63,7 @@ a {
   outline: solid 2px #63d1bb;
 }
 .site-list__link:hover .site-list__link-icon {
-  fill: #63d1bb;
+  background: #63d1bb;
   opacity: 1;
 }
 .site-list__link:active .site-list__link-icon {
@@ -89,6 +89,13 @@ a {
   left: 32px;
   top: 32px;
   opacity: 0.2;
+  width: 20px;
+  height: 20px;
+  -webkit-mask: url("../../img/sprite.svg#search-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#search-icon") center center no-repeat;
+  -webkit-mask-size: 22px 22px;
+          mask-size: 22px 22px;
+  background: #000000;
 }
 
 .site-list__link-icon--cart {
@@ -96,6 +103,13 @@ a {
   left: 32px;
   top: 32px;
   opacity: 0.2;
+  width: 22px;
+  height: 22px;
+  -webkit-mask: url("../../img/sprite.svg#cart-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#cart-icon") center center no-repeat;
+  -webkit-mask-size: 22px 22px;
+          mask-size: 22px 22px;
+  background: #000000;
 }
 
 .site-list__item--desktop,
@@ -116,7 +130,7 @@ a {
   }
 
   .site-list__link-icon {
-    transition: all 0.3s;
+    transition: background 0.3s, opacity 0.3s;
   }
 
   .site-list__link-text {
@@ -778,6 +792,10 @@ a {
     margin-right: auto;
   }
 
+  .main-header__list--icons {
+    min-width: 349px;
+  }
+
   .main-header__wrapper {
     order: -1;
     position: absolute;
@@ -1125,7 +1143,7 @@ a {
   content: "";
   height: 6px;
   width: 100%;
-  background-image: url(../../img/zigzag-line.svg);
+  background-image: url("../../img/zigzag-line.svg");
   background-repeat: repeat-x;
   left: 0;
   top: -37px;
