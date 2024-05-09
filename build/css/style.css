@@ -1734,17 +1734,52 @@ a {
 }
 
 .socials__link {
-  padding: 20px 10px;
-  transition: fill 0.3s, opacity 0.3s;
+  padding: 20px 43px;
 }
-.socials__link:hover {
-  fill: #46c1ae;
+.socials__link:hover .socials__link-icon {
+  background: #46c1ae;
 }
-.socials__link:active {
+.socials__link:active .socials__link-icon {
   opacity: 0.3;
 }
 .socials__link:focus-visible {
   outline: solid 2px #63d1bb;
+}
+
+.socials__link-icon {
+  display: block;
+  margin: 0 auto;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.socials__link-icon--vk {
+  -webkit-mask: url(../../img/sprite.svg#vk-icon) center center no-repeat;
+          mask: url(../../img/sprite.svg#vk-icon) center center no-repeat;
+  -webkit-mask-size: 27px 18px;
+          mask-size: 27px 18px;
+  background: #231F20;
+  width: 27px;
+  height: 18px;
+}
+
+.socials__link-icon--youtube {
+  -webkit-mask: url(../../img/sprite.svg#youtube-icon) center center no-repeat;
+          mask: url(../../img/sprite.svg#youtube-icon) center center no-repeat;
+  -webkit-mask-size: 24px 20px;
+          mask-size: 24px 20px;
+  background: #231F20;
+  width: 24px;
+  height: 20px;
+}
+
+.socials__link-icon--telegram {
+  -webkit-mask: url(../../img/sprite.svg#telegram-icon) center center no-repeat;
+          mask: url(../../img/sprite.svg#telegram-icon) center center no-repeat;
+  -webkit-mask-size: 20px 18px;
+          mask-size: 20px 18px;
+  background: #231F20;
+  width: 20px;
+  height: 18px;
 }
 
 .main-footer {
@@ -1776,6 +1811,10 @@ a {
     justify-content: space-between;
     min-height: 143px;
     padding: 0 50px;
+  }
+
+  .main-footer__socials {
+    padding: 0 80px 8px;
   }
 
   .main-footer__developed {

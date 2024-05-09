@@ -125,7 +125,7 @@ export const sprite = () => {
   .pipe(svgo())
   .pipe(svgstack(config))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('source/img'))
 }
 
 // Server
@@ -154,11 +154,11 @@ const watcher = () => {
 
 export default gulp.series(
   del,
+  sprite,
   copy,
   gulp.parallel(
     styles,
     scripts,
-    sprite,
   ),
   server,
   watcher
@@ -166,11 +166,11 @@ export default gulp.series(
 
 export const build = gulp.series (
   del,
+  sprite,
   copy,
   gulp.parallel(
     styles,
     scripts,
-    sprite,
     html,
     images
   )
