@@ -319,7 +319,7 @@ a {
 }
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/hero-image.webp"), url(../img/hero-image@2x.jpg);
+    background-image: url("../img/hero-image.webp"), url("../img/hero-image@2x.jpg");
     background-size: contain;
     background-position: 0 -17px;
   }
@@ -331,12 +331,12 @@ a {
     padding-top: 155px;
     background-position: 0;
     background-size: cover;
-    background-image: url(../../img/hero-image-tablet.webp), url(../../img/hero-image-tablet.jpg);
+    background-image: url("../../img/hero-image-tablet.webp"), url("../../img/hero-image-tablet.jpg");
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero-image-tablet@2x.webp), url(../../img/hero-image-tablet@2x.jpg);
+    background-image: url("../../img/hero-image-tablet@2x.webp"), url("../../img/hero-image-tablet@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -347,12 +347,12 @@ a {
 @media (min-width: 1150px) {
   .hero {
     padding-top: 157px;
-    background-image: url(../../img/hero-image-desktop.webp), url(../../img/hero-image-desktop.jpg);
+    background-image: url("../../img/hero-image-desktop.webp"), url("../../img/hero-image-desktop.jpg");
   }
 }
 @media (min-width: 1150px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero-image-desktop@2x.webp), url(../../img/hero-image-desktop@2x.jpg);
+    background-image: url("../../img/hero-image-desktop@2x.webp"), url("../../img/hero-image-desktop@2x.jpg");
   }
 }
 .hero-title {
@@ -1318,7 +1318,7 @@ a {
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .reviews {
-    background-image: url(../../img/review@2x.jpg);
+    background-image: url("../../img/review@2x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1753,31 +1753,31 @@ a {
 }
 
 .socials__link-icon--vk {
-  -webkit-mask: url(../../img/sprite.svg#vk-icon) center center no-repeat;
-          mask: url(../../img/sprite.svg#vk-icon) center center no-repeat;
+  -webkit-mask: url("../../img/sprite.svg#vk-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#vk-icon") center center no-repeat;
   -webkit-mask-size: 27px 18px;
           mask-size: 27px 18px;
-  background: #231F20;
+  background: #231f20;
   width: 27px;
   height: 18px;
 }
 
 .socials__link-icon--youtube {
-  -webkit-mask: url(../../img/sprite.svg#youtube-icon) center center no-repeat;
-          mask: url(../../img/sprite.svg#youtube-icon) center center no-repeat;
+  -webkit-mask: url("../../img/sprite.svg#youtube-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#youtube-icon") center center no-repeat;
   -webkit-mask-size: 24px 20px;
           mask-size: 24px 20px;
-  background: #231F20;
+  background: #231f20;
   width: 24px;
   height: 20px;
 }
 
 .socials__link-icon--telegram {
-  -webkit-mask: url(../../img/sprite.svg#telegram-icon) center center no-repeat;
-          mask: url(../../img/sprite.svg#telegram-icon) center center no-repeat;
+  -webkit-mask: url("../../img/sprite.svg#telegram-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#telegram-icon") center center no-repeat;
   -webkit-mask-size: 20px 18px;
           mask-size: 20px 18px;
-  background: #231F20;
+  background: #231f20;
   width: 20px;
   height: 18px;
 }
@@ -2212,12 +2212,8 @@ a {
 
   .card__cart-button {
     align-self: end;
-    margin-bottom: 22px;
-    margin-right: 22px;
-  }
-
-  .card__cart-button {
     margin-bottom: 18px;
+    margin-right: 22px;
   }
 }
 @media (min-width: 1150px) {
@@ -2447,6 +2443,8 @@ a {
 
 .video__player {
   border: none;
+  width: 260px;
+  height: 150px;
 }
 
 .video__player--no-js {
@@ -2459,11 +2457,6 @@ a {
 
 .video__play-button--hidden {
   display: none;
-}
-
-.video__player {
-  width: 260px;
-  height: 150px;
 }
 
 @media (min-width: 768px) {
@@ -2913,8 +2906,11 @@ a {
   content: "";
   width: 23.22px;
   height: 16.08px;
-  background-image: url("../../img/icons/tick-icon.svg");
-  background-position: center;
+  -webkit-mask: url("../../img/sprite.svg#tick-icon") center center no-repeat;
+          mask: url("../../img/sprite.svg#tick-icon") center center no-repeat;
+  background: #000000;
+  -webkit-mask-size: 24px 17px;
+          mask-size: 24px 17px;
   left: -53px;
   bottom: 10px;
 }
@@ -2936,8 +2932,18 @@ a {
     left: -69px;
     width: 32px;
     height: 22px;
+    -webkit-mask-size: 32px 22px;
+            mask-size: 32px 22px;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .checkbox-block__label::after {
+    -webkit-mask-size: 32px 26px;
+            mask-size: 32px 26px;
+    -webkit-mask-position: -2px -6px;
+            mask-position: -2px -6px;
   }
 }
 .text-block {

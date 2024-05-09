@@ -7,7 +7,7 @@
     content: "";
     height: 6px;
     width: 100%;
-    background-image: url(../../img/zigzag-line.svg);
+    background-image: url("../../img/zigzag-line.svg");
     background-repeat: repeat-x;
     left: 0;
     top: -37px;
@@ -136,7 +136,7 @@
   }
 
   .about__list-item-image--rocket {
-    bottom:  74px;
+    bottom: 74px;
   }
 
   .about__list-item-image--present {

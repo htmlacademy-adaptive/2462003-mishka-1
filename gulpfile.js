@@ -175,27 +175,3 @@ export const build = gulp.series (
     images
   )
 )
-
-
-// отдельно
-// WebP
-
-// to do Общее для build и start
-// удалять папку build
-// перенести html в build
-// запускаю styles
-// запускаю js
-// переношу картинки
-// переношу шрифты
-// переношу favicons (именно .ico)
-// собрать спрайт(стек)
-
-//команда move перенести в одной команде
-
-// start
-// запуск server, watcher
-
-// build весь to do
-// минификация html
-// оптимизация картинок squoosh
-

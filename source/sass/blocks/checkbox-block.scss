@@ -52,8 +52,9 @@
     content: "";
     width: 23.22px;
     height: 16.08px;
-    background-image: url("../../img/icons/tick-icon.svg");
-    background-position: center;
+    mask: url("../../img/sprite.svg#tick-icon") center center no-repeat;
+    background: #000000;
+    mask-size: 24px 17px;
     left: -53px;
     bottom: 10px;
   }
@@ -77,8 +78,18 @@
       left: -69px;
       width: 32px;
       height: 22px;
+      mask-size: 32px 22px;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .checkbox-block__label {
+      &::after {
+        mask-size: 32px 26px;
+        mask-position: -2px -6px;
+      }
     }
   }
 }

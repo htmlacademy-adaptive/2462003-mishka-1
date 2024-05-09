@@ -51,5 +51,3 @@ function (event) {
   videoPreview.classList.toggle('video__video--hidden');
   videoLink.classList.toggle('video__play-button--hidden');
 });
-
-

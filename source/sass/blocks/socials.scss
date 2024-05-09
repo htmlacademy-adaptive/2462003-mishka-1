@@ -14,7 +14,7 @@
   padding: 20px 43px;
 
 
-  &:hover .socials__link-icon  {
+  &:hover .socials__link-icon {
     background: #46c1ae;
   }
 
@@ -33,26 +33,26 @@
   transition: background 0.3s, opacity 0.3s;
 }
 
-.socials__link-icon--vk{
-  mask: url(../../img/sprite.svg#vk-icon) center center no-repeat;
+.socials__link-icon--vk {
+  mask: url("../../img/sprite.svg#vk-icon") center center no-repeat;
   mask-size: 27px 18px;
-  background: #231F20;
+  background: #231f20;
   width: 27px;
   height: 18px;
 }
 
 .socials__link-icon--youtube {
-  mask: url(../../img/sprite.svg#youtube-icon) center center no-repeat;
+  mask: url("../../img/sprite.svg#youtube-icon") center center no-repeat;
   mask-size: 24px 20px;
-  background: #231F20;
+  background: #231f20;
   width: 24px;
   height: 20px;
 }
 
 .socials__link-icon--telegram {
-  mask: url(../../img/sprite.svg#telegram-icon) center center no-repeat;
+  mask: url("../../img/sprite.svg#telegram-icon") center center no-repeat;
   mask-size: 20px 18px;
-  background: #231F20;
+  background: #231f20;
   width: 20px;
   height: 18px;
 }
