@@ -55,6 +55,7 @@ export const copyHtml = () => {
 export const copyImg = () => {
   return gulp.src('source/img/**/*')
   .pipe(gulp.dest('build/img'))
+  .pipe(browser.stream());
 }
 
 // export const copyFonts = () => {
