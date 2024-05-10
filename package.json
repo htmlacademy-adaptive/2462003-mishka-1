@@ -30,9 +30,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "cross-env NODE_OPTIONS=--no-experimental-fetch gulp build",
     "start": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp",
-    "webp": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp webp",
-    "del": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp del",
-    "copyImg": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp sprite"
+    "webp": "cross-env NODE_OPTIONS=--no-experimental-fetch npx gulp webp"
   },
   "browserslist": [
     "last 2 versions",

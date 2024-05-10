@@ -18,6 +18,10 @@
   &:focus-visible + .radio-block__label::before {
     outline: solid 2px #62d1ba;
   }
+
+  &:disabled + .radio-block__label::before {
+    border-color: #0000004d;
+  }
 }
 
 

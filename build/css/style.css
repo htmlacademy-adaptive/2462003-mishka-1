@@ -300,7 +300,7 @@ a {
 .page__body {
   min-height: 100%;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -1176,6 +1176,12 @@ a {
   list-style-type: none;
 }
 
+.about__list__column {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .about__list-item img {
   display: block;
 }
@@ -1427,6 +1433,10 @@ a {
     line-height: 30px;
   }
 
+  .review__author-email {
+    margin-top: 0;
+  }
+
   .review__text {
     font-size: 17px;
     line-height: 30px;
@@ -1553,7 +1563,7 @@ a {
 
   .contact-us__title {
     padding: 0 50px;
-    margin-top: 150px;
+    margin-top: 153px;
     margin-bottom: 49px;
   }
 
@@ -1752,7 +1762,7 @@ a {
 }
 
 .socials__link {
-  padding: 20px 43px;
+  padding: 20px 13px;
 }
 .socials__link:hover .socials__link-icon {
   background: #46c1ae;
@@ -1809,7 +1819,7 @@ a {
 }
 
 .main-footer__socials {
-  padding: 0 80px;
+  padding: 0 92px 8px;
 }
 
 .main-footer__developed {
@@ -1829,10 +1839,6 @@ a {
     justify-content: space-between;
     min-height: 143px;
     padding: 0 50px;
-  }
-
-  .main-footer__socials {
-    padding: 0 80px 8px;
   }
 
   .main-footer__developed {
@@ -1930,6 +1936,8 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 14px;
+  text-transform: uppercase;
+  padding: 0 50px;
 }
 
 .modal-window__options {
@@ -1944,13 +1952,14 @@ a {
   .modal-window {
     margin-left: 101px;
     width: 566px;
-    padding: 37.5px 108px 46px 108px;
+    padding: 37.5px 102px 46px 108px;
   }
 
   .modal-window__title {
     font-size: 30px;
     line-height: 57px;
     margin-bottom: 11px;
+    padding: 0;
   }
 
   .modal-window__options {
@@ -2148,19 +2157,22 @@ a {
   padding: 10px;
   padding-top: 0;
   margin-right: 17px;
-  opacity: 0.2;
-  transition: fill 0.3s, opacity 0.3s;
 }
-.card__cart-button:hover {
+.card__cart-button:hover svg {
   fill: #63d1bb;
   opacity: 1;
 }
-.card__cart-button:active {
+.card__cart-button:active svg {
   opacity: 0.3;
 }
 .card__cart-button:focus-visible {
   outline: solid 2px #63d1bb;
   transition: none;
+}
+
+.card__cart-button svg {
+  opacity: 0.2;
+  transition: fill 0.3s, opacity 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -2790,6 +2802,9 @@ a {
 .radio-block__radio:focus-visible + .radio-block__label::before {
   outline: solid 2px #62d1ba;
 }
+.radio-block__radio:disabled + .radio-block__label::before {
+  border-color: #0000004D;
+}
 
 .radio-block__label {
   cursor: pointer;
@@ -2897,6 +2912,9 @@ a {
 }
 .checkbox-block__checkbox:focus-visible + .checkbox-block__label::before {
   outline: solid 2px #62d1ba;
+}
+.checkbox-block__checkbox:disabled + .checkbox-block__label::before {
+  border-color: #0000004D;
 }
 
 .checkbox-block__label {

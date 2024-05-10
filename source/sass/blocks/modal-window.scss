@@ -17,6 +17,8 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 14px;
+  text-transform: uppercase;
+  padding: 0 50px;
 }
 
 .modal-window__options {
@@ -31,13 +33,14 @@
   .modal-window {
     margin-left: 101px;
     width: 566px;
-    padding: 37.5px 108px 46px 108px;
+    padding: 37.5px 102px 46px 108px;
   }
 
   .modal-window__title {
     font-size: 30px;
     line-height: 57px;
     margin-bottom: 11px;
+    padding: 0;
   }
 
   .modal-window__options {

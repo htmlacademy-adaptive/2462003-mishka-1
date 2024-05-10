@@ -58,16 +58,6 @@ export const copyImg = () => {
   .pipe(browser.stream());
 }
 
-// export const copyFonts = () => {
-//   return gulp.src('source/fonts/*')
-//   .pipe(gulp.dest('build/fonts'))
-// }
-
-// export const copyFavicon = () => {
-//   return gulp.src('source/root/*')
-//   .pipe(gulp.dest('build/root'))
-// }
-
 export const copyScript = () => {
   return gulp.src('source/js/*.js')
     .pipe(gulp.dest('build/js'))
@@ -77,6 +67,7 @@ export const copyScript = () => {
  export const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest('build'))
 }
 
 // Scripts
@@ -97,6 +88,7 @@ export const images = async () => {
 
 // WebP
 export const webp = () => {
+    deleteAsync(['source/img/**/*.{webp}'])
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
@@ -105,7 +97,8 @@ export const webp = () => {
 }
 // SVG
 export const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/*.svg',
+   '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
 }
@@ -167,6 +160,7 @@ export default gulp.series(
 export const build = gulp.series (
   del,
   sprite,
+  webp,
   copy,
   gulp.parallel(
     styles,

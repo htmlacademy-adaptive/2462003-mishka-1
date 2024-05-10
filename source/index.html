@@ -16,9 +16,6 @@
 </head>
 
 <body class="page__body">
-  <svg class="page__sprite sprite">
-
-  </svg>
   <header class="main-header main-header--no-js">
       <div class="main-header__wrapper">
           <a class="main-header__logo" href="#">
@@ -140,9 +137,9 @@
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="featured__image" src="img/triple-set-mobile.webp" srcset="img/triple-set-mobile@2x.webp 2x" width="525" height="636"
+            <source media="(min-width: 320px)" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile.webp 2x">
+          <img class="featured__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="525" height="636"
             alt="Три разноцветных вязаных корзинки разных размеров.">
-            <source media="(min-width: 320px)" srcset="img/triple-set-mobile.jpg 1x, img/triple-set-mobile.jpg 2x">
           </picture>
         </div>
         <div class="featured__order-wrapper">
@@ -154,60 +151,64 @@
     <section class="about">
       <h2 class="about__title section-title">Коротко о нас:</h2>
       <ul class="about__list">
-        <div class="about__list__item-column">
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--flower" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#flower-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Экологически<br> чистые материалы
-            </p>
-          </li>
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--money" width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#money-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Скандинавский стиль<br> по российской цене
-            </p>
-          </li>
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--heart" width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#heart-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Увеличивает лайки<br> на фотографиях
-            </p>
-          </li>
-        </div>
-        <div class="about__list__item-column">
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--ball" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#ball-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Связано вручную<br>
-              с любовью и умилением
-            </p>
-          </li>
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--rocket" width="55" height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#rocket-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Поддержка отечественного<br> производителя
-            </p>
-          </li>
-          <li class="about__list-item">
-            <svg class="about__list-item-image about__list-item-image--present" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#present-icon"></use>
-            </svg>
-            <p class="about__list-item-description">
-              Поставляется<br>
-              в подарочной упаковке
-            </p>
-          </li>
-        </div>
+        <li class="about__list__item-column">
+          <ul class="about__list__column">
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--flower" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#flower-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Экологически<br> чистые материалы
+              </p>
+            </li>
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--money" width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#money-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Скандинавский стиль<br> по российской цене
+              </p>
+            </li>
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--heart" width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#heart-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Увеличивает лайки<br> на фотографиях
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="about__list__item-column">
+          <ul class="about__list__column">
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--ball" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#ball-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Связано вручную<br>
+                с любовью и умилением
+              </p>
+            </li>
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--rocket" width="55" height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#rocket-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Поддержка отечественного<br> производителя
+              </p>
+            </li>
+            <li class="about__list-item">
+              <svg class="about__list-item-image about__list-item-image--present" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#present-icon"></use>
+              </svg>
+              <p class="about__list-item-description">
+                Поставляется<br>
+                в подарочной упаковке
+              </p>
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
     <section class="reviews">
@@ -282,8 +283,8 @@
             <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-            <img class="contact-us__map-wrapper-map" src="img/map-mobile.webp" srcset="img/map-mobile@2x.webp 2x" width="320" height="454" alt="Наш адрес на карте.">
-            <source media="(min-width: 320px)" srcset="img/map-mobile.png.png 1x, img/map-mobile@2x.png 2x">
+            <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
           </picture>
         </div>
         <a class="contact-us__button button button-primary" href="#">Напишите нам</a>
@@ -302,7 +303,6 @@
           <path d="M78.2205 23.0999C77.3205 20.2999 75.8205 17.8999 74.6205 15.2999C75.6205 13.3999 76.6205 11.3999 77.5205 9.39992C78.3205 7.59992 78.9205 5.59992 80.6205 4.29992C81.2205 3.89992 81.2205 3.39992 80.3205 3.29992C79.4205 3.19992 78.2205 3.49992 77.5205 3.99992C76.1205 5.29992 75.1205 6.69992 74.4205 8.39992C73.5205 10.4999 72.5205 12.4999 71.5205 14.4999C71.4205 14.5999 71.4205 14.7999 71.3205 14.8999C70.8205 15.1999 70.5205 15.6999 70.7205 16.1999C69.9205 17.7999 69.1205 19.2999 68.2205 20.7999C67.9205 15.2999 67.2205 9.69992 67.0205 4.19992C67.0205 2.89992 63.0205 3.69992 63.1205 5.19992C63.3205 12.0999 64.3205 18.8999 64.4205 25.7999C64.4205 25.7999 64.4205 25.7999 64.4205 25.8999C64.1205 26.1999 64.2205 26.3999 64.5205 26.4999C64.5205 28.2999 64.4205 29.9999 64.3205 31.7999C63.8205 32.4999 64.8205 32.8999 65.4205 32.8999H65.5205C66.2205 32.8999 68.1205 32.5999 68.2205 31.4999C68.4205 29.3999 68.5205 27.2999 68.4205 25.1999C70.0205 23.4999 71.3205 21.5999 72.5205 19.5999C73.3205 21.0999 74.0205 22.5999 74.5205 24.1999C75.4205 26.8999 76.8205 29.4999 77.6205 32.1999C78.1205 33.9999 82.1205 32.8999 81.5205 31.1999C80.5205 28.3999 79.1205 25.8999 78.2205 23.0999Z"/>
           <path d="M101.72 18.4999C101.52 17.6999 100.32 17.6999 99.4205 17.6999C99.4205 17.3999 99.4205 16.9999 99.4205 16.6999C99.3205 13.9999 99.2205 11.2999 99.0205 8.6999C98.8205 6.1999 97.4205 5.3999 95.0205 5.4999C92.6205 5.5999 89.8205 5.9999 87.5205 6.8999C84.9205 7.8999 83.4205 9.7999 82.9205 12.5999C82.4205 15.5999 83.1205 18.7999 83.3205 21.7999C83.5205 25.2999 83.4205 28.7999 83.4205 32.2999C83.4205 32.8999 87.3205 32.2999 87.3205 31.2999C87.3205 28.4999 87.3205 25.6999 87.3205 22.9999C87.3205 22.1999 87.2205 21.3999 87.2205 20.5999C88.6205 19.9999 90.9205 20.5999 92.3205 20.6999C93.4205 20.7999 94.5205 20.4999 95.5205 20.3999C95.5205 22.6999 95.6205 24.9999 95.7205 27.2999C95.7205 28.4999 96.2205 30.7999 95.3205 31.7999C94.9205 32.2999 96.8205 32.0999 96.9205 32.0999C97.7205 31.9999 98.7205 31.6999 99.2205 31.0999C100.12 29.9999 99.7205 27.2999 99.6205 25.9999C99.5205 24.0999 99.5205 22.1999 99.5205 20.2999C100.62 20.0999 101.92 19.3999 101.72 18.4999ZM87.1205 18.3999C87.0205 17.1999 86.9205 15.8999 86.8205 14.6999C86.6205 12.3999 86.9205 9.0999 89.1205 7.6999C89.7205 7.2999 90.8205 7.3999 91.5205 7.2999C92.5205 7.0999 93.5205 6.8999 94.3205 7.4999C95.5205 8.2999 95.2205 11.1999 95.2205 12.3999C95.2205 14.3999 95.4205 16.3999 95.5205 18.3999C94.9205 18.4999 94.4205 18.4999 93.8205 18.4999C91.5205 18.2999 89.2205 17.8999 87.1205 18.3999Z"/>
           <path d="M24.2204 6.7C24.7204 6.6 25.2204 6.5 25.7204 6.2C25.8204 6.1 25.9204 6 25.9204 6C26.4204 5.7 26.9204 5.2 26.6204 4.6C26.1204 3.5 26.2204 2.4 26.2204 1.2C26.2204 0.2 25.2204 0 24.4204 0C23.7204 0.1 22.2204 0.6 22.2204 1.5C22.2204 2.5 22.1204 3.5 22.3204 4.5C22.3204 4.6 22.2204 4.7 22.2204 4.9C22.1204 5.1 22.2204 5.3 22.3204 5.5V5.6C22.3204 5.7 22.3204 5.8 22.3204 5.9C22.4204 6.1 22.5204 6.3 22.7204 6.4C23.3204 6.7 23.8204 6.7 24.2204 6.7Z"/>
-          <use xlink:href=""></use>
           </svg>
       </a>
     </div>
@@ -326,14 +326,13 @@
         </a>
       </li>
     </ul>
-    <a class="main-footer__developed developed" href="https://htmlacademy.ru">
+    <a class="main-footer__developed developed" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="developed__text">Разработано</p>
       <span class="developed__logo">
         <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg"
         aria-label="Логотип разрабочтика.">
         <path
           d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
-          <use xlink:href=""></use>
       </svg>
       </span>
     </a>
