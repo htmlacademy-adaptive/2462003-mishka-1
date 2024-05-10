@@ -22,6 +22,10 @@
   &:disabled + .checkbox-block__label::before {
     border-color: #0000004d;
   }
+
+  &:disabled + .checkbox-block__label::after {
+    background: #0000004d;
+  }
 }
 
 .checkbox-block__label {

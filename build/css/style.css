@@ -331,11 +331,21 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+@supports (background-image: url("../img/hero-image.webp")) {
+  .hero {
+    background-image: url("../img/hero-image.webp");
+  }
+}
 @media (min-resolution: 2dppx) {
   .hero {
     background-image: url("../img/hero-image@2x.jpg");
     background-size: contain;
     background-position: 0 -17px;
+  }
+  @supports (background-image: url("../img/hero-image@2x.webp")) {
+    .hero {
+      background-image: url("../img/hero-image@2x.webp");
+    }
   }
 }
 
@@ -347,10 +357,20 @@ a {
     background-size: cover;
     background-image: url("../img/hero-image-tablet.jpg");
   }
+  @supports (background-image: url("../img/hero-image-tablet.webp")) {
+    .hero {
+      background-image: url("../img/hero-image-tablet.webp");
+    }
+  }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../img/hero-image-tablet@2x.jpg");
+  }
+  @supports (background-image: url("../img/hero-image-tablet@2x.webp")) {
+    .hero {
+      background-image: url("../img/hero-image-tablet@2x.webp");
+    }
   }
 }
 @media (min-width: 768px) {
@@ -363,10 +383,20 @@ a {
     padding-top: 157px;
     background-image: url("../img/hero-image-desktop.jpg");
   }
+  @supports (background-image: url("../img/hero-image-desktop.webp")) {
+    .hero {
+      background-image: url("../img/hero-image-desktop.webp");
+    }
+  }
 }
 @media (min-width: 1150px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../img/hero-image-desktop@2x.jpg");
+  }
+  @supports (background-image: url("../img/hero-image-desktop@2x.webp")) {
+    .hero {
+      background-image: url("../img/hero-image-desktop@2x.webp");
+    }
   }
 }
 .hero-title {
@@ -1339,15 +1369,25 @@ a {
     justify-content: space-between;
     position: relative;
     min-height: 457px;
-    background-image: url("../../img/review.jpg");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+  }
+  @supports (background-image: url("../img/review.webp")) {
+    .reviews {
+      background-image: url("../img/review.webp");
+    }
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .reviews {
-    background-image: url("../../img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  @supports (background-image: url("../img/review@2x.webp")) {
+    .reviews {
+      background-image: url("../img/review@2x.webp");
+    }
   }
 }
 @media (min-width: 768px) {
@@ -2808,6 +2848,9 @@ a {
 .radio-block__radio:disabled + .radio-block__label::before {
   border-color: #0000004d;
 }
+.radio-block__radio:disabled + .radio-block__label::after {
+  background-color: #0000004d;
+}
 
 .radio-block__label {
   cursor: pointer;
@@ -2918,6 +2961,9 @@ a {
 }
 .checkbox-block__checkbox:disabled + .checkbox-block__label::before {
   border-color: #0000004d;
+}
+.checkbox-block__checkbox:disabled + .checkbox-block__label::after {
+  background: #0000004d;
 }
 
 .checkbox-block__label {

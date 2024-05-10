@@ -58,11 +58,6 @@ export const copyImg = () => {
   .pipe(browser.stream());
 }
 
-export const copyScript = () => {
-  return gulp.src('source/js/*.js')
-    .pipe(gulp.dest('build/js'))
-}
-
 // HTML minify
  export const html = () => {
   return gulp.src('source/*.html')
@@ -77,6 +72,7 @@ export const copyScript = () => {
     .pipe(terser())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream())
 }
 
 // Images
@@ -139,9 +135,9 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change',gulp.series(copyHtml), browser.reload);
+  gulp.watch('source/*.html').on('change', gulp.series(copyHtml), browser.reload);
   gulp.watch('source/img/**/*'), gulp.series(copyImg);
-  gulp.watch('source/js/*.js'), gulp.series(copyScript);
+  gulp.watch('source/js/*.js').on('change', gulp.series(scripts), browser.reload);
 }
 
 
