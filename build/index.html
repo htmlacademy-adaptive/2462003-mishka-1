@@ -53,8 +53,8 @@
           </li>
           <li class="site-list__item site-list__item--cart">
             <a class="site-list__link site-list__link--wider site-list__link--cart" href="#">
-              <svg class="site-list__link-icon site-list__link-icon--cart" width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
-                </svg>
+              <span class="site-list__link-icon site-list__link-icon--cart">
+              </span>
                 <span class="site-list__link-text site-list__link-text--cart">Корзина: пока пуста</span>
             </a>
           </li>
@@ -144,7 +144,7 @@
         </div>
         <div class="featured__order-wrapper">
           <p class="featured__price">Цена: 990 руб.</p>
-          <a class="featured__button button button-primary" href="#">Заказать</a>
+          <a class="featured__button button button--for-modal button-primary" href="#">Заказать</a>
         </div>
       </div>
     </article>
@@ -286,6 +286,9 @@
             <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
             <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
           </picture>
+          <iframe class="map-wrapper__map map" src="https://yandex.ru/map-widget/v1/?ll=30.323610%2C59.938661&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=17.91"
+            allowfullscreen="true">
+          </iframe>
         </div>
         <a class="contact-us__button button button-primary" href="#">Напишите нам</a>
       </div>
@@ -346,7 +349,7 @@
         <button class="options__button button-xs" type="button">M</button>
         <button class="options__button button-xs" type="button">L</button>
       </div>
-      <button class="button button-secondary" type="button">Добавить</button>
+      <button class="button button--modal button-secondary" type="button">Добавить</button>
     </div>
   </div>
   <script src="js/app.min.js"></script>

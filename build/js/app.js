@@ -44,12 +44,66 @@ function (event) {
 });
 }
 
+// Модальное окно
+let buy = document.querySelectorAll('.card__cart-button');
+let buyIndex = document.querySelector('.button--for-modal');
+let modal = document.querySelector('.modal-wrapper');
+let modalButton = document.querySelector('.button--modal');
+let size = document.querySelectorAll('.button-xs');
+
+if (buyIndex) {
+  buyIndex.addEventListener("click", function () {
+  modal.classList.remove('modal-wrapper--invisible')
+})
+
+for (let sizeButton of size) {
+  sizeButton.addEventListener("click", function () {
+    let activeSize = document.querySelector('.button-xs--active');
+    activeSize.classList.remove('button-xs--active')
+    sizeButton.classList.add('button-xs--active')
+  })
+}
+}
+
+if (buy) {
+  for (let buyButton of buy) {
+  buyButton.addEventListener("click", function () {
+  modal.classList.remove('modal-wrapper--invisible')
+})
+
+for (let sizeButton of size) {
+  sizeButton.addEventListener("click", function () {
+    let activeSize = document.querySelector('.button-xs--active');
+    activeSize.classList.remove('button-xs--active')
+    sizeButton.classList.add('button-xs--active')
+  })
+}
+}
+
+modalButton.addEventListener("click", function () {
+  modal.classList.add('modal-wrapper--invisible');
+})
+}
+
 // Слайдер
-let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
-let arrowRight = document.querySelector('.slide-wrapper__button-next');
-let reviews = document.querySelectorAll('.reviews__item');
-let active = document.querySelector('reviews__item--active');
-console.log(reviews);
+// let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
+// let arrowRight = document.querySelector('.slide-wrapper__button-next');
+// let reviews = document.querySelectorAll('.reviews__item');
+// let active = document.querySelector('reviews__item--active');
+// j = 0
+
+//   arrowRight.addEventListener('click', function() {
+
+
+
+//     j++
+//     reviews[j - 1].classList.remove('reviews__item--active')
+//     reviews[j].classList.add('reviews__item--active')
+
+//  if (j >= 2) {
+//        j = 0
+//     }
+//   })
 
 // if (reviews.classList('reviews__item--active')) {
 //   console.log('review')

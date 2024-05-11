@@ -23,6 +23,10 @@
   margin-bottom: 39px;
 }
 
+.contact-us__map-wrapper {
+  position: relative;
+}
+
 .contact-us__map-wrapper-map {
   display: block;
   margin-top: 62px;
@@ -128,6 +132,7 @@
     position: absolute;
     top: 247px;
     padding-left: 225px;
+    max-width: 500px;
   }
 
   .contact-us__wrapper {
@@ -154,8 +159,12 @@
     left: 225px;
   }
 
+  .contact-us__map-wrapper {
+    padding-top: 7px;
+  }
+
   .contact-us__map-wrapper-map {
-    margin-top: 7px;
+    margin-top: 0;
     margin-bottom: 105px;
     width: 527px;
     height: 457px;

@@ -111,7 +111,6 @@
 @media (min-width: $desktop-width) {
   .production__content-wrapper {
     display: grid;
-    align-items: start;
     grid-template-columns: 682.65px 1fr;
     grid-template-rows: 144px 198px 109px;
     column-gap: 79.08px;
@@ -133,7 +132,7 @@
 
   .production__title::before {
     left: -1px;
-    bottom: 24px;
+    top: -6px;
   }
 
   .production__production-description {
@@ -146,6 +145,7 @@
     grid-column: 2/3;
     width: 230px;
     margin: 0;
+    align-self: start;
   }
 
   .production--spacing {
