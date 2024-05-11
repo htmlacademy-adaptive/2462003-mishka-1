@@ -1,3 +1,5 @@
+
+
 document.querySelector('.main-header').classList.remove('main-header--no-js');
 
 // Мобильное меню
@@ -86,24 +88,37 @@ modalButton.addEventListener("click", function () {
 }
 
 // Слайдер
-// let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
-// let arrowRight = document.querySelector('.slide-wrapper__button-next');
-// let reviews = document.querySelectorAll('.reviews__item');
+let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
+let arrowRight = document.querySelector('.slide-wrapper__button-next');
+let reviews = Array.from(document.querySelectorAll('.reviews__item')); // Массив слайдов
 // let active = document.querySelector('reviews__item--active');
-// j = 0
+j = 0 // Индекс
+let reviewsCount = reviews.length // количество слайдов
 
-//   arrowRight.addEventListener('click', function() {
+  arrowRight.addEventListener('click', nextSlide);
+  arrowLeft.addEventListener('click', previousSlide);
 
+  function nextSlide() {
+    j = (j + 1) % reviewsCount;
+    updateSlider()
+  };
 
+  function previousSlide() {
+    j = (j - 1 + reviewsCount) % reviewsCount;
+    updateSlider()
+  };
 
-//     j++
-//     reviews[j - 1].classList.remove('reviews__item--active')
-//     reviews[j].classList.add('reviews__item--active')
+  function updateSlider() {
+    reviews.forEach((review, index) => {
+      if (index === j) {
+        review.style.display = 'block';
+      } else {
+        review.style.display = 'none';
+      }
+    });
+  }
 
-//  if (j >= 2) {
-//        j = 0
-//     }
-//   })
+  updateSlider()
 
 // if (reviews.classList('reviews__item--active')) {
 //   console.log('review')
