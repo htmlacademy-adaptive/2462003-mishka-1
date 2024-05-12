@@ -3,7 +3,9 @@
   position: fixed;
   background-color: #ffffff90;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 .modal-wrapper--invisible {

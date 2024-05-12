@@ -34,8 +34,7 @@
   width: 32px;
   height: 22px;
   left: 34px;
-  top: 18px;
-  bottom: 0;
+  top: 32px;
   margin: auto;
 }
 
@@ -88,7 +87,7 @@
 
   .production__title::before {
     left: 40px;
-    top: -8px;
+    top: -3px;
   }
 
   .production__production-description {
@@ -111,8 +110,8 @@
 @media (min-width: $desktop-width) {
   .production__content-wrapper {
     display: grid;
+    align-items: start;
     grid-template-columns: 682.65px 1fr;
-    grid-template-rows: 144px 198px 109px;
     column-gap: 79.08px;
     padding-bottom: 0;
   }
@@ -128,17 +127,18 @@
     padding-left: 0;
     padding-top: 96px;
     max-width: 200px;
+    margin-bottom: 30px;
   }
 
   .production__title::before {
-    left: -1px;
-    top: -6px;
+    left: 0;
+    top: 45px;
   }
 
   .production__production-description {
     grid-column: 2/3;
     padding: 0;
-    margin-top: 26px;
+    margin-bottom: 52px;
   }
 
   .production__button {

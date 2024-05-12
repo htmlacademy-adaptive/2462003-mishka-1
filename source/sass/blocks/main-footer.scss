@@ -12,6 +12,8 @@
 
 .main-footer__developed {
   padding: 0 30px;
+  width: 244px;
+  justify-content: flex-end;
 }
 
 .main-footer__logo {
@@ -27,6 +29,10 @@
     justify-content: space-between;
     min-height: 143px;
     padding: 0 50px;
+  }
+
+  .main-footer__socials {
+    padding: 0 62px 8px 120px;
   }
 
   .main-footer__developed {

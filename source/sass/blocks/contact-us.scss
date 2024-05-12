@@ -59,7 +59,7 @@
       height: 81px;
       background-image: url("../../img/flag.svg");
       background-repeat: no-repeat;
-      top: 127px;
+      top: 131px;
       right: 53px;
     }
   }
@@ -121,7 +121,7 @@
     }
 
     &::after {
-      top: 230px;
+      top: 231px;
       left: 113px;
     }
   }
@@ -129,38 +129,39 @@
   .contact-us__title {
     padding: 0;
     margin: 0;
-    position: absolute;
-    top: 247px;
+    margin-top: 88px;
     padding-left: 225px;
     max-width: 500px;
   }
 
   .contact-us__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-left: 225px;
+    display: grid;
+    grid-template-columns: 1fr 527px;
   }
 
   .contact-us__wrapper .contact-us__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: 331px;
-    padding: 0;
-    margin-right: 17px;
-    padding-top: 170.5px;
+    align-items: flex-start;
+    width: 570px;
+    height: min-content;
+    padding-left: 225px;
+    padding-top: 26px;
   }
 
   .contact-us__button {
     width: 230px;
-    position: absolute;
-    bottom: 47px;
-    left: 225px;
+    margin-top: 81px;
   }
 
   .contact-us__map-wrapper {
     padding-top: 7px;
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
+
+  .contact-us__button-wrapper {
+    padding-left: 106px;
   }
 
   .contact-us__map-wrapper-map {

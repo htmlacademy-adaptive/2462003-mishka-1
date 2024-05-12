@@ -8,6 +8,8 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  width: 90px;
+  background-color: #ffffff;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     position: relative;
@@ -16,10 +18,12 @@
       position: absolute;
       content: "";
       height: 1px;
-      width: 76.92%;
+      width: 100vw;
       background-color: #62d1ba;
-      right: 0;
+      left: 0;
       top: 7.5px;
+      z-index: -1;
+      clip-path: polygon(50% 0, 0 0, 0 100%, 50% 100%);
     }
   }
 }

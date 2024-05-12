@@ -30,6 +30,10 @@
   }
 }
 
+.main-header__logo-image {
+  max-height: 75px;
+}
+
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .main-header__logo {
     position: relative;

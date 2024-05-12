@@ -11,6 +11,7 @@
   box-shadow: 0 5px 10px 0 #00010140;
   border: solid 1px #c6c6c6c6;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .modal-window__title {
@@ -31,7 +32,6 @@
 
 @media (min-width: $tablet-width) {
   .modal-window {
-    margin-left: 101px;
     width: 566px;
     padding: 37.5px 102px 46px 108px;
   }
@@ -45,11 +45,5 @@
 
   .modal-window__options {
     font-size: 17px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-window {
-    margin-left: 292px;
   }
 }
