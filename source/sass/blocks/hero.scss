@@ -12,10 +12,18 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @supports (background-image: url("../img/hero-image.webp")) {
+    background-image: url("../img/hero-image.webp");
+  }
+
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/hero-image@2x.jpg);
-    background-size: contain;
+    background-image: url("../img/hero-image@2x.jpg");
+    background-size: 100% auto;
     background-position: 0 -17px;
+
+    @supports (background-image: url("../img/hero-image@2x.webp")) {
+      background-image: url("../img/hero-image@2x.webp");
+    }
   }
 }
 
@@ -24,13 +32,22 @@
   .hero {
     min-height: 745px;
     padding-top: 155px;
-    background-position: 0;
-    background-size: cover;
-    background-image: url(../../img/hero-image-tablet.jpg);
-  @media (min-resolution: 2dppx) {
-    background-image: url(../../img/hero-image-tablet@2x.jpg);
+    background-position: top;
+    background-image: url("../img/hero-image-tablet.jpg");
+
+    @supports (background-image: url("../img/hero-image-tablet.webp")) {
+      background-image: url("../img/hero-image-tablet.webp");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-image-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/hero-image-tablet@2x.webp")) {
+        background-image: url("../img/hero-image-tablet@2x.webp");
+      }
     }
   }
+
   .hero__mobile-br {
     display: none;
   }
@@ -39,9 +56,18 @@
 @media (min-width: $desktop-width) {
   .hero {
     padding-top: 157px;
-    background-image: url(../../img/hero-image-desktop.jpg);
+    background-image: url("../img/hero-image-desktop.jpg");
+
+    @supports (background-image: url("../img/hero-image-desktop.webp")) {
+      background-image: url("../img/hero-image-desktop.webp");
+    }
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/hero-image-desktop@2x.jpg);
+      background-image: url("../img/hero-image-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/hero-image-desktop@2x.webp")) {
+        background-image: url("../img/hero-image-desktop@2x.webp");
+      }
     }
   }
 }

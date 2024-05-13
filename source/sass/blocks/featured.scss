@@ -63,6 +63,7 @@
 
 .featured__image {
   display: block;
+  max-height: 315px;
 }
 
 .featured__order-wrapper {
@@ -88,9 +89,12 @@
 @media (min-width: $tablet-width) {
   .featured {
     padding: 0 50px;
+    position: relative;
   }
 
   .featured__wrapper {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -102,6 +106,7 @@
 
   .featured__title {
     margin: 0;
+    width: 500px;
   }
 
   .featured__best-of-week {
@@ -141,6 +146,7 @@
 
   .featured__image {
     margin-top: 12px;
+    max-height: 404px;
   }
 
   .featured__order-wrapper {
@@ -172,19 +178,26 @@
 @media (min-width: $desktop-width) {
   .featured {
     position: relative;
+    min-height: 636px;
   }
 
+  .featured__title {
+    width: 590px;
+  }
+
+
   .featured__wrapper {
-    position: absolute;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 0 32px;
-    margin-top: 77px;
+    margin-top: 132px;
     margin-bottom: 35px;
   }
 
   .featured__best-of-week {
     order: -1;
     margin-right: 43px;
+    margin-top: 10px;
   }
 
   .featured__columns-wrapper {
@@ -192,18 +205,16 @@
     grid-template-columns: 292px 525px;
     column-gap: 58px;
     align-items: start;
-    min-height: 636px;
     padding-left: 175px;
-    margin-top: 54px;
   }
 
   .featured__image {
     margin-top: 17px;
+    max-height: 636px;
   }
 
   .featured__description {
     grid-column: 1/2;
-    margin-top: 171px;
     margin-bottom: 50px;
   }
 
@@ -217,6 +228,9 @@
   }
 
   .featured__image-wrapper {
+    position: absolute;
+    right: 50px;
+    top: -78px;
     grid-column: 2/3;
     grid-row: 1/5;
   }

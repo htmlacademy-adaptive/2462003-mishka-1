@@ -2,6 +2,16 @@
   padding-bottom: 55px;
 }
 
+.form__label-text {
+  display: block;
+  background-color: #ffffff;
+  width: 60px;
+
+  &--long {
+    width: 78px;
+  }
+}
+
 .form__label {
   font-size: 17px;
   line-height: 16px;
@@ -11,23 +21,19 @@
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     position: relative;
-
+    overflow: hidden;
     &::after {
       position: absolute;
       content: "";
       height: 1px;
-      width: 76.92%;
+      width: 100vw;
       background-color: #62d1ba;
-      right: 0;
+      left: 0;
       top: 7.5px;
+      z-index: -1;
     }
   }
 }
-
-.form__label--shorter-line.form__label::after {
-  width: 70%;
-}
-
 
 .form__label--primary {
   color: #63d1bb;
@@ -74,6 +80,10 @@
     padding-bottom: 50px;
   }
 
+  .form__label-text {
+    background-color: transparent;
+  }
+
   .form__type {
     display: flex;
     padding: 0 50px;
@@ -88,14 +98,14 @@
     padding-bottom: 57px;
   }
 
-  .form__label--primary  {
+  .form__label--primary {
     align-self: flex-start;
     padding-top: 10px;
   }
 
   .form__form-list-name {
     padding: 0;
-    padding-left: 125px;
+    padding-left: 107px;
   }
 
   .form__type--contacts {
@@ -168,7 +178,6 @@
   .form__button {
     width: 230px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -177,7 +186,7 @@
   }
 
   .form__form-list-name {
-    padding-left: 60px;
+    padding-left: 56px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;

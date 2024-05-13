@@ -7,7 +7,7 @@
     content: "";
     height: 6px;
     width: 100%;
-    background-image: url(../../img/zigzag-line.svg);
+    background-image: url("../../img/zigzag-line.svg");
     background-repeat: repeat-x;
     left: 0;
     top: -37px;
@@ -43,6 +43,13 @@
   list-style-type: none;
 }
 
+.about__list__column {
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+  list-style-type: none;
+}
+
 .about__list-item img {
   display: block;
 }
@@ -67,32 +74,32 @@
 }
 
 .about__list-item-image--flower {
-  bottom: 56px;
+  top: -54px;
   left: 8px;
 }
 
 .about__list-item-image--money {
-  bottom: 66px;
+  top: -53px;
   left: 0;
 }
 
 .about__list-item-image--heart {
-  bottom: 61px;
+  top: -48px;
   left: 7px;
 }
 
 .about__list-item-image--ball {
-  bottom: 57px;
+  top: -51px;
   left: 3px;
 }
 
 .about__list-item-image--rocket {
-  bottom: 66px;
+  top: -50px;
   left: -6px;
 }
 
 .about__list-item-image--present {
-  bottom: 60px;
+  top: -52px;
   left: 3px;
 }
 
@@ -118,29 +125,29 @@
   }
 
   .about__list-item-image--flower {
-    bottom: 64px;
+    top: -58px;
   }
 
   .about__list-item-image--money {
-    bottom: 73px;
+    top: -56px;
     left: 1px;
   }
 
   .about__list-item-image--heart {
-    bottom: 68px;
+    top: -51px;
     left: 8px;
   }
 
   .about__list-item-image--ball {
-    bottom: 64px;
+    top: -54px;
   }
 
   .about__list-item-image--rocket {
-    bottom:  74px;
+    top: -53px;
   }
 
   .about__list-item-image--present {
-    bottom: 67px;
+    top: -55px;
   }
 
   .about__list-item-description {
@@ -163,7 +170,7 @@
   }
 
   .about__title {
-    margin-top: 164px;
+    margin-top: 103px;
     margin-bottom: 76px;
   }
 }

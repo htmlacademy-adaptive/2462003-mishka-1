@@ -23,7 +23,7 @@
   }
 
   &:hover .site-list__link-icon {
-    fill: #63d1bb;
+    background: #63d1bb;
     opacity: 1;
   }
 
@@ -52,6 +52,11 @@
   left: 32px;
   top: 32px;
   opacity: 0.2;
+  width: 20px;
+  height: 20px;
+  mask: url("../../img/sprite.svg#search-icon") center center no-repeat;
+  mask-size: 22px 22px;
+  background: #000000;
 }
 
 .site-list__link-icon--cart {
@@ -59,6 +64,11 @@
   left: 32px;
   top: 32px;
   opacity: 0.2;
+  width: 22px;
+  height: 22px;
+  mask: url("../../img/sprite.svg#cart-icon") center center no-repeat;
+  mask-size: 22px 22px;
+  background: #000000;
 }
 
 .site-list__item--desktop,
@@ -79,7 +89,7 @@
   }
 
   .site-list__link-icon {
-    transition: all 0.3s;
+    transition: background 0.3s, opacity 0.3s;
   }
 
   .site-list__link-text {
@@ -209,6 +219,7 @@
 
   .site-list__link {
     padding-bottom: 20.5px;
+
     &--smaller {
       font-size: 17px;
     }

@@ -11,12 +11,15 @@
   box-shadow: 0 5px 10px 0 #00010140;
   border: solid 1px #c6c6c6c6;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .modal-window__title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 14px;
+  text-transform: uppercase;
+  padding: 0 50px;
 }
 
 .modal-window__options {
@@ -29,24 +32,18 @@
 
 @media (min-width: $tablet-width) {
   .modal-window {
-    margin-left: 101px;
     width: 566px;
-    padding: 37.5px 108px 46px 108px;
+    padding: 37.5px 102px 46px 108px;
   }
 
   .modal-window__title {
     font-size: 30px;
     line-height: 57px;
     margin-bottom: 11px;
+    padding: 0;
   }
 
   .modal-window__options {
     font-size: 17px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-window {
-    margin-left: 292px;
   }
 }

@@ -39,10 +39,13 @@
   font-weight: 700;
   margin-right: 27px;
   transition: opacity 0.3s;
+  width: 130px;
+  margin-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .developed__text {
     margin-top: 12px;
+    padding-left: 2px;
   }
 }

@@ -29,13 +29,21 @@
     justify-content: space-between;
     position: relative;
     min-height: 457px;
-    background-image: url("../../img/review.jpg");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
 
+    @supports (background-image: url("../img/review.webp")) {
+      background-image: url("../img/review.webp");
+    }
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/review@2x.jpg);
+      background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
       background-size: contain;
+
+      @supports (background-image: url("../img/review@2x.webp")) {
+        background-image: url("../img/review@2x.webp");
+      }
     }
   }
 
