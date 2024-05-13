@@ -18,7 +18,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-image@2x.jpg");
-    background-size: contain;
+    background-size: 100% auto;
     background-position: 0 -17px;
 
     @supports (background-image: url("../img/hero-image@2x.webp")) {
