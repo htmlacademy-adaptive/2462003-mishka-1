@@ -5,9 +5,9 @@ document.querySelector('.main-header').classList.remove('main-header--no-js');
 // Мобильное меню
 let menu = document.querySelector('.main-header__list-wrapper');
 let menuButton = document.querySelector('.main-header__toggle');
-let menuButtonContent = document.querySelector('.main-header__toggle-lines')
+let menuButtonContent = document.querySelector('.main-header__toggle-lines');
 
-const mobileMediaQuery = window.matchMedia('(max-width: 768px)')
+const mobileMediaQuery = window.matchMedia('(max-width: 768px)');
   menu.classList.add("main-header__list-wrapper--no-animation");
     setTimeout(() => {
       menu.classList.remove("main-header__list-wrapper--no-animation");
@@ -54,84 +54,78 @@ let modalButton = document.querySelector('.button--modal');
 let size = document.querySelectorAll('.button-xs');
 
 if (buyIndex) {
-  buyIndex.addEventListener("click", function () {
-  modal.classList.remove('modal-wrapper--invisible')
-})
+      buyIndex.addEventListener("click", function () {
+      modal.classList.remove('modal-wrapper--invisible');
+    });
 
-for (let sizeButton of size) {
-  sizeButton.addEventListener("click", function () {
-    let activeSize = document.querySelector('.button-xs--active');
-    activeSize.classList.remove('button-xs--active')
-    sizeButton.classList.add('button-xs--active')
-  })
-}
-}
+    for (let sizeButton of size) {
+      sizeButton.addEventListener("click", function () {
+        let activeSize = document.querySelector('.button-xs--active');
+        activeSize.classList.remove('button-xs--active');
+        sizeButton.classList.add('button-xs--active');
+      });
+    };
+  };
 
-if (buy) {
-  for (let buyButton of buy) {
-  buyButton.addEventListener("click", function () {
-  modal.classList.remove('modal-wrapper--invisible')
-})
+  if (buy) {
+      for (let buyButton of buy) {
+      buyButton.addEventListener("click", function () {
+      modal.classList.remove('modal-wrapper--invisible');
+    })
 
-for (let sizeButton of size) {
-  sizeButton.addEventListener("click", function () {
-    let activeSize = document.querySelector('.button-xs--active');
-    activeSize.classList.remove('button-xs--active')
-    sizeButton.classList.add('button-xs--active')
-  })
-}
-}
-
-modalButton.addEventListener("click", function () {
-  modal.classList.add('modal-wrapper--invisible');
-})
-}
+    for (let sizeButton of size) {
+      sizeButton.addEventListener("click", function () {
+        let activeSize = document.querySelector('.button-xs--active');
+        activeSize.classList.remove('button-xs--active');
+        sizeButton.classList.add('button-xs--active');
+      })
+    }
+  }
+  if (modalButton) {
+    modalButton.addEventListener("click", function () {
+      modal.classList.add('modal-wrapper--invisible');
+    })
+  };
+};
 
 // Слайдер
-let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
-let arrowRight = document.querySelector('.slide-wrapper__button-next');
 let reviews = Array.from(document.querySelectorAll('.reviews__item')); // Массив слайдов
-// let active = document.querySelector('reviews__item--active');
-j = 0 // Индекс
-let reviewsCount = reviews.length // количество слайдов
 
-  arrowRight.addEventListener('click', nextSlide);
-  arrowLeft.addEventListener('click', previousSlide);
+if (reviews) {
+  let arrowLeft = document.querySelector('.slide-wrapper__button-previous');
+let arrowRight = document.querySelector('.slide-wrapper__button-next');
+
+j = 0 // Индекс
+let reviewsCount = reviews.length; // количество слайдов
+
+  if (arrowRight) {
+    arrowRight.addEventListener('click', nextSlide);
+  };
+
+  if (arrowRight) {
+    arrowLeft.addEventListener('click', previousSlide);
+  };
+
 
   function nextSlide() {
     j = (j + 1) % reviewsCount;
-    updateSlider()
+    updateSlider();
   };
 
   function previousSlide() {
     j = (j - 1 + reviewsCount) % reviewsCount;
-    updateSlider()
+    updateSlider();
   };
 
   function updateSlider() {
     reviews.forEach((review, index) => {
       if (index === j) {
-        review.style.display = 'block';
+        review.classList.add('reviews__item--active');
       } else {
-        review.style.display = 'none';
+        review.classList.remove('reviews__item--active');
       }
     });
   }
 
-  updateSlider()
-
-// if (reviews.classList('reviews__item--active')) {
-//   console.log('review')
-// }
-
-// for (let currentSlide of reviews) {
-//   if (currentSlide.matches(active)) {
-//     console.log('Активный слайд')
-//   }
-// }
-// for (let i = 0; i < reviews.length; i++) {
-//   console.log(i)
-// };
-
-
-
+  updateSlider();
+};

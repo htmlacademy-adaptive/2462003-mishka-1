@@ -2,14 +2,23 @@
   padding-bottom: 55px;
 }
 
+.form__label-text {
+  display: block;
+  background-color: #ffffff;
+  width: 60px;
+
+  &--long {
+    width: 78px;
+  }
+}
+
 .form__label {
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  width: 90px;
-  background-color: #ffffff;
+  overflow: hidden;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     position: relative;
@@ -23,15 +32,9 @@
       left: 0;
       top: 7.5px;
       z-index: -1;
-      clip-path: polygon(50% 0, 0 0, 0 100%, 50% 100%);
     }
   }
 }
-
-.form__label--shorter-line.form__label::after {
-  width: 70%;
-}
-
 
 .form__label--primary {
   color: #63d1bb;
