@@ -18,11 +18,10 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  overflow: hidden;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     position: relative;
-
+    overflow: hidden;
     &::after {
       position: absolute;
       content: "";
@@ -106,7 +105,7 @@
 
   .form__form-list-name {
     padding: 0;
-    padding-left: 125px;
+    padding-left: 107px;
   }
 
   .form__type--contacts {
@@ -187,7 +186,7 @@
   }
 
   .form__form-list-name {
-    padding-left: 60px;
+    padding-left: 56px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
