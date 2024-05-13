@@ -31,6 +31,8 @@
   display: block;
   margin-top: 62px;
   margin-bottom: 42px;
+  height: 454px;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -96,6 +98,7 @@
   .contact-us__map-wrapper-map {
     display: block;
     width: 768px;
+    object-fit: cover;
     height: 457px;
     margin-top: 31px;
   }
@@ -137,6 +140,7 @@
   .contact-us__wrapper {
     display: grid;
     grid-template-columns: 1fr 527px;
+    margin-bottom: 105px;
   }
 
   .contact-us__wrapper .contact-us__list {
@@ -152,10 +156,10 @@
   .contact-us__button {
     width: 230px;
     margin-top: 81px;
+    margin-bottom: 0;
   }
 
   .contact-us__map-wrapper {
-    padding-top: 7px;
     grid-column: 2/3;
     grid-row: 1/5;
   }
@@ -165,8 +169,8 @@
   }
 
   .contact-us__map-wrapper-map {
-    margin-top: 0;
-    margin-bottom: 105px;
+    margin-top: 7px;
+    margin-bottom: 0;
     width: 527px;
     height: 457px;
   }

@@ -7,7 +7,6 @@
 .featured__title {
   margin-bottom: 3.5px;
   margin-top: 31px;
-  width: 590px;
 }
 
 .featured__best-of-week {
@@ -107,6 +106,7 @@
 
   .featured__title {
     margin: 0;
+    width: 500px;
   }
 
   .featured__best-of-week {
@@ -180,6 +180,11 @@
     position: relative;
     min-height: 636px;
   }
+
+  .featured__title {
+    width: 590px;
+  }
+
 
   .featured__wrapper {
     justify-content: flex-start;
