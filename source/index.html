@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Магазин о крутых DIY штуках, которые понравятся всем.">
   <title>HTML Academy: Мишка</title>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -26,9 +27,9 @@
             </picture>
           </a>
         <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
           <span class="main-header__toggle-lines"></span>
         </button>
-        <span class="visually-hidden">Открыть меню.</span>
       </div>
       <div class="main-header__list-wrapper">
         <ul class="main-header__list main-header__list--first site-list">
@@ -45,10 +46,9 @@
         </ul>
         <ul class="main-header__list main-header__list--icons site-list">
           <li class="site-list__item site-list__item--search">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__link-icon site-list__link-icon--search">
-              </span>
+            <a class="site-list__link site-list__link--search" href="#" aria-label="Поиск по сайту.">
               <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+              <span class="site-list__link-icon site-list__link-icon--search"></span>
             </a>
           </li>
           <li class="site-list__item site-list__item--cart">
@@ -286,7 +286,7 @@
             <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
             <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
           </picture>
-          <iframe class="map-wrapper__map map" src="https://yandex.ru/map-widget/v1/?ll=30.323610%2C59.938661&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=17.91">
+          <iframe class="map-wrapper__map map" title="Адрес на карте" src="https://yandex.ru/map-widget/v1/?ll=30.323610%2C59.938661&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=17.91">
           </iframe>
         </div>
         <div class="contact-us__button-wrapper">
