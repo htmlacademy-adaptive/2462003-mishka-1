@@ -19,7 +19,6 @@
 }
 
 .contact-us__button {
-  margin-left: 30px;
   margin-bottom: 39px;
 }
 
@@ -33,6 +32,11 @@
   margin-bottom: 42px;
   height: 454px;
   object-fit: cover;
+}
+
+.contact-us__button-wrapper  {
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

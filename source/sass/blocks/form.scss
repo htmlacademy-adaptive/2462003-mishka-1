@@ -19,7 +19,7 @@
   text-transform: uppercase;
   margin: 0;
 
-  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+  @media (max-width: $mobile-max-width) {
     position: relative;
     overflow: hidden;
     &::after {

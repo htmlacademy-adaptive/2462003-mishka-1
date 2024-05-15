@@ -6,7 +6,7 @@
 
 .featured__title {
   margin-bottom: 3.5px;
-  margin-top: 31px;
+  margin-top: 33px;
 }
 
 .featured__best-of-week {
@@ -22,6 +22,8 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  padding-right: 10px;
+  margin-top: 16px;
 }
 
 .featured__properties {
@@ -62,11 +64,13 @@
 }
 
 .featured__image {
+  margin: 0 auto;
   display: block;
   max-height: 315px;
 }
 
 .featured__order-wrapper {
+  width: 98%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

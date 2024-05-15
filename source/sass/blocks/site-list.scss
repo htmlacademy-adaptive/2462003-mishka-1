@@ -32,9 +32,9 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   .site-list__link {
-    width: 320px;
+    width: 100%;
     background-color: #ffffff;
     border-top: solid 1px #ececec;
   }

@@ -147,7 +147,7 @@ export default gulp.series(
   copy,
   gulp.parallel(
     styles,
-    scripts,
+    scripts
   ),
   server,
   watcher

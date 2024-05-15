@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Магазин о крутых DIY штуках, которые понравятся всем.">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link media="(max-width: 767px)" rel="preload" fetchpriority="high" href="img/hero-image.webp" as="image" type="image/webp">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link media="(max-width: 768px)" rel="preload" href="img/hero-image.webp" as="image">
-  <link media="(min-width: 768px) and (max-width:1150px)" rel="preload" href="img/hero-image-tablet.webp" as="image">
-  <link media="(min-width: 1150px)" rel="preload" href="img/hero-image-desktop.webp" as="image">
+  <link media="(min-width: 768px) and (max-width:1150px)" rel="preload" href="img/hero-image-tablet.webp" as="image" type="image/webp">
+  <link media="(min-width: 1150px)" rel="preload" href="img/hero-image-desktop.webp" as="image" type="image/webp">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -18,7 +19,6 @@
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -263,9 +263,11 @@
           </button>
         </div>
       </div>
-      <a class="reviews__button button button-primary" href="#">
+      <div class="reviews__button-wrapper">
+        <a class="reviews__button button button-primary" href="#">
         Написать
       </a>
+      </div>
     </section>
     <section class="contact-us">
       <div class="contact-us__wrapper">
