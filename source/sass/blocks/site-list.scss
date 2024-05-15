@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
   .site-list__link {
     width: 320px;
     background-color: #ffffff;
@@ -109,7 +109,7 @@
 
   .site-list__item--catalog {
     position: absolute;
-    left: -367px;
+    left: 0;
     top: 82px;
     padding-left: 46px;
   }
@@ -121,7 +121,7 @@
 
   .site-list__item--order {
     position: absolute;
-    left: -154px;
+    left: 217px;
     top: 82px;
   }
 

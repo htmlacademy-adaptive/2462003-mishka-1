@@ -66,7 +66,7 @@
   padding-left: 28px;
   position: relative;
 
-  @media (min-height: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-height: $mobile-width) and (max-width: $mobile-max-width) {
     &::before {
       position: absolute;
       content: "";

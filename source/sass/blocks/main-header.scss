@@ -34,7 +34,7 @@
   max-height: 75px;
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
   .main-header__logo {
     position: relative;
     top: 2px;
@@ -192,6 +192,14 @@
 
   .main-header__list-wrapper {
     display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .main-header__list--first {
+    position: absolute;
+    width: 100%;
+    left: 0;
   }
 }
 

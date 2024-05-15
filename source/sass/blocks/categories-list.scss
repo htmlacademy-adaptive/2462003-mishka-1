@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
   .categories-list__item--primary {
     position: relative;
     top: 1px;

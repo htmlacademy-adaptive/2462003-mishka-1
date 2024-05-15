@@ -19,7 +19,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .cards {
     padding: 0 50px;
   }

@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
   .main-footer {
     position: relative;
 

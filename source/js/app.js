@@ -7,7 +7,7 @@ let menu = document.querySelector('.main-header__list-wrapper');
 let menuButton = document.querySelector('.main-header__toggle');
 let menuButtonContent = document.querySelector('.main-header__toggle-lines');
 
-const mobileMediaQuery = window.matchMedia('(max-width: 768px)');
+const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
   menu.classList.add("main-header__list-wrapper--no-animation");
     setTimeout(() => {
       menu.classList.remove("main-header__list-wrapper--no-animation");
