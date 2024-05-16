@@ -34,9 +34,10 @@
     border: none;
     min-height: 26px;
     width: 50px;
+    min-width: 100px;
   }
 
   .slide-wrapper__button-previous {
-    margin-right: 37px;
+    margin-right: -13px;
   }
 }

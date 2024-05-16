@@ -21,7 +21,7 @@
 }
 
 .reviews__button-wrapper {
-  width: 98%;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,6 +35,7 @@
     min-height: 457px;
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
 
     @supports (background-image: url("../img/review.webp")) {
       background-image: url("../img/review.webp");
@@ -43,7 +44,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
-      background-size: contain;
 
       @supports (background-image: url("../img/review@2x.webp")) {
         background-image: url("../img/review@2x.webp");
@@ -67,8 +67,8 @@
   .reviews__slide-wrapper {
     margin: 0;
     position: absolute;
-    bottom: 61px;
-    right: 75px;
+    bottom: 109px;
+    right: 44px;
   }
 }
 
