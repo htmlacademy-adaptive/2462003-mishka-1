@@ -14,7 +14,7 @@
 
 .contact-us__title {
   margin-top: 89px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   padding: 0 30px;
 }
 
@@ -34,7 +34,7 @@
   object-fit: cover;
 }
 
-.contact-us__button-wrapper  {
+.contact-us__button-wrapper {
   width: 80%;
   margin: 0 auto;
 }
@@ -55,7 +55,7 @@
       background-size: 772px 17px;
       background-image: url("../../img/zigzag-line-desktop.svg");
       background-repeat: repeat-x;
-      top: 16px;
+      top: 68px;
     }
 
     &::after {
@@ -65,14 +65,14 @@
       height: 81px;
       background-image: url("../../img/flag.svg");
       background-repeat: no-repeat;
-      top: 79px;
+      top: 131px;
       right: 53px;
     }
   }
 
   .contact-us__title {
     padding: 0 50px;
-    margin-top: 103px;
+    margin-top: 154px;
     margin-bottom: 49px;
   }
 
@@ -142,7 +142,7 @@
   .contact-us__wrapper {
     display: grid;
     grid-template-columns: 1fr 527px;
-    margin-bottom: 105px;
+    margin-bottom: 106px;
   }
 
   .contact-us__wrapper .contact-us__list {

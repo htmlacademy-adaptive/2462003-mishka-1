@@ -9,11 +9,10 @@ let menuButtonContent = document.querySelector('.main-header__toggle-lines');
 
 
 const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
-   menu.classList.add("main-header__list-wrapper--no-animation");
+    menu.classList.add("main-header__list-wrapper--no-animation");
     setTimeout(() => {
       menu.classList.remove("main-header__list-wrapper--no-animation");
     }, 1000);
-
 
 mobileMediaQuery.addEventListener("change", function (event) {
   if (event.matches) { if (menu.classList.contains("main-header__list-wrapper--menu-open")) {

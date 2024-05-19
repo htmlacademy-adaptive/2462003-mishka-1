@@ -161,7 +161,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 80%;
+      width: calc(100% - 56px);
       height: 1px;
       background-color: #ececec;
       top: 0;

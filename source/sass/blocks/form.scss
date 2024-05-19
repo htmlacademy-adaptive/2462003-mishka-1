@@ -22,6 +22,7 @@
   @media (max-width: $mobile-max-width) {
     position: relative;
     overflow: hidden;
+
     &::after {
       position: absolute;
       content: "";
@@ -194,6 +195,7 @@
 @media (min-width: $desktop-width) {
   .form {
     max-width: 1150px;
+    padding-bottom: 47px;
   }
 
   .form__type {

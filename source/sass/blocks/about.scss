@@ -39,8 +39,6 @@
   margin-bottom: 82px;
 }
 
-
-
 .about__list {
   margin: 0;
   padding: 0;
@@ -51,7 +49,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     align-items: start;
-    }
+  }
 }
 
 .about__list__column {
@@ -121,7 +119,7 @@
 .about__list__item-column:not(:last-child) {
   margin-bottom: 83px;
 
-  @media (min-width: 640px)  {
+  @media (min-width: 640px) {
     margin-bottom: 0;
   }
 }
