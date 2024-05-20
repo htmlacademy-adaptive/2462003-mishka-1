@@ -39,8 +39,13 @@
   .cards__items {
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
+    justify-content: flex-start;
+    gap: 51px;
     margin-top: 111px;
-    padding-top: 16px;
+    padding: 16px 0 0 20px
+  }
+
+  .cards__item {
+    margin: 0;
   }
 }

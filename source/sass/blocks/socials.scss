@@ -10,6 +10,10 @@
   min-height: 80px;
 }
 
+.socials__item {
+  width: 33%;
+}
+
 .socials__link {
   padding: 20px 13px;
 
@@ -29,7 +33,6 @@
 
 .socials__link-icon {
   display: block;
-  margin: 0 auto;
   transition: background 0.3s, opacity 0.3s;
 }
 

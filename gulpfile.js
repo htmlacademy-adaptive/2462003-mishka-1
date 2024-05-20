@@ -37,8 +37,7 @@ export const copy = () => {
   return gulp.src([
     'source/*.html',
     'source/img/**/*',
-    'source/fonts/*',
-    'source/root/*'
+    'source/fonts/*'
   ], {
     base: 'source'
   })
@@ -55,6 +54,12 @@ export const copyHtml = () => {
 export const copyImg = () => {
   return gulp.src('source/img/**/*')
   .pipe(gulp.dest('build/img'))
+  .pipe(browser.stream());
+}
+
+export const copyRoot = () => {
+  return gulp.src('source/root/*')
+  .pipe(gulp.dest('build'))
   .pipe(browser.stream());
 }
 
@@ -145,6 +150,7 @@ export default gulp.series(
   del,
   sprite,
   copy,
+  copyRoot,
   gulp.parallel(
     styles,
     scripts
@@ -158,6 +164,7 @@ export const build = gulp.series (
   sprite,
   webp,
   copy,
+  copyRoot,
   gulp.parallel(
     styles,
     scripts,
