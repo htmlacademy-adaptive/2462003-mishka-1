@@ -187,7 +187,8 @@
     min-width: 300px;
     position: absolute;
     top: 108px;
-    right: -70px;
+    right: 0;
+    text-align: right;
   }
 
   .site-list__link--delivery {
@@ -238,10 +239,9 @@
     line-height: 24px;
     font-weight: 400;
     color: #444444;
-    min-width: 300px;
+    min-width: 234px;
     position: absolute;
     top: 109.5px;
-    right: -70px;
   }
 
   .site-list__item--sale {

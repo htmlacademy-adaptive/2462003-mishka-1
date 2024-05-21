@@ -155,18 +155,21 @@
 
   .categories-list__item {
     width: 50%;
+    min-height: 116px;
   }
 
   .categories-list__link {
     max-width: 200px;
-    padding: 25px 485px 34px 36px;
+    padding: 22px 485px 27px 36px;
   }
 
   .categories-list__link-image--lamp {
-    left: 86.33%;
+    left: 86%;
+    top: 53%;
   }
 
   .categories-list__link-image--toy {
-    left: 82.9%;
+    left: 82.5%;
+    top: 54%;
   }
 }

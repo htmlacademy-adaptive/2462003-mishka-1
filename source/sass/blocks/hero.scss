@@ -12,6 +12,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: calc((100vw - 100%) / -2);
+    background-color: #f9f9f9;
+    z-index: -1;
+  }
 
   @supports (background-image: url("../img/hero-image.webp")) {
     background-image: url("../img/hero-image.webp");
@@ -58,6 +70,7 @@
   .hero {
     padding-top: 157px;
     background-image: url("../img/hero-image-desktop.jpg");
+    min-height: 742px;
 
     @supports (background-image: url("../img/hero-image-desktop.webp")) {
       background-image: url("../img/hero-image-desktop.webp");
