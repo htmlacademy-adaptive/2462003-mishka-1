@@ -9,7 +9,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: calc((100vw - 100%) / -2);
     top: 0;
@@ -33,7 +33,7 @@
       background-image: url("../../img/zigzag-fill-tablet.svg");
       background-size: 100% 24px;
       background-repeat: repeat-x;
-      bottom: -12px;
+      bottom: -14px;
     }
   }
 }
@@ -50,13 +50,13 @@
       height: 34px;
       background-image: url("../../img/zigzag-fill-desktop-catalog.svg");
       background-size: 100% 34px;
-      bottom: -17px;
+      bottom: -21px;
     }
   }
 
   .hero-section--form {
     &::after {
-      bottom: 0;
+      bottom: -19px;
     }
   }
 }

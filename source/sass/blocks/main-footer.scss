@@ -7,7 +7,7 @@
   background-color: #f1f1f1;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: calc((100vw - 100%) / -2);
     top: 0;
