@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   transition: all 0.3s;
+  width: 260px;
 
   &:hover .card__border {
     box-shadow: 0 6px 10px 0 #0000001a;
@@ -66,7 +67,7 @@
   padding-left: 28px;
   position: relative;
 
-  @media (min-height: $mobile-width) and (max-width: $tablet-width) {
+  @media (max-width: $mobile-max-width) {
     &::before {
       position: absolute;
       content: "";
@@ -118,9 +119,10 @@
 @media (min-width: $tablet-width) {
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 334px 1fr;
     grid-template-rows: 1fr 21.87%;
     min-height: 334px;
+    width: 100%;
   }
 
   .card__border {
@@ -159,7 +161,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 80%;
+      width: calc(100% - 56px);
       height: 1px;
       background-color: #ececec;
       top: 0;

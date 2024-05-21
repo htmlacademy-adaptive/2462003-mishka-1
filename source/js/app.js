@@ -7,14 +7,19 @@ let menu = document.querySelector('.main-header__list-wrapper');
 let menuButton = document.querySelector('.main-header__toggle');
 let menuButtonContent = document.querySelector('.main-header__toggle-lines');
 
-const mobileMediaQuery = window.matchMedia('(max-width: 768px)');
-  menu.classList.add("main-header__list-wrapper--no-animation");
+
+const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
+    menu.classList.add("main-header__list-wrapper--no-animation");
     setTimeout(() => {
       menu.classList.remove("main-header__list-wrapper--no-animation");
     }, 1000);
 
 mobileMediaQuery.addEventListener("change", function (event) {
-  if (event.matches) {
+  if (event.matches) { if (menu.classList.contains("main-header__list-wrapper--menu-open")) {
+    menu.classList.toggle('main-header__list-wrapper--menu-close');
+    menu.classList.toggle('main-header__list-wrapper--menu-open');
+    menuButtonContent.classList.toggle('main-header__toggle-lines--x');
+  }
     menu.classList.add("main-header__list-wrapper--no-animation");
     setTimeout(() => {
       menu.classList.remove("main-header__list-wrapper--no-animation");

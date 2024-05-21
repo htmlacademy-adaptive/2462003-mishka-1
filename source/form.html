@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Форма заказа уникальной игрушки под любой ваш каприз.">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -26,9 +29,9 @@
         </picture>
       </a>
       <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
         <span class="main-header__toggle-lines"></span>
       </button>
-      <span class="visually-hidden">Открыть меню.</span>
     </div>
     <div class="main-header__list-wrapper">
       <ul class="main-header__list main-header__list--first site-list">
@@ -45,7 +48,7 @@
       </ul>
       <ul class="main-header__list site-list">
         <li class="site-list__item site-list__item--search">
-          <a class="site-list__link site-list__link--search" href="#">
+          <a class="site-list__link site-list__link--search" href="#" aria-label="Поиск по сайту.">
             <span class="site-list__link-icon site-list__link-icon--search">
             </span>
             <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
@@ -159,7 +162,7 @@
               <span class="form__label-text">Тел</span>
             </h3>
             <label class="form__text-input-block text-input-block">
-              <input class="text-input-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <input class="text-input-block__input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required aria-label="Введите ваш телефон.">
               <span class="text-input-block__input-image text-input-block__input-image--phone">
                 <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
                   <g>
@@ -177,7 +180,7 @@
               <span class="form__label-text form__label-text--long">E-mail</span>
             </h3>
             <label class="form__text-input-block text-input-block">
-              <input class="text-input-block__input text-input-block__input--email" type="email" name="email" placeholder="Ваш Email*" required>
+              <input class="text-input-block__input text-input-block__input--email" type="email" name="email" placeholder="Ваш Email*" required aria-label="Введите ваш E-mail.">
               <span class="text-input-block__input-image text-input-block__input-image--email">
                 <svg width="32" height="21" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg">
                   <path d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
@@ -192,7 +195,7 @@
           </h3>
           <label class="form__text-input-block text-area-input-block">
             <textarea class="text-area-input-block__input-textarea" name="extra" form="form-area" cols="30" rows="10"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              placeholder="Опишите все ваши пожелания к заказу" aria-label="Опишите ваши пожелания к заказу."></textarea>
           </label>
         </div>
           <div class="form__required-wrapper">
@@ -230,7 +233,7 @@
           <span class="socials__link-icon socials__link-icon--youtube"></span>
         </a>
       </li>
-      <li class="socials__item">
+      <li class="socials__item socials__item--telegram">
         <a class="socials__link socials__link--telegram" href="#">
           <span class="visually-hidden">Телеграмм.</span>
           <span class="socials__link-icon socials__link-icon--telegram"></span>

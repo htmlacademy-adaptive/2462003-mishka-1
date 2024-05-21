@@ -11,15 +11,16 @@
     padding-left: 188px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 140px;
+    column-gap: 101px;
     row-gap: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-list-checkbox {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.95fr 0.97fr 1fr;
     row-gap: 57px;
     padding-left: 134px;
+    column-gap: 0;
   }
 }
