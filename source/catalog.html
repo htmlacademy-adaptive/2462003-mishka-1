@@ -21,13 +21,13 @@
 <body class="page__body">
   <header class="main-header main-header--no-js">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" width="149" height="72">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="113" height="46">
-          <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
-        </picture>
-      </a>
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="113" height="46">
+            <img class="main-header__logo-image" src="img/logo.svg" width="86" height="35" alt="DIY магазин «Мишка».">
+          </picture>
+        </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
         <span class="main-header__toggle-lines"></span>
@@ -36,7 +36,7 @@
     <div class="main-header__list-wrapper">
       <ul class="main-header__list main-header__list--first site-list">
         <li class="site-list__item site-list__item--catalog">
-          <a class="site-list__link site-list__link--catalog site-list__link--wider site-list__link--smaller" href="catalog.html">
+          <a class="site-list__link site-list__link--catalog site-list__link--wider site-list__link--smaller" href="#">
             <span class="site-list__link-text">Каталог товаров</span>
           </a>
         </li>
@@ -46,12 +46,11 @@
           </a>
         </li>
       </ul>
-      <ul class="main-header__list site-list">
+      <ul class="main-header__list main-header__list--icons site-list">
         <li class="site-list__item site-list__item--search">
           <a class="site-list__link site-list__link--search" href="#" aria-label="Поиск по сайту.">
-            <span class="site-list__link-icon site-list__link-icon--search">
-            </span>
             <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+            <span class="site-list__link-icon site-list__link-icon--search"></span>
           </a>
         </li>
         <li class="site-list__item site-list__item--cart">
@@ -62,7 +61,6 @@
           </a>
         </li>
       </ul>
-    </div>
       <ul class="main-header__list main-header__list--last site-list">
         <li class="site-list__item site-list__item--new site-list__item--desktop">
           <a class="site-list__link site-list__link--wider" href="#">
@@ -78,6 +76,7 @@
             <span class="site-list__link-text">Бесплатная доставка по России</span>
         </li>
       </ul>
+    </div>
 </header>
   <main class="main-wrapper">
     <section class="hero-section">

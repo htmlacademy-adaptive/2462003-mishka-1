@@ -9,32 +9,38 @@ let menuButtonContent = document.querySelector('.main-header__toggle-lines');
 
 
 const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
-    menu.classList.add("main-header__list-wrapper--no-animation");
+    menu.classList.add('main-header__list-wrapper--no-animation');
     setTimeout(() => {
-      menu.classList.remove("main-header__list-wrapper--no-animation");
+      menu.classList.remove('main-header__list-wrapper--no-animation');
     }, 1000);
 
-mobileMediaQuery.addEventListener("change", function (event) {
-  if (event.matches) { if (menu.classList.contains("main-header__list-wrapper--menu-open")) {
+mobileMediaQuery.addEventListener('change', function (event) {
+  if (event.matches) { if (menu.classList.contains('main-header__list-wrapper--menu-open')) {
     menu.classList.toggle('main-header__list-wrapper--menu-close');
     menu.classList.toggle('main-header__list-wrapper--menu-open');
     menuButtonContent.classList.toggle('main-header__toggle-lines--x');
   }
-    menu.classList.add("main-header__list-wrapper--no-animation");
+    menu.classList.add('main-header__list-wrapper--no-animation');
     setTimeout(() => {
-      menu.classList.remove("main-header__list-wrapper--no-animation");
+      menu.classList.remove('main-header__list-wrapper--no-animation');
     }, 1000);
   } else {
-    menu.classList.remove("main-header__list-wrapper--no-animation");
+    menu.classList.remove('main-header__list-wrapper--no-animation');
   }
 });
 
 menu.classList.add('main-header__list-wrapper--menu-close');
-if (menuButton) {menuButton.addEventListener ("click", function () {
+if (menuButton) {menuButton.addEventListener ('click', function () {
   menu.classList.toggle('main-header__list-wrapper--menu-close');
   menu.classList.toggle('main-header__list-wrapper--menu-open');
   menuButtonContent.classList.toggle('main-header__toggle-lines--x');
 })}
+
+// Карта
+if (document.querySelector('.map-wrapper__map')) {
+  document.querySelector('.map-wrapper__map').classList.remove('map-wrapper__map--no-js');
+};
+
 
 // Плеер
 let videoPlayer = document.querySelector('.video__player');
@@ -42,7 +48,7 @@ let videoLink = document.querySelector('.video__play-button');
 let videoPreview = document.querySelector('.video__video-wrapper');
 
 if (videoLink) {
-  videoLink.addEventListener("click",
+  videoLink.addEventListener('click',
 function (event) {
   event.preventDefault();
   videoPlayer.classList.toggle('video__player--no-js');
@@ -59,12 +65,12 @@ let modalButton = document.querySelector('.button--modal');
 let size = document.querySelectorAll('.button-xs');
 
 if (buyIndex) {
-      buyIndex.addEventListener("click", function () {
+      buyIndex.addEventListener('click', function () {
       modal.classList.remove('modal-wrapper--invisible');
     });
 
     for (let sizeButton of size) {
-      sizeButton.addEventListener("click", function () {
+      sizeButton.addEventListener('click', function () {
         let activeSize = document.querySelector('.button-xs--active');
         activeSize.classList.remove('button-xs--active');
         sizeButton.classList.add('button-xs--active');
@@ -74,12 +80,12 @@ if (buyIndex) {
 
   if (buy) {
       for (let buyButton of buy) {
-      buyButton.addEventListener("click", function () {
+      buyButton.addEventListener('click', function () {
       modal.classList.remove('modal-wrapper--invisible');
     })
 
     for (let sizeButton of size) {
-      sizeButton.addEventListener("click", function () {
+      sizeButton.addEventListener('click', function () {
         let activeSize = document.querySelector('.button-xs--active');
         activeSize.classList.remove('button-xs--active');
         sizeButton.classList.add('button-xs--active');
@@ -87,7 +93,7 @@ if (buyIndex) {
     }
   }
   if (modalButton) {
-    modalButton.addEventListener("click", function () {
+    modalButton.addEventListener('click', function () {
       modal.classList.add('modal-wrapper--invisible');
     })
   };
