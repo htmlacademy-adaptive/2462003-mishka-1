@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Магазин о крутых DIY штуках, которые понравятся всем.">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link media="(max-width: 767px)" rel="preload" fetchpriority="high" href="img/hero-image.webp" as="image" type="image/webp">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link media="(min-width: 768px) and (max-width:1150px)" rel="preload" href="img/hero-image-tablet.webp" as="image" type="image/webp">
+  <link media="(min-width: 1150px)" rel="preload" href="img/hero-image-desktop.webp" as="image" type="image/webp">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -12,7 +19,6 @@
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -26,9 +32,9 @@
             </picture>
           </a>
         <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
           <span class="main-header__toggle-lines"></span>
         </button>
-        <span class="visually-hidden">Открыть меню.</span>
       </div>
       <div class="main-header__list-wrapper">
         <ul class="main-header__list main-header__list--first site-list">
@@ -45,10 +51,9 @@
         </ul>
         <ul class="main-header__list main-header__list--icons site-list">
           <li class="site-list__item site-list__item--search">
-            <a class="site-list__link site-list__link--search" href="#">
-              <span class="site-list__link-icon site-list__link-icon--search">
-              </span>
+            <a class="site-list__link site-list__link--search" href="#" aria-label="Поиск по сайту.">
               <span class="site-list__link-text site-list__link-text--search">Поиск по сайту</span>
+              <span class="site-list__link-icon site-list__link-icon--search"></span>
             </a>
           </li>
           <li class="site-list__item site-list__item--cart">
@@ -151,8 +156,8 @@
     <section class="about">
       <h2 class="about__title section-title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__list__item-column">
-          <ul class="about__list__column">
+        <li class="about__list-item-column">
+          <ul class="about__column">
             <li class="about__list-item">
               <svg class="about__list-item-image about__list-item-image--flower" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#flower-icon"></use>
@@ -179,8 +184,8 @@
             </li>
           </ul>
         </li>
-        <li class="about__list__item-column">
-          <ul class="about__list__column">
+        <li class="about__list-item-column">
+          <ul class="about__column">
             <li class="about__list-item">
               <svg class="about__list-item-image about__list-item-image--ball" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#ball-icon"></use>
@@ -258,9 +263,11 @@
           </button>
         </div>
       </div>
-      <a class="reviews__button button button-primary" href="#">
+      <div class="reviews__button-wrapper">
+        <a class="reviews__button button button-primary" href="#">
         Написать
       </a>
+      </div>
     </section>
     <section class="contact-us">
       <div class="contact-us__wrapper">
@@ -278,15 +285,15 @@
           </li>
         </ul>
         <div class="contact-us__map-wrapper map-wrapper">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-            <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-            <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
-          </picture>
-          <iframe class="map-wrapper__map map" src="https://yandex.ru/map-widget/v1/?ll=30.323610%2C59.938661&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=17.91">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+              <source media="(min-width: 320px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <img class="contact-us__map-wrapper-map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="454" alt="Наш адрес на карте.">
+            </picture>
+          <iframe class="map-wrapper__map map-wrapper__map--no-js map" title="Адрес на карте" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.323610%2C59.938661&mode=whatshere&whatshere%5Bpoint%5D=30.323053%2C59.938535&whatshere%5Bzoom%5D=17&z=17.91">
           </iframe>
         </div>
         <div class="contact-us__button-wrapper">
@@ -323,7 +330,7 @@
           <span class="socials__link-icon socials__link-icon--youtube"></span>
         </a>
       </li>
-      <li class="socials__item">
+      <li class="socials__item socials__item--telegram">
         <a class="socials__link socials__link--telegram" href="#">
           <span class="visually-hidden">Телеграмм.</span>
           <span class="socials__link-icon socials__link-icon--telegram"></span>

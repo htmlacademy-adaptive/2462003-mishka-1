@@ -1,6 +1,6 @@
 .text-area-input-block__input-textarea {
   margin-top: 21px;
-  width: 260px;
+  width: 100%;
   height: 142px;
   resize: none;
   border: solid 2px #444444;
@@ -32,7 +32,6 @@
 @media (min-width: $tablet-width) {
   .text-area-input-block__input-textarea {
     margin: 0;
-    width: 501px;
     font-size: 19px;
   }
 
@@ -45,5 +44,6 @@
   .text-area-input-block__input-textarea {
     width: 700px;
     margin-right: 173px;
+    padding: 16px 16px 16px 13px;
   }
 }

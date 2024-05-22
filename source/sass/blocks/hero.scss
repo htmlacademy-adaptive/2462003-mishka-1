@@ -2,15 +2,28 @@
 
 .hero {
   background-image: url("../img/hero-image.jpg");
-  background-color: #808080;
+  background-color: #f9f9f9;
   background-repeat: no-repeat;
-  background-position: 0 -17px;
+  background-position: center -17px;
+  background-size: 320px 373px;
   object-fit: cover;
   padding-top: 73px;
   min-height: 283px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: calc((100vw - 100%) / -2);
+    background-color: #f9f9f9;
+    z-index: -1;
+  }
 
   @supports (background-image: url("../img/hero-image.webp")) {
     background-image: url("../img/hero-image.webp");
@@ -18,8 +31,8 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-image@2x.jpg");
-    background-size: 100% auto;
-    background-position: 0 -17px;
+    background-size: 320px 373px;
+    background-position: center -17px;
 
     @supports (background-image: url("../img/hero-image@2x.webp")) {
       background-image: url("../img/hero-image@2x.webp");
@@ -32,7 +45,8 @@
   .hero {
     min-height: 745px;
     padding-top: 155px;
-    background-position: top;
+    background-position: center -1px;
+    background-size: 768px 746px;
     background-image: url("../img/hero-image-tablet.jpg");
 
     @supports (background-image: url("../img/hero-image-tablet.webp")) {
@@ -40,6 +54,7 @@
     }
 
     @media (min-resolution: 2dppx) {
+      background-size: 768px 746px;
       background-image: url("../img/hero-image-tablet@2x.jpg");
 
       @supports (background-image: url("../img/hero-image-tablet@2x.webp")) {
@@ -57,12 +72,16 @@
   .hero {
     padding-top: 157px;
     background-image: url("../img/hero-image-desktop.jpg");
+    min-height: 742px;
+    background-size: 1150px 746px;
+    background-position: center -1px;
 
     @supports (background-image: url("../img/hero-image-desktop.webp")) {
       background-image: url("../img/hero-image-desktop.webp");
     }
 
     @media (min-resolution: 2dppx) {
+      background-size: 1150px 746px;
       background-image: url("../img/hero-image-desktop@2x.jpg");
 
       @supports (background-image: url("../img/hero-image-desktop@2x.webp")) {

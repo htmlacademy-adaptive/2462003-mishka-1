@@ -1,7 +1,3 @@
-.modal-wrapper {
-  z-index: 3;
-}
-
 .modal-window {
   width: 320px;
   padding: 28.5px 30px 46px 30px;
@@ -45,5 +41,9 @@
 
   .modal-window__options {
     font-size: 17px;
+  }
+
+  .modal-window__options-wraooer {
+    width: 99%;
   }
 }

@@ -1,13 +1,25 @@
 .main-footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   background-color: #f1f1f1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc((100vw - 100%) / -2);
+    top: 0;
+    height: 100%;
+    background: #f1f1f1;
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .main-footer__socials {
-  padding: 0 90px 8px;
+  padding: 0 53px 8px 88px;
 }
 
 .main-footer__developed {
@@ -32,7 +44,7 @@
   }
 
   .main-footer__socials {
-    padding: 0 62px 8px 120px;
+    padding: 0 20px 8px 120px;
   }
 
   .main-footer__developed {
@@ -44,7 +56,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (max-width: $mobile-max-width) {
   .main-footer {
     position: relative;
 

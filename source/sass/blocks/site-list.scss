@@ -32,9 +32,9 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (max-width: $mobile-max-width) {
   .site-list__link {
-    width: 320px;
+    width: 100%;
     background-color: #ffffff;
     border-top: solid 1px #ececec;
   }
@@ -76,16 +76,26 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .site-list__item--catalog {
+    padding-left: 50px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     position: relative;
-    min-height: 89px;
+    min-height: 79px;
     z-index: 1;
   }
 
   .site-list__item {
     min-width: 0;
+  }
+
+  .site-list__item--catalog {
+    align-self: center;
   }
 
   .site-list__link-icon {
@@ -107,22 +117,9 @@
     padding-right: 0;
   }
 
-  .site-list__item--catalog {
-    position: absolute;
-    left: -367px;
-    top: 82px;
-    padding-left: 46px;
-  }
-
   .site-list__link--smaller {
     font-size: 15px;
     line-height: 24px;
-  }
-
-  .site-list__item--order {
-    position: absolute;
-    left: -154px;
-    top: 82px;
   }
 
   .site-list__item--search {
@@ -185,9 +182,10 @@
     font-weight: 400;
     color: #444444;
     min-width: 300px;
-    position: absolute;
     top: 108px;
-    right: -70px;
+    right: 0;
+    text-align: right;
+    margin-left: auto;
   }
 
   .site-list__link--delivery {
@@ -207,14 +205,19 @@
   }
 
   .site-list__item--catalog {
-    position: static;
     padding-left: 0;
     min-width: 179px;
     margin-right: 41px;
-  }
+    position: relative;
 
-  .site-list__item--order {
-    position: static;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: #00000010;
+      right: -6px;
+    }
   }
 
   .site-list__link {
@@ -226,10 +229,9 @@
   }
 
   .site-list__item--new {
-    position: absolute;
     top: 107.5px;
     left: -1050px;
-    min-width: 240px;
+    min-width: 210px;
   }
 
   .site-list__item--delivery {
@@ -238,16 +240,8 @@
     line-height: 24px;
     font-weight: 400;
     color: #444444;
-    min-width: 300px;
-    position: absolute;
+    min-width: 234px;
     top: 109.5px;
-    right: -70px;
-  }
-
-  .site-list__item--sale {
-    position: absolute;
-    top: 107.5px;
-    left: -831px;
   }
 
   .site-list__link--delivery {

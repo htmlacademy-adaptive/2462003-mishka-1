@@ -5,9 +5,11 @@
 }
 
 .categories-list__item {
-  width: 320px;
+  width: 100%;
+  margin: 0 auto;
   text-align: left;
-  padding: 0 30px;
+  padding-left: 30px;
+  min-height: 103px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -36,7 +38,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (max-width: $mobile-max-width) {
   .categories-list__item--primary {
     position: relative;
     top: 1px;
@@ -46,6 +48,7 @@
 .categories-list__link {
   color: #ffffff;
   min-width: 130px;
+  width: 100%;
   padding: 24px 160px 31px 0;
   position: relative;
 
@@ -90,10 +93,9 @@
   content: "";
   width: 40px;
   height: 62px;
-  right: 0;
+  right: 36px;
   top: 53%;
   transform: translateY(-50%);
-  left: 81.95%;
   opacity: 0.5;
   transition: opacity 0.3s;
 }
@@ -103,10 +105,9 @@
   content: "";
   width: 60px;
   height: 60px;
-  right: 0;
+  right: 27px;
   top: 50%;
   transform: translateY(-50%);
-  left: 78%;
   opacity: 0.5;
   transition: opacity 0.3s;
 }
@@ -154,18 +155,21 @@
 
   .categories-list__item {
     width: 50%;
+    min-height: 116px;
   }
 
   .categories-list__link {
     max-width: 200px;
-    padding: 25px 485px 34px 36px;
+    padding: 22px 485px 27px 36px;
   }
 
   .categories-list__link-image--lamp {
-    left: 86.33%;
+    left: 86%;
+    top: 53%;
   }
 
   .categories-list__link-image--toy {
-    left: 82.9%;
+    left: 82.5%;
+    top: 54%;
   }
 }

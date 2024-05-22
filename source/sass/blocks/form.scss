@@ -19,9 +19,10 @@
   text-transform: uppercase;
   margin: 0;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (max-width: $mobile-max-width) {
     position: relative;
     overflow: hidden;
+
     &::after {
       position: absolute;
       content: "";
@@ -78,6 +79,10 @@
 @media (min-width: $tablet-width) {
   .form {
     padding-bottom: 50px;
+  }
+
+  .form__form-list {
+    width: 100%;
   }
 
   .form__label-text {
@@ -176,11 +181,23 @@
   }
 
   .form__button {
-    width: 230px;
+    width: 34.5%;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .form__text-input-block {
+    margin-left: auto;
+    width: 75%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    max-width: 1150px;
+    padding-bottom: 47px;
+  }
+
   .form__type {
     padding-left: 112px;
   }
@@ -202,5 +219,9 @@
 
   .form__type--contacts {
     padding-right: 225px;
+  }
+
+  .form__button {
+    width: 33%;
   }
 }
