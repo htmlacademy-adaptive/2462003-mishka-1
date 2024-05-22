@@ -209,6 +209,11 @@
   .main-header__list-wrapper {
     display: flex;
   }
+
+  .main-header__list--first {
+    flex-wrap: wrap;
+    max-width: 440px;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
